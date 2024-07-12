@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/app.css" rel="stylesheet" />
+
+    <title>Provisionals Programmes Offered at A-Star Academy | Comprehensive Hospitality Education</title>
+    <meta name="description"
+        content="Explore diverse hospitality programmes at A-Star Academy, from diplomas in pastry and entrepreneurship to advanced degrees in hotel management.">
+    <meta name="keywords"
+        content="A-Star Academy programmes, hospitality courses, culinary arts degree, hotel management diploma, professional culinary training">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5WFJW026Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D5WFJW026Z');
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="main-layout-wrapper">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container navigation">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li><a class="dropdown-item" href="executive-directors-message.html">Executive
+                                        Director’s
+                                        Message</a></li>
+                                <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
+                                <li><a class="dropdown-item" href="team-a-star.html">Team A-Star</a></li>
+                                <!--<li><a class="dropdown-item" href="affiliations.html">Affiliations</a></li>-->
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programmes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./workshops-event.html">Workshops</a></li>
+                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma</a></li>
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree</a></li>
+                                <li><a class="dropdown-item" href="./certification-courses.html">Certification
+                                        Courses</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Campuses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="sahara-star.html">Sahara Star</a></li>
+                                <li><a class="dropdown-item" href="aamby-valley-city.html">Aamby Valley City</a></li>
+                                <!--<li><a class="dropdown-item" href="events.html">Events</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="./img/logo.png" alt="Logo" height="40">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="life-at-astar.html">Life at A-Star</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admissions.html">Admissions</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Connect
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <!--<li><a class="dropdown-item" href="request-brochure.html">Request Brochure</a></li>-->
+                                <li><a class="dropdown-item" href="careers-at-a-star.html">Careers at A-Star</a></li>
+                                <!--<li><a class="dropdown-item" href="blogs.html">Blogs</a></li>-->
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="course-banner course-banner-video">
+            <!-- <img src="./img/banner/programme.jpg" class="img-fluid" alt="logo" /> -->
+            <video id="videoPlayer" autoplay loop onclick="toggleVideo()">
+                <source src="./img/banner/workshop.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="course-heading-wrapper">
+            <div class="container">
+                <h2>Workshops & Events</h2>
+                <strong class="sub-heading">Culinary workshops at Mumbai Campus</strong>
+
+                <div class="table-responsive workshop-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name of The Courses</th>
+                                <th>No. of Days</th>
+                                <th>No. of Hours Per Day</th>
+                                <th>Fees in INR</th>
+                                <th>Name of the Chef</th>
+                                <th>Inclusions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LEBANESE MEZZE</td>
+                                <td>2 days</td>
+                                <td>3 Hours</td>
+                                <td>7500</td>
+                                <td>
+                                    <b>Chef Jihad Shami</b>
+                                    <div>
+                                        1. Edamame Hummus <br />
+                                        2. Babaganush <br />
+                                        3. Quinoa Tabbouleh<br />
+                                        4. Fatuous<br />
+                                        5. Labneh<br />
+                                        6. Mohamara
+                                    </div>
+                                </td>
+                                <td>
+                                    06 Varieties of Mezze with Hands on Experience
+                                    <br /><br />
+                                    Workshop Completion Certificate
+                                    <br /><br />
+                                    3rd Day-Optional Practice Session
+                                    <br /><br />
+                                    Tea/ Coffee/Snacks
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <!-- <span>Workshop on 10<sup>th</sup> - 11<sup>th</sup> June (Monday &
+                                                                    Tuesday)</span> -->
+
+                                    <span>Workshop on 15<sup>th</sup> - 16<sup>th</sup> June
+                                        (Saturday & Sunday)</span>
+                                    <br />
+                                    <span>Workshop on 22<sup>nd</sup> - 23<sup>rd</sup> June
+                                        (Saturday & Sunday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="programm-white-space"></td>
+                            </tr>
+                            <tr>
+                                <td>MIXOLOGY</td>
+                                <td>1 days</td>
+                                <td>5 Hours</td>
+                                <td>----</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on 29<sup>th</sup> - 30<sup>th</sup> June
+                                        (Saturday &amp; Sunday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+                            <tr>
+                                <td>HOMEMADE PASTA AND BEYOND</td>
+                                <tD>2 Days</tD>
+                                <td>3 Hours</td>
+                                <td>5000</td>
+                                <td>
+                                    <b>Chef Rupesh Khandekar</b>
+                                    <div>
+                                        1. Fettuccini <br />
+                                        2. Spinach & Ricotta Ravioli <br />
+                                        3. Pumpkin, Goat Cheese & Walnut Tortellini
+                                    </div>
+                                </td>
+                                <td>
+                                    03 Varieties of Homemade Pasta with Hands on Experience Workshop
+                                    <br /><br />
+                                    Workshop Completion Certificate
+                                    <br /><br />
+                                    3rd Day-Optional Practice Session
+                                    <br /><br />
+                                    Tea/ Coffee/Snacks
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on June 19<sup>th</sup> - June 20<sup>th</sup> (Wednesday
+                                        & Thursday)</span>
+                                    <br />
+                                    <span>Workshop on June 26<sup>th</sup> - June 27<sup>th</sup> (Wednesday
+                                        & Thursday)</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td>THE ART OF ROLLING SUSHI</td>
+                                <td>2 Days</td>
+                                <td>3 Hours</td>
+                                <td>6500</td>
+                                <td>
+                                    <b>Chef Vikas Rane</b>
+                                    <div>
+                                        1. Avocado Tiger Eye Uramaki<br />
+                                        2. Classic California Roll (Asparagus, Cucumber)<br />
+                                        3. Vegetable Tempura Roll<br />
+                                        4. Vegetarian Nigiri<br />
+                                        5. Air Fried Vegetable Spring Roll<br />
+                                        6. Vietnamese Spring Rolll<br />
+
+                                    </div>
+                                </td>
+                                <td>
+                                    05 Varieties of Sushi
+                                    <br /><br />
+                                    02 Variety of Spring Roll with Hands on Experience
+                                    <br /><br />
+                                    Workshop Completion Certificate
+                                    <br /><br />
+                                    3rd Day-Optional Practice Session
+                                    <br /><br />
+                                    Tea/Coffee/Snacks
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on June 15<sup>th</sup> - 16<sup>th</sup> (Saturday &
+                                        Sunday)</span>
+                                    <br />
+                                    <span>Workshop on June 26<sup>th</sup> - 27<sup>th</sup> (Wednesday &
+                                        Thursday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+
+
+                            <tr>
+                                <td>CRAFTED BEVERAGES</td>
+                                <td>----</td>
+                                <td>----</td>
+                                <td>----</td>
+                                <td>
+                                    ----
+                                </td>
+                                <td>
+                                    ----
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on June 23<sup>rd</sup> (Sunday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+
+                            <tr>
+                                <td>MEXICAN FAVOURITES</td>
+                                <td>2 Days</td>
+                                <td>3 Hours</td>
+                                <td>6500</td>
+                                <td>
+                                    <b>Chef Rupesh Khandekar</b>
+                                    <div>
+                                        1. Corn & Bean Salad <br />
+                                        2. Tacos, Tomato Salsa and Guacamole <br />
+                                        3 Quesadilla<br />
+                                        4. Burrito<br />
+                                        5. Enchilada<br />
+                                        6. Mexican Rice
+                                    </div>
+                                </td>
+                                <td>
+                                    06 Varieties of Mexican Favorite with Hands On Experience
+                                    <br /><br />
+                                    Workshop Completion Certificate
+                                    <br /><br />
+                                    3rd Day-Optional Practice Session
+                                    <br /><br />
+                                    Tea/ Coffee/Snack
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on 22<sup>nd</sup> - 23<sup>rd</sup> June
+                                        (Saturday &amp; Sunday)</span>
+                                    <br />
+                                    <span>Workshop on 29<sup>th</sup> - 30<sup>th</sup> June
+                                        (Saturday &amp; Sunday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+
+                            <tr>
+                                <td>KEBABS AND TIKKAS </td>
+                                <td>2 Days</td>
+                                <td>3 Hours</td>
+                                <td>7500</td>
+                                <td>
+                                    <b>Chef Ganesh</b>
+                                    <div>
+                                        1. Chapli Kebab <br />
+                                        2. Murg Ke Parche <br />
+                                        3. Subz Gilafi Sheekh 4. Pasanda Chicken Seekh Kebab<br />
+                                        5. Karare Dahi Ke Kebab
+                                    </div>
+                                </td>
+                                <td>
+                                    05 Varieties of Kebabs with Hands on Experience
+                                    <br /><br />
+                                    Workshop Completion Certificate
+                                    <br /><br />
+                                    Tea/ Coffee/Snack
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-date">
+                                    <span>Workshop on June 19<sup>th</sup> - June 20<sup>th</sup> (Wednesday
+                                        &amp; Thursday)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="workshop-td-btn">
+                                    <div class="programme-btn-wrapper center">
+                                        <a href="./workshop-event-form.html" class="btn btn-primary custom-btn">Apply
+                                            now</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="programm-white-space"></td>
+                            </tr>
+
+                            <!---->
+
+                            <!-- <tr>
+                                                            <td>HOMEMADE PASTA AND MORE (Vegetarian)</td>
+                                                            <td>5000</td>
+                                                            <td>2 days</td>
+                                                            <td>3 Hours per days</td>
+                                                            <td>
+                                                                <b>Chef Rupesh</b>
+                                                                <div>
+                                                                    1. Fettuccini <br />
+                                                                    2. Spinach and ricotta ravioli <br />
+                                                                    3. Pumpkin, goat cheese and walnut tortellini
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                03 Varieties of homemade
+                                                                pasta hands on experience
+                                                                <br /><br />
+                                                                Workshop completion
+                                                                certificate
+                                                                <br /><br />
+                                                                2<sup>nd</sup> day-Optional practice
+                                                                session
+                                                                <br /><br />
+                                                                Tea/ Coffee/Snacks
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-date">
+                                                                <span>Workshop on June 19<sup>th</sup></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-btn">
+                                                                <div class="programme-btn-wrapper center">
+                                                                    <a href="./workshop-event-form.html"
+                                                                        class="btn btn-primary custom-btn">Apply
+                                                                        now</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                
+                                                        <tr>
+                                                            <td>THAI CLASSIE (Vegetarian)</td>
+                                                            <td>----</td>
+                                                            <td>2 days</td>
+                                                            <td>3 Hours per days</td>
+                                                            <td>
+                                                                <b>Chef Rupesh</b>
+                                                                <div>
+                                                                    1. Tom yam <br />
+                                                                    2. Som tam<br />
+                                                                    3. Thai curry (2types)<br />
+                                                                    4. Jasmine rice<br />
+                                                                    5. Mango & sticky rice<br />
+                                                                    6. Fhad Thai noodles
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                06 Varieties Thai Classie
+                                                                hands on experience
+                                                                <br />
+                                                                Workshop completion
+                                                                certificate
+                                                                <br />
+                                                                2<sup>nd</sup> day-Optional practice
+                                                                session
+                                                                <br />
+                                                                Tea/ Coffee/Snacks
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-date">
+                                                                <span>Workshop on June 12<sup>th</sup></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-btn">
+                                                                <div class="programme-btn-wrapper center">
+                                                                    <a href="./workshop-event-form.html"
+                                                                        class="btn btn-primary custom-btn">Apply
+                                                                        now</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                
+                
+                                                        <tr>
+                                                            <td>ITALIAN MEAL (Vegetarian)</td>
+                                                            <td>----</td>
+                                                            <td>2 days</td>
+                                                            <td>3 Hours per days</td>
+                                                            <td>
+                                                                <b>Chef Rupesh</b>
+                                                                <div>
+                                                                    1. Bruschetta (2types) <br />
+                                                                    2. Caprese salad<br />
+                                                                    3. Arancini<br />
+                                                                    4. Pizza margherita<br />
+                                                                    5. Spaghetti al olio<br />
+                                                                    6. Vegetable lasagna
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                06 Varieties of Italian meal
+                                                                hands on experience
+                                                                <br />
+                                                                Workshop completion
+                                                                certificate
+                                                                <br />
+                                                                2<sup>nd</sup> day-Optional practice
+                                                                session
+                                                                <br />
+                                                                Tea/ Coffee/Snacks
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-date">
+                                                                <span>Workshop on June 19<sup>th</sup></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-btn">
+                                                                <div class="programme-btn-wrapper center">
+                                                                    <a href="./workshop-event-form.html"
+                                                                        class="btn btn-primary custom-btn">Apply
+                                                                        now</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                
+                
+                                                        <tr>
+                                                            <td>MEXICAN FAVORITE (Vegetarian)</td>
+                                                            <td>----</td>
+                                                            <td>2 days</td>
+                                                            <td>3 Hours per days</td>
+                                                            <td>
+                                                                <b>Chef Rupesh</b>
+                                                                <div>
+                                                                    1. Corn & bean salad <br />
+                                                                    2. Tacos, tomato salsa and guacamole <br />
+                                                                    3. Quesadilla <br />
+                                                                    4. Burrito<br />
+                                                                    5. Enchilada<br />
+                                                                    6. Mexican rice
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                06 Varieties of Mexican
+                                                                favorite hands on experience
+                                                                <br />
+                                                                Workshop completion
+                                                                certificate
+                                                                <br />
+                                                                2<sup>nd</sup> day-Optional practice
+                                                                session
+                                                                <br />
+                                                                Tea/ Coffee/Snacks
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-date">
+                                                                <span>Workshop on June 26<sup>th</sup> - 27<sup>th</sup></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="6" class="workshop-td-btn">
+                                                                <div class="programme-btn-wrapper center">
+                                                                    <a href="./workshop-event-form.html"
+                                                                        class="btn btn-primary custom-btn">Apply
+                                                                        now</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr> -->
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="./img/footer-logo.jpg" class="img-fluid" alt="logo" />
+                        <p>
+                            <span>Hotal Sahara Star</span>
+                            <span>Opp Domestic Airport</span>
+                            <span>Mumbai 400099</span>
+                            <span>Tel: +91 8657411591, +91 8657411592</span>
+                            <a href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-link-wrapper">
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="mission-vision.html">About Us</a></li>
+
+                                    <li><a href="executive-directors-message.html">ED's Message</a></li>
+                                    <li><a href="degree-programmes.html">Programmes</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="team-a-star.html">Management Team</a></li>
+                                    <li><a href="life-at-astar.html">Life at A-Star</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="careers-at-a-star.html">Careers at A-Star</a></li>
+                                    <li><a href="terms-&-conditions.html">Terms & Conditions</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <ul class="footer-social-link">
+                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61556820487501"><img
+                                        src="./img/social/facebook.png" class="img-fluid" alt="facebook" /></a>
+                            </li>
+                            <li><a target="_blank" href="https://www.instagram.com/astar.academy.aambyvalley/"><img
+                                        src="./img/social/instagram.png" class="img-fluid" alt="instagram" /></a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www.linkedin.com/company/a-star-academy-indias-only-hotel-school/"><img
+                                        src="./img/social/linkedin.png" class="img-fluid" alt="linkedin" /></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copy-write-wrapper">
+            <p>
+                Copyright ©
+                <script>document.write(new Date().getFullYear())</script> A-Star Academy Ltd. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="./js/app.js"></script>
+
+    <script>
+
+        function toggleVideo() {
+
+            var video = document.getElementById('videoPlayer');
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+
+        $(document).ready(function () {
+            // $(window).scroll(function () {
+            //     if ($(this).scrollTop() > 300) {
+            //         $('nav').removeClass('fixed');
+            //     } else {
+            //         $('nav').addClass('fixed');
+            //     }
+            // });
+
+            // $('.diploma-content').hide();
+
+            // $('.nav-link').click(function (event) {
+            //     event.preventDefault();
+            //     let tabId = $(this).attr('href');
+            //     tabId = tabId.replace('#', '');
+            //     console.log('Clicked tab ID:', tabId.toLowerCase());
+
+            //     if (tabId.toLowerCase() === 'degree') {
+            //         $('.diploma-content').hide();
+            //         $('.degree-content').show();
+            //         $('#provisional-btn-wrapper').hide();
+            //     }
+
+            //     if (tabId.toLowerCase() === 'diploma') {
+            //         $('.degree-content').hide();
+            //         $('.diploma-content').show();
+            //         $('#provisional-btn-wrapper').hide();
+            //     }
+
+            //     if (tabId.toLowerCase() === 'provisional') {
+            //         $('.degree-content').hide();
+            //         $('.diploma-content').hide();
+            //         $('#provisional-btn-wrapper').show();
+            //     }
+            // });
+
+        });
+    </script>
+
+</body>
+
+</html>
