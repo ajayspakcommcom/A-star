@@ -2620,3 +2620,8 @@ p {
 #age-error.hide {
   display: none;
 }
+
+#mobile-error, #age-error{
+  color: #ff3333;
+  font-size: 12px;
+}
