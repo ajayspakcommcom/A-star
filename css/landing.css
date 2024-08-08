@@ -1,0 +1,112 @@
+
+
+body{
+    background-color: var(--bs-body-bg);
+    height: auto;
+}
+
+.landing-wrapper h2 {
+    color: #8B4513;
+    font-family: "Cinzel-SemiBold";
+    font-weight: bold;
+}
+
+.landing-wrapper p {
+    font-size: 18px;
+    color: #8B4513;
+    margin: 0;
+    font-family: "Cinzel-Medium";
+  font-weight: 600;
+}
+
+.landing-wrapper li img{
+    width: 18px;
+}
+
+.landing-wrapper .text-with-list  {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.landing-wrapper .text-with-list .list-unstyled {
+    width: 50%;
+    margin-bottom: 0;
+}
+  
+.landing-wrapper .text-with-list .list-unstyled li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    color: #8B4513;
+    font-weight: bold;
+  }
+
+  .landing-wrapper .text-with-list .list-unstyled li>img {
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+
+  .landing-wrapper p.regular-font {
+    font-family: 'Poppins-Regular';
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .landing-wrapper .landing-form {
+
+  }
+
+  .landing-wrapper .landing-form .landing-input-form {
+    max-width: 1000px;
+    margin: auto auto;
+    margin-top: auto;
+    margin-top: auto;
+    padding: 20px 50px 0px 50px;
+    border-radius: 8px;    
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+
+  .landing-wrapper .landing-form .landing-input-form .form-control {
+    border: 3px solid grey;
+    border-radius: 0;
+    min-height: 70px;
+  }
+
+  .landing-wrapper .landing-form button {
+    width: auto;
+    background: #ca933b;
+    border: 1px solid #ca933b;
+    min-height: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: bold;  
+  }
+  
+
+.landing-wrapper .landing-form h2 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.landing-wrapper {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.landing-wrapper .thankyou {
+    font-size:14px;
+}
+
+.telephone{
+  text-decoration: none;
+  color: white;
+}
