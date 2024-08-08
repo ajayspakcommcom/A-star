@@ -39,17 +39,22 @@
     <div class="container">
 
         <h2 class="mt-4 text-center">Thank You For Your Interest in a Career <br /> in Hotel Management</h2>
-        <p class="mt-3 text-center">As a certificate holder from Sahara and Aamby <br /> Valley's A-Star Academy you can look forward to</p>
+        <p class="mt-3 text-center">As a certificate holder from Sahara and Aamby <br /> Valley's A-Star Academy you can
+            look forward to</p>
 
         <div class="text-with-list">
             <ul class="list-unstyled">
-                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Gain paid internships and apply your skills <br /> in a real-time hotel project</span></li>
-                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Global career in the Hospitality<br/> Sector</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Gain paid internships and apply your
+                        skills <br /> in a real-time hotel project</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Global career in the Hospitality<br />
+                        Sector</span></li>
             </ul>
-    
+
             <ul class="list-unstyled">
-                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Learn from seasoned Hoteliers and <br /> Professors</span></li>
-                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Be in a uniquely advantageous position to <br /> start your own hotel business</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Learn from seasoned Hoteliers and <br />
+                        Professors</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Be in a uniquely advantageous position
+                        to <br /> start your own hotel business</span></li>
             </ul>
         </div>
         <p class="text-center regular-font">Transform from a Novice to an Industry Expert</p>
@@ -63,28 +68,33 @@
         <div class="container-fluid">
             <h2 class="text-center">Avail free consulting</h2>
 
-            <p class="thankyou hide">Thank you for reaching out. <br> We will ensure that a representative contacts you promptly.</p>
+            <p class="thankyou hide">Thank you for reaching out. <br> We will ensure that a representative contacts you
+                promptly.</p>
 
             <div class="landing-input-form">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-5">
-                            <input type="text" class="form-control" name="uname" id="uname" placeholder="FULL NAME"  />
+                            <input type="text" class="form-control" name="uname" id="uname" placeholder="FULL NAME" />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-5">
-                            <input type="text" class="form-control" name="uaddress" id="uaddress" placeholder="ADDRESS"  />
+                            <input type="text" class="form-control" name="uaddress" id="uaddress"
+                                placeholder="ADDRESS" />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-5">
-                            <input type="text" class="form-control" name="umobile" id="umobile" placeholder="MOBILE NO."/>                            
+                            <input type="text" class="form-control" name="umobile" id="umobile"
+                                placeholder="MOBILE NO." />
+                            <span id="mobile-error" class="hide">Please enter valid mobile number</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-5">
-                            <input type="text" class="form-control" name="uqualification" id="uqualification" placeholder="QUALIFICATION"  />
+                            <input type="text" class="form-control" name="uqualification" id="uqualification"
+                                placeholder="QUALIFICATION" />
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -94,7 +104,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="mb-5">
-                            <input type="number" class="form-control" name="uage" id="uage" placeholder="AGE"  />
+                            <input type="number" class="form-control" name="uage" id="uage" placeholder="AGE" />
+                            <span id="age-error" class="hide">Please enter valid valid</span>
                         </div>
                     </div>
                 </div>
@@ -106,11 +117,43 @@
             </div>
             <img src="img/landing-page/Landing-Page-Image-4.png" alt="" class="img-fluid buttom-img">
         </div>
-        
+
     </div>
 
     <script>
-       
+
+        $('#umobile').on('input', function () {
+            const mobileInput = $(this).val();
+            const mobileError = $('#mobile-error');
+
+            //Regular expression for validating mobile number
+            const mobileRegex = /^[0-9]{10}$/;
+
+            if (mobileRegex.test(mobileInput)) {
+                mobileError.text(''); // Clear any previous error message
+                mobileError.addBack('hide');
+            } else {
+                mobileError.removeClass('hide');
+                mobileError.text('Invalid mobile number. Please enter a 10-digit number.');
+            }
+        });
+
+        $('#uage').on('input', function () {
+            const ageInput = $(this).val();
+            const ageError = $('#age-error');
+
+            //Regular expression for validating mobile number
+            const ageRegex = /^(?:[1-9]|[1-9][0-9]|100)$/;
+
+            if (ageRegex.test(ageInput)) {
+                ageError.text(''); // Clear any previous error message
+                ageError.addBack('hide');
+            } else {
+                ageError.removeClass('hide');
+                ageError.text('Invalid age.');
+            }
+        });
+
         function saveData() {
 
             let uname, uaddress, umobile, uqualification, uemail, uage;
@@ -141,7 +184,7 @@
                     alert("Please Enter Valid Mobile Number");
                     $("#umobile").focus();
                     return false;
-                } 
+                }
                 umobile = $("#umobile").val();
             }
 
@@ -172,7 +215,7 @@
                     alert("Please Enter Valid Age");
                     $("#uage").focus();
                     return false;
-                } 
+                }
                 uage = $("#uage").val();
             }
 
@@ -192,13 +235,13 @@
                 contentType: "application/json; charset=utf-8",
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
                 data: {
-                    "type":"CREATE",
-                    "Name":uname,
-                    "Address":uaddress,
-                    "Mobile":umobile,
-                    "Qualification":uqualification,
-                    "Email":uemail,
-                    "Age":uage
+                    "type": "CREATE",
+                    "Name": uname,
+                    "Address": uaddress,
+                    "Mobile": umobile,
+                    "Qualification": uqualification,
+                    "Email": uemail,
+                    "Age": uage
                 },
                 success: function (data, textStatus, jqXHR) {
 
@@ -234,4 +277,3 @@
 </body>
 
 </html>
-
