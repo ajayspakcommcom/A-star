@@ -2041,6 +2041,10 @@ select:first-of-type {
   background-color: #fff !important;
 }
 
+.table-bordered .programm-white-space{
+  border: 0;
+}
+
 @media (max-width: 767px) {
   nav .navigation [src="./img/logo.png"] {
     width: 110px;
