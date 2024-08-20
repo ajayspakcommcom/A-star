@@ -2625,7 +2625,15 @@ p {
   display: none;
 }
 
-#mobile-error, #age-error{
+#mobile-error,
+#age-error {
   color: #ff3333;
   font-size: 12px;
+}
+
+#myModal.modal.show .modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
