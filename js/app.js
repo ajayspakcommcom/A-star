@@ -282,7 +282,7 @@ const professors = [
         name: "Mohammed Shaikh",
         description: `<p><p>
         `,
-        imgUrl: "Mohammed shaikh.jpg",
+        imgUrl: "shaikh.jpg",
         designation: 'HR Manager',
         passion: 'Sahara Star',
         experience: "25 Years of Experience"
@@ -291,7 +291,7 @@ const professors = [
         id: 5,
         name: "Karishma Raghuvanshi",
         description: `<p></p> `,
-        imgUrl: "Karishma Raghuvanshi.jpg",
+        imgUrl: "karishma.jpg",
         designation: 'Consultant-HR- Training & Recruitment',
         passion: 'Sahara Star',
         experience: "17 Years of Experience"
@@ -300,7 +300,7 @@ const professors = [
         id: 6,
         name: "Deepali Rambade",
         description: `<p></p> `,
-        imgUrl: "Deepali Rambade.jpg",
+        imgUrl: "deepali.jpg",
         designation: 'Front Office Manager',
         passion: 'Sahara Star',
         experience: "21 Years of Experience"
@@ -357,7 +357,7 @@ const professorsChef = [
         id: 1,
         name: "Vishal Singh",
         description: "",
-        imgUrl: "vishal-singh.jpg",
+        imgUrl: "vishal-singh(2).jpg",
         designation: 'Head Chef',
         passion: 'Indian Heritage',
         experience: "35 Years of Experience"
@@ -366,7 +366,7 @@ const professorsChef = [
         id: 2,
         name: "Vinod Rana",
         description: "",
-        imgUrl: "vinod-rana.jpg",
+        imgUrl: "vinod-rana(2).jpg",
         designation: 'Executive Sous-chef',
         passion: 'Indian Breads',
         experience: "35 Years of Experience"
@@ -375,7 +375,7 @@ const professorsChef = [
         id: 3,
         name: "Rupesh Khandekar",
         description: "",
-        imgUrl: "rupesh-khandekar.jpg",
+        imgUrl: "rupesh-khandekar(2).jpg",
         designation: 'Executive Sous-chef',
         passion: 'Continental Cuisine',
         experience: "24 Years of Experience"
@@ -393,7 +393,7 @@ const professorsChef = [
         id: 5,
         name: "Vikas Rane",
         description: "",
-        imgUrl: "vikas-rane.jpg",
+        imgUrl: "vikas-rane(2).jpg",
         designation: 'Chef De Partie',
         passion: 'Oriental Cuisine',
         experience: "18 Years of Experience"
@@ -402,7 +402,7 @@ const professorsChef = [
         id: 6,
         name: "Prashant Lad",
         description: "",
-        imgUrl: "prashant-lad.jpg",
+        imgUrl: "prashant-lad(2).jpg",
         designation: 'Jr. Sous-chef',
         passion: 'Italian Cuisine',
         experience: "15 Years of Experience"
@@ -411,7 +411,7 @@ const professorsChef = [
         id: 7,
         name: "Yashwant Singh",
         description: "",
-        imgUrl: "yashwant-singh.jpg",
+        imgUrl: "yashwant-singh(2).jpg",
         designation: 'Sous Chef',
         passion: 'Indian Curries',
         experience: "16 Years of Experience"
@@ -459,7 +459,7 @@ const Mentors = [
         id: 1,
         name: "Bharat Singh Rawat",
         description: ``,
-        imgUrl: "bharat-singh-rawat.jpg",
+        imgUrl: "bharat-singh.jpg",
         designation: 'Jr Sous-chef',
         passion: 'Cold appetizer',
         experience: "26 Years of Experience"
@@ -469,7 +469,7 @@ const Mentors = [
         id: 2,
         name: "Savar Singh",
         description: ``,
-        imgUrl: "savar-singh.jpg",
+        imgUrl: "savar-singh(2).jpg",
         designation: 'Chef De partie',
         passion: 'Indian Breads',
         experience: "13 Years of Experience"
@@ -478,7 +478,7 @@ const Mentors = [
         id: 3,
         name: "Guddu Singh",
         description: ``,
-        imgUrl: "guddu-singh.jpg",
+        imgUrl: "guddu-singh(2).jpg",
         designation: 'Chef De Partie',
         passion: 'Kebabs',
         experience: "12 Years of Experience"
@@ -487,7 +487,7 @@ const Mentors = [
         id: 4,
         name: "Bimal Gurung",
         description: ``,
-        imgUrl: "bimal-gurung.jpg",
+        imgUrl: "bimal-gurung(2).jpg",
         designation: 'Chef De Parti',
         passion: 'Dim Sum',
         experience: "13 Years of Experience"
@@ -496,7 +496,7 @@ const Mentors = [
         id: 5,
         name: "Lohare Singh",
         description: ``,
-        imgUrl: "lohare-singh.jpg",
+        imgUrl: "lohare-singh(2).jpg",
         designation: 'Demi Chef De Partie',
         passion: 'Halwai',
         experience: "16 Years of Experience"
@@ -505,9 +505,9 @@ const Mentors = [
         id: 6,
         name: "Mohammad Aasif",
         description: ``,
-        imgUrl: "Mohammad-Aasif.jpg",
+        imgUrl: "Mohammad-Aasif(2).jpg",
         designation: 'Demi Chef De Partie',
-        passio: 'Patisserie',
+        passion: 'Patisserie',
         experience: "11 Years of Experience"
     }
     
