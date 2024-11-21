@@ -113,9 +113,8 @@ renderAdvisoryMembers();
 const facultyMembers = [
     {
         id: 1,
-        name: "Dr. Rajeev R Mishra",
-        description: `
-        <p>Dr. Rajeev R Mishra, an IHM Lucknow alumnus (1998), holds a Doctoral Degree in Hospitality from Amity
+        name: `Dr. Rajeev R Mishra`,
+        description: `<p>Dr. Rajeev R Mishra, an IHM Lucknow alumnus (1998), holds a Doctoral Degree in Hospitality from Amity
             University, Noida. With over 25 years of combined experience in hotel operations and academia, he
             currently serves as Director of A-Star Academy Mumbai.Dr. Mishra has worked with several leading
             institutions including CGC Landran, IES University Bhopal, AURO University Surat, and UEI Global New
@@ -228,7 +227,7 @@ function renderFacultyMembers() {
                             <img src="./img/faculty/${member.imgUrl}" class="img-fluid" alt="" />
                         </span>
                         <div class="designation-name">
-                            <div><span>${member.name}</span></div>
+                            <div><span><b>${member.name}</b></span></div>
                             <div><span>${member.designation}</span></div>
                             <div><span>${member.experience}</span></div>
                             <p>${renderFirst100Characters(member.description)}</p>
@@ -270,8 +269,7 @@ const professors = [
     {
         id: 3,
         name: "Ranjan Ranjani",
-        description: `<p>
-            </p>`,
+        description: ``,
         imgUrl: "Ranjan Ranjani.jpg",
         designation: 'Director Food & Beverage',
         passion: 'Sahara Star',
@@ -280,8 +278,7 @@ const professors = [
     {
         id: 4,
         name: "Mohammed Shaikh",
-        description: `<p><p>
-        `,
+        description: ``,
         imgUrl: "shaikh.jpg",
         designation: 'HR Manager',
         passion: 'Sahara Star',
@@ -290,7 +287,7 @@ const professors = [
     {
         id: 5,
         name: "Karishma Raghuvanshi",
-        description: `<p></p> `,
+        description: ` `,
         imgUrl: "karishma.jpg",
         designation: 'Consultant-HR- Training & Recruitment',
         passion: 'Sahara Star',
@@ -299,7 +296,7 @@ const professors = [
     {
         id: 6,
         name: "Deepali Rambade",
-        description: `<p></p> `,
+        description: ``,
         imgUrl: "deepali.jpg",
         designation: 'Front Office Manager',
         passion: 'Sahara Star',
@@ -333,7 +330,7 @@ function renderProfessors() {
                     <img src="./img/new-image/${professor.imgUrl}" class="img-fluid" alt="" />
                 </span>
                 <div class="designation-name">
-                    <div><span>${professor.name}</span></div>
+                    <div><span><b>${professor.name}</b></span></div>
                     <div><span>${professor.designation}</span></div>
                     <div><span>${professor.passion}</span></div>
                     <div><span>${professor.experience}</span></div>
@@ -435,7 +432,7 @@ function renderProfessorsChef() {
                     <img src="./img/professos-chef/${professor.imgUrl}" class="img-fluid" alt="" />
                 </span>
                 <div class="designation-name">
-                    <div><span>${professor.name}</span></div>
+                    <div><span><b>${professor.name}</b></span></div>
                     <div><span>${professor.designation}</span></div>
                     <div><span>${professor.passion}</span></div>
                     <div><span>${professor.experience}</span></div>
@@ -531,7 +528,7 @@ function renderMentors() {
                     <img src="./img/mentor/${mentor.imgUrl}" class="img-fluid" alt="" />
                 </span>
                 <div class="designation-name">
-                    <div><span>${mentor.name}</span></div>
+                    <div><span><b>${mentor.name}</b></span></div>
                     <div><span>${mentor.designation}</span></div>
                     <div><span>${mentor.passion}</span></div>
                     <div><span>${mentor.experience}</span></div>
@@ -553,48 +550,56 @@ renderMentors();
 
 function togglePopContent(event) {
     toggleMore = !toggleMore;
-    toggleMore ? $('.pop-read-more-btn').text('less...') : $('.pop-read-more-btn').text('more...');
+    toggleMore
+        ? $('.pop-read-more-btn').text('less...')
+        : $('.pop-read-more-btn').text('more...');
     $(event).parents("#modalParagraph").find('.pop-modal-content-box').toggleClass('auto-height');
 }
 
 function getModalObject(obj, types) {
+   
+    if (!obj || !obj.description || obj.description.trim().length === 0) {
+        console.warn('No content available for this modal');
+        return;
+    }
+
+    
     if (types === 'advisory') {
         $('#modalImage').attr('src', `./img/advisory/${obj.imgUrl}`);
-    }
-
-    if (types === 'faculty') {
+    } else if (types === 'faculty') {
         $('#modalImage').attr('src', `./img/faculty/${obj.imgUrl}`);
-    }
-    
-    if (types === 'new-image') {
-        $('#modalImage').attr('src',`./img/new-image/${obj.imgUrl}`);
-    }
-
-    if (types === 'professos-chef') {
-        $('#modalImage').attr('src',`./img/professos-chef/${obj.imgUrl}`);
+    } else if (types === 'new-image') {
+        $('#modalImage').attr('src', `./img/new-image/${obj.imgUrl}`);
+    } else if (types === 'professos-chef') {
+        $('#modalImage').attr('src', `./img/professos-chef/${obj.imgUrl}`);
+    } else if (types === 'mentor') {
+        $('#modalImage').attr('src', `./img/mentor/${obj.imgUrl}`);
     }
 
-    if(types === 'mentor') {        
-        $('#modalImage').attr('src',`./img/mentor/${obj.imgUrl}`);
-    }
-
+   
     $('#modalName').text(obj.name);
 
-    console.clear();
-    console.log('obj', obj);
     
-    if(obj.description.trim().length > 0) {
-        $('#modalParagraph').html(`
-            <div class="pop-modal-content-box">${obj.description}</div>
-            <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
-        `);
-    } else {
-        $('#modalParagraph').html(null);
-    }
+    //  document.getElementById('modalName').innerHTML = `<b>${obj.name}</b>`;
 
+    // Log the object for debugging
+    // console.clear();
+    // console.log('Modal Object:', obj);
+
+   
+    $('#modalParagraph').html(`
+        <div class="pop-modal-content-box">${obj.description}</div>
+        <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
+    `);
+
+   
     $('#myModal').modal('show');
 
+    document.getElementById('modalName').innerHTML = `<b>${person.name}</b>`;
 }
+
+
+
 
 function programmes() {
     $('.courses-tabs .nav-link').on('click', function () {
