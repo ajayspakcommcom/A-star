@@ -1266,7 +1266,7 @@ footer .footer-social-link>li>a>img {
   background-color: rgba(140, 140, 140, 0.2);
   padding: 15px 15px;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px 5px rgba(140, 140, 140, 0.5);
+  /* box-shadow: 1px 1px 5px 5px rgba(140, 140, 140, 0.5); */
   margin-top: 30px;
   transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -1275,13 +1275,13 @@ footer .footer-social-link>li>a>img {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
-.about-us-wrapper .content .item .vision:hover {
+/* .about-us-wrapper .content .item .vision:hover {
   box-shadow: 5px 5px 5px 5px rgba(140, 140, 140, 0.7);
-}
+} */
 
 .courses-feature-wrapper {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  /* padding-top: 50px; */
+  padding-bottom: 20px;
 }
 
 .courses-feature-wrapper .box {
@@ -1363,6 +1363,7 @@ footer .footer-social-link>li>a>img {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .mentor-team-ul,
 .professos-team-ul,
@@ -1407,10 +1408,10 @@ footer .footer-social-link>li>a>img {
   font-weight: 600;
 }
 
-.advisory-wrapper li:nth-child(n+5),
+/* .advisory-wrapper li:nth-child(n+5),
 .management-team-ul li:nth-child(n+5) {
-  /* Adjust as needed */
-}
+  /* Adjust as needed 
+} */
 
 .advisory-wrapper li>div,
 .management-team-ul li>div,
@@ -1545,7 +1546,7 @@ footer .footer-social-link>li>a>img {
 .management-team-ul li:first-child
  {
   width: 100%;
-  flex: 0 1 100%;
+  /* flex: 0 1 100%; */
   display: flex;
   justify-content: center;
 }
@@ -2724,4 +2725,55 @@ p {
 
 .image{
   max-width: 350px;
+}
+
+
+
+/* for mission and vision page */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline-item .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #764f2a;
+}
+
+.timeline-item .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.timeline-item .content h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #764f2a;
+}
+
+.timeline-item .content p {
+  font-size: 1rem;
+  color: #5a5a5a;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: #764f2a;
+  top: 0;
+  bottom: 0;
+  left: 25px;
+  z-index: -1;
 }

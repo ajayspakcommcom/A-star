@@ -38,33 +38,15 @@ const advisoryMembers = [
     },
     {
         id: 3,
-        name: "Chef Nitin Upadhyay",
-        description: "<p>Chef Nitin Upadhyay brings to the table a wealth of experience acquired from renowned culinary institutes across Germany, France, and Switzerland. With a diverse portfolio spanning 30+ years and encompassing esteemed establishments such as Marriott Resort & Spa, Goa, Renaissance Hotel & Convention Centre, Mumbai, Hyatt Hotels International, Crown & Champa Resorts, Malé, and DLF Emporio Restaurants Pvt. Ltd, New Delhi, Chef Nitin epitomizes culinary excellence. </p>",
-        imgUrl: "nitin-upadhyay.jpg"
+        name: " Chef Sabyasachi Gorai",
+        description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge, Chef Saby's passion for food and cooking shines through. Armed with specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’  by the President of India.</p>",
+        imgUrl: "Sabyasachi-Gorai.jpg"
     },
     {
         id: 4,
         name: "Mr. Salil Fadnis",
         description: "<p>An alumnus of IHM Mumbai 1991 batch, Salil Fadnis began his career with Oberoi hotels joining the prestigious OCLD. Salil spent a major part of his career in the kitchen and about 15 years as an Executive Chef. His professional voyage encompasses stints across various national and international hotel chains. Over the past 30+ years he has worked in and out of the country having had the opportunity to open hotels in India and overseas. He is a founder member of The Western India Culinary Association (WICA), a networking and collaborating platform for chefs & is the current President at WICA.</p>",
         imgUrl: "salil-fadnis.jpg"
-    },
-    {
-        id: 5,
-        name: "Chef Sabyasachi Gorai",
-        description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge,Chef Saby's passion for food and cooking shines through. Armedwith specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’by the President of India.</p>",
-        imgUrl: "Sabyasachi-Gorai.jpg"
-    },
-    {
-        id: 6,
-        name: "Mr. Sumeet Kumar",
-        description: "<p>A Graduate from Swiss Hotel Association, Hotel Management School ‘Les Roches’, Switzerland. Presently, as the Vice President of Hospitality at Aamby Valley City, boasts over 25 years of experience as a Senior Director of Food & Beverage/Catering Operations Professional. With a global footprint spanning the USA, Europe, UAE, and India, Kumar's expertise extends to overseeing the pre-opening of over 25 F&B outlets in the UAE and Qatar, showcasing his adeptness in navigating diverse culinary landscapes. His vast experience in leading hotels of the world, franchises, and world class Royalty Evenings in the United Arab Emirates and beyond.</p>",
-        imgUrl: "sumeet-kumar.jpg"
-    },
-    {
-        id: 7,
-        name: "Chef Ranjan Rajani",
-        description: "<p>With over two decades of culinary expertise garnered from prestigious establishments such as Oberoi, Marriott, and Hyatt, Chef Ranjan Rajani currently serves as the Director of Food and Beverage at Hotel Sahara Star. His leadership prowess, coupled with an unwavering commitment to teamwork, enables him to steer his team of chefs across a spectrum of cuisines with finesse. </p>",
-        imgUrl: "ranjan-rajani.jpg"
     },
     {
         id: 8,
@@ -207,15 +189,8 @@ const facultyMembers = [
     {
         id: 6,
         name: "Ms. Srusti Singh",
-        description: `<p>With over 19 years in the hospitality industry, including a decade in management, she is a dedicated
-                        Assistant Professor of Rooms Division Management passionate about delivering exceptional guest
-                        experiences. Currently pursuing a Ph.D. in Hotel Management, she holds an MBA in HR, a Master&#39;s in
-                        Tourism Management, a B.Sc. in Hospitality Studies and Catering Services, and a Professional Diploma
-                        in Hotel Management and Catering Technology.</p>
-                        <p>She has extensive experience conducting professional training at institutes in Mumbai, Lonavala-
-                        Khandala, and Pune, and as an outsourced trainer for properties such as The Fern, Fariyas Resort, VITS
-                        Hotels, Ginger Hotel, Specialty Restaurants Pvt. Ltd. and Concept Hospitality Pvt. Ltd.</p> `,
-        imgUrl: "fff.png",
+        description: `<p></p> `,
+        imgUrl: "Shruti-Singh.jpg",
         designation: 'Teaching Assistant',
         experience: "3 Years of Experience"
     },
@@ -276,27 +251,27 @@ const professors = [
     {
         id: 1,
         name: "Ms. Shelly Mathur",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p>`,
+        description: ``,
         imgUrl: "Ms. Shelly Mathur.jpg",
         designation: 'Assistant Director',
         passion: 'Sahara Hospitality Limited',
         experience: "22 Years of Experience"
         
     },
-    {
-        id: 2,
-        name: "Sumeet Kumar",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p>`,
-        imgUrl: "Sumeet Kumar.jpg",
-        designation: 'Vice President Hospitality',
-        passion: 'Aamby Valley City',
-        experience: "25+ Years of Experience"
-    },
+    // {
+    //     id: 2,
+    //     name: "Sumeet Kumar",
+    //     description: ``,
+    //     imgUrl: "Sumeet Kumar.jpg",
+    //     designation: 'Vice President Hospitality',
+    //     passion: 'Aamby Valley City',
+    //     experience: "25+ Years of Experience"
+    // },
     {
         id: 3,
         name: "Ranjan Ranjani",
         description: `<p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p>`,
+            </p>`,
         imgUrl: "Ranjan Ranjani.jpg",
         designation: 'Director Food & Beverage',
         passion: 'Sahara Star',
@@ -305,7 +280,7 @@ const professors = [
     {
         id: 4,
         name: "Mohammed Shaikh",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.<p>
+        description: `<p><p>
         `,
         imgUrl: "Mohammed shaikh.jpg",
         designation: 'HR Manager',
@@ -315,7 +290,7 @@ const professors = [
     {
         id: 5,
         name: "Karishma Raghuvanshi",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p> `,
+        description: `<p></p> `,
         imgUrl: "Karishma Raghuvanshi.jpg",
         designation: 'Consultant-HR- Training & Recruitment',
         passion: 'Sahara Star',
@@ -324,7 +299,7 @@ const professors = [
     {
         id: 6,
         name: "Deepali Rambade",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p> `,
+        description: `<p></p> `,
         imgUrl: "Deepali Rambade.jpg",
         designation: 'Front Office Manager',
         passion: 'Sahara Star',
@@ -333,7 +308,7 @@ const professors = [
     {
         id: 7,
         name: "Manpreet Kaur",
-        description: `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis sapiente amet dignissimos repellendus laudantium quibusdam dicta fuga accusamus totam!.</p>`,
+        description: ``,
         imgUrl: "Manpreet Kaur.jpg",
         designation: 'Customer Excellence',
         passion: 'Aamby Valley City',
@@ -362,7 +337,7 @@ function renderProfessors() {
                     <div><span>${professor.designation}</span></div>
                     <div><span>${professor.passion}</span></div>
                     <div><span>${professor.experience}</span></div>
-                    <p>${renderFirst100Characters(professor.description)}</p>
+                    <p>${renderFirst100Characters(professor.description)}</p>                    
                 </div>
             </div>                
         `;
@@ -381,8 +356,8 @@ const professorsChef = [
     {
         id: 1,
         name: "Vishal Singh",
-        description: "Chef A. K. Singh is a highly experienced culinary professional with over 20 years of experience in the hospitality industry. He has worked in various renowned hotels and restaurants, honing his skills in different cuisines and culinary techniques. Chef Singh is known for his innovative approach to cooking and his ability to create unique and delicious dishes.",
-        imgUrl: "vishal-singh.png",
+        description: "",
+        imgUrl: "vishal-singh.jpg",
         designation: 'Head Chef',
         passion: 'Indian Heritage',
         experience: "35 Years of Experience"
@@ -390,8 +365,8 @@ const professorsChef = [
     {
         id: 2,
         name: "Vinod Rana",
-        description: "Chef S. K. Sharma is a seasoned chef with over 25 years of experience in the culinary industry. He has worked in various hotels and restaurants, gaining expertise in different cuisines and cooking styles. Chef Sharma is known for his passion for food and his dedication to creating exceptional dining experiences for his guests.",
-        imgUrl: "vinod-rana.png",
+        description: "",
+        imgUrl: "vinod-rana.jpg",
         designation: 'Executive Sous-chef',
         passion: 'Indian Breads',
         experience: "35 Years of Experience"
@@ -399,8 +374,8 @@ const professorsChef = [
     {
         id: 3,
         name: "Rupesh Khandekar",
-        description: "Chef R. K. Jain is a culinary expert with over 15 years of experience in the hospitality industry. He specializes in Indian cuisine and has worked in several top-rated restaurants, refining his skills in traditional cooking techniques. Chef Jain is recognized for his attention to detail and ability to craft authentic Indian dishes.",
-        imgUrl: "rupesh-khandekar.png",
+        description: "",
+        imgUrl: "rupesh-khandekar.jpg",
         designation: 'Executive Sous-chef',
         passion: 'Continental Cuisine',
         experience: "24 Years of Experience"
@@ -408,8 +383,8 @@ const professorsChef = [
     {
         id: 4,
         name: "Jihad Shami",
-        description: "Chef P. K. Patel is a skilled pastry chef with over 12 years of experience in the culinary industry. He has worked in various hotels and restaurants, perfecting his craft in pastry-making and dessert design. Chef Patel is known for his creativity and ability to create visually stunning and delicious pastries.",
-        imgUrl: "jihad-shami.png",
+        description: "",
+        imgUrl: "jihad-shami.jpg",
         designation: 'Chef De Cuisine (Head Chef - Mabruk)',
         passion: 'Lebansese Cuisine',
         experience: "33 Years of Experience"
@@ -417,8 +392,8 @@ const professorsChef = [
     {
         id: 5,
         name: "Vikas Rane",
-        description: "Chef M. K. Gupta is a seasoned chef with over 18 years of experience in the hospitality industry. He has worked in several international hotels and restaurants, gaining expertise in global cuisines and cooking techniques. Chef Gupta is recognized for his leadership skills and ability to manage kitchen operations efficiently.",
-        imgUrl: "vikas-rane.png",
+        description: "",
+        imgUrl: "vikas-rane.jpg",
         designation: 'Chef De Partie',
         passion: 'Oriental Cuisine',
         experience: "18 Years of Experience"
@@ -426,8 +401,8 @@ const professorsChef = [
     {
         id: 6,
         name: "Prashant Lad",
-        description: "Chef S. S. Rao is a culinary professional with over 10 years of experience in the hospitality industry. He specializes in international cuisine and has worked in several top-rated restaurants, refining his skills in modern cooking techniques. Chef Rao is known for his innovative approach to cooking and ability to create unique fusion dishes.",
-        imgUrl: "prashant-lad.png",
+        description: "",
+        imgUrl: "prashant-lad.jpg",
         designation: 'Jr. Sous-chef',
         passion: 'Italian Cuisine',
         experience: "15 Years of Experience"
@@ -435,8 +410,8 @@ const professorsChef = [
     {
         id: 7,
         name: "Yashwant Singh",
-        description: "Chef R. K. Mehta is a seasoned chef with over 20 years of experience in the culinary industry. He has worked in various hotels and restaurants, gaining expertise in different cuisines and cooking styles. Chef Mehta is known for his passion for food and his dedication to creating exceptional dining experiences for his guests.",
-        imgUrl: "yashwant-singh.png",
+        description: "",
+        imgUrl: "yashwant-singh.jpg",
         designation: 'Sous Chef',
         passion: 'Indian Curries',
         experience: "16 Years of Experience"
@@ -483,9 +458,8 @@ const Mentors = [
     {
         id: 1,
         name: "Bharat Singh Rawat",
-        description: `
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p>`,
-        imgUrl: "bharat-singh-rawat.png",
+        description: ``,
+        imgUrl: "bharat-singh-rawat.jpg",
         designation: 'Jr Sous-chef',
         passion: 'Cold appetizer',
         experience: "26 Years of Experience"
@@ -494,8 +468,8 @@ const Mentors = [
     {
         id: 2,
         name: "Savar Singh",
-        description: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p>`,
-        imgUrl: "savar-singh.png",
+        description: ``,
+        imgUrl: "savar-singh.jpg",
         designation: 'Chef De partie',
         passion: 'Indian Breads',
         experience: "13 Years of Experience"
@@ -503,8 +477,8 @@ const Mentors = [
     {
         id: 3,
         name: "Guddu Singh",
-        description: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p>`,
-        imgUrl: "guddu-singh.png",
+        description: ``,
+        imgUrl: "guddu-singh.jpg",
         designation: 'Chef De Partie',
         passion: 'Kebabs',
         experience: "12 Years of Experience"
@@ -512,8 +486,8 @@ const Mentors = [
     {
         id: 4,
         name: "Bimal Gurung",
-        description: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p>`,
-        imgUrl: "bimal-gurung.png",
+        description: ``,
+        imgUrl: "bimal-gurung.jpg",
         designation: 'Chef De Parti',
         passion: 'Dim Sum',
         experience: "13 Years of Experience"
@@ -521,8 +495,8 @@ const Mentors = [
     {
         id: 5,
         name: "Lohare Singh",
-        description: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p> `,
-        imgUrl: "lohare-singh.png",
+        description: ``,
+        imgUrl: "lohare-singh.jpg",
         designation: 'Demi Chef De Partie',
         passion: 'Halwai',
         experience: "16 Years of Experience"
@@ -530,8 +504,8 @@ const Mentors = [
     {
         id: 6,
         name: "Mohammad Aasif",
-        description: `<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et soluta doloribus earum libero! Alias odit quod dolorem. Voluptas, sed?</p> `,
-        imgUrl: "Mohammad-Aasif.png",
+        description: ``,
+        imgUrl: "Mohammad-Aasif.jpg",
         designation: 'Demi Chef De Partie',
         passio: 'Patisserie',
         experience: "11 Years of Experience"
@@ -561,7 +535,7 @@ function renderMentors() {
                     <div><span>${mentor.designation}</span></div>
                     <div><span>${mentor.passion}</span></div>
                     <div><span>${mentor.experience}</span></div>
-                    <p>${renderFirst100Characters(mentor.description)}</p>
+                    <p>${renderFirst100Characters(mentor.description)}</p>                    
                 </div>
             </div>                
         `;
@@ -605,11 +579,21 @@ function getModalObject(obj, types) {
     }
 
     $('#modalName').text(obj.name);
-    $('#modalParagraph').html(`
-        <div class="pop-modal-content-box">${obj.description}</div>
-        <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
-    `);
+
+    console.clear();
+    console.log('obj', obj);
+    
+    if(obj.description.trim().length > 0) {
+        $('#modalParagraph').html(`
+            <div class="pop-modal-content-box">${obj.description}</div>
+            <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
+        `);
+    } else {
+        $('#modalParagraph').html(null);
+    }
+
     $('#myModal').modal('show');
+
 }
 
 function programmes() {
