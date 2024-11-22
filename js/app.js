@@ -58,13 +58,13 @@ const advisoryMembers = [
         id: 9,
         name: "Dr. Prashant Kumar Gautam",
         description: "Dr. Prashant Kumar Gautam is a highly accomplished Professor of Tourism at Panjab University with extensive leadership experience. He currently holds positions as a Nominated Fellow to the Senate, Executive Council member at HPU Shimla and Nagaland University, and member of the AICTE All India Board for Tourism and Hospitality. His impressive record includes completing research projects valued at Rs 2.5 crores, guiding 8 doctoral students, and publishing 15 books and 80 research papers, solidifying his expertise in the field.",
-        imgUrl: "Dr. Prashant kumar Gautam.jpg"
+        imgUrl: "DR Prashant Kumar Gautam.jpg"
     },
     {
         id: 10,
         name: "Prof. U. N. Shukla",
         description: "Prof. U. N. Shukla, a tourism education leader with 29+ years, is the director of Dr. Bhimrao Ambedkar University's Institute of Tourism and Hotel Management. He is also the Dean of the Faculty of Management. With published research in over 28 journals and experience guiding scholars, his expertise is undeniable.",
-        imgUrl: "Prof. U. N. Shukla.jpg"
+        imgUrl: "Prof U.N. Shukla (2).jpg"
     },
     {
         id: 11,
