@@ -188,7 +188,7 @@ const facultyMembers = [
     {
         id: 6,
         name: "Ms. Srusti Singh",
-        description: `<p></p> `,
+        description: ``,
         imgUrl: "Shruti-Singh.jpg",
         designation: 'Teaching Assistant',
         experience: "3 Years of Experience"
