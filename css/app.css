@@ -2066,8 +2066,12 @@ select:first-of-type {
 
 #homeModal #popCarousel .carousel-control-next-icon,
 #homeModal #popCarousel .carousel-control-prev-icon {
-  width: 3rem;
+  width: 2rem;
   height: 3rem;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
 }
 
 #homeModal #popCarousel .carousel-item img {
