@@ -1044,9 +1044,11 @@ footer {
 
             &>a {
                 display: block;
+                cursor: pointer;
 
                 &>img {
                     width: 35px;
+                    cursor: pointer;
                 }
             }
         }
@@ -1430,10 +1432,6 @@ footer {
         //     margin-right: 0;
         // }
 
-        &:nth-child(n+5) {
-            // margin-top: 30px;
-            /* Adjust as needed */
-        }
 
         &>div {
             border: 1px solid rgba(128, 128, 128, 0.1);
