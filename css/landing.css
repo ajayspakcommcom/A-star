@@ -54,10 +54,6 @@ body{
     margin-bottom: 20px;
   }
 
-  .landing-wrapper .landing-form {
-
-  }
-
   .landing-wrapper .landing-form .landing-input-form {
     max-width: 1000px;
     margin: auto auto;
@@ -110,3 +106,6 @@ body{
   text-decoration: none;
   color: white;
 }
+
+
+

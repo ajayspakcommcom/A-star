@@ -640,7 +640,7 @@ function mobile() {
         $('.navigation .nav-link').on('click', function (e) {
             //e.preventDefault();
             const $this = $(this);
-            $this.parent('li').find('ul').slideToggle()
+            $this.parent('li').find('ul').slideToggle();
         });
     }
 
@@ -649,3 +649,5 @@ function mobile() {
 mobile();
 
 programmes();
+
+

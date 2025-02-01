@@ -52,30 +52,162 @@
 
     <div class="main-layout-wrapper">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+
+        <!-- desktop view -->
+        <nav class="navbar navbar-expand-lg fixed-top lg-nav">
+            <div class="container-fluid custom-container">                
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="Logo" height="40">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="executive-directors-message.html">Executive
+                                        Director’s Message</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="our-padeogy.html">Our Pedagogy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="team-a-star.html">Our Faculty & <br> Professors of
+                                        Practice</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programmes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree Programmes </a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma Programmes </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./certification-courses.html">Certificate
+                                        Programmes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./workshops-event.html">Workshops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="campusesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Campuses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="campusesDropdown">
+                                <li><a class="dropdown-item" href="sahara-star.html">Mumbai Campus</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="aamby-valley-city.html">Lonavala Campus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="life-at-astar.html">Life at A-Star</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider custom-divider">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admissions.html">Admissions</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider custom-divider">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="connectDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Connect
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="connectDropdown">
+                                <li><a class="dropdown-item" href="careers-at-a-star.html">Careers at A-Star</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand mx-auto" href="https://www.aambyvalley.com/" target="_blank">
+                    <img src="./img/avclogo.png" alt="Logo" height="40">
+                </a>
+                <a class="navbar-brand mx-auto" href="https://www.saharastar.com/" target="_blank">
+                    <img src="./img/SSlogo.png" alt="Logo" height="40">
+                </a>
+
+            </div>
+        </nav> 
+
+
+        <!-- mobile view -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed xs-nav">
             <div class="container navigation">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto">
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="executive-directors-message.html">Executive
                                         Director’s Message</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="our-padeogy.html">Our Pedagogy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
-                                <li><a class="dropdown-item" href="team-a-star.html">Team A-Star</a></li>
-                                <!--<li><a class="dropdown-item" href="affiliations.html">Affiliations</a></li>-->
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="team-a-star.html">Our Faculty & <br> Professors of
+                                        Practice</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Programmes
                             </a>
                             <!--<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -83,26 +215,37 @@
                                 <li><a class="dropdown-item" href="./workshops-event.html">Workshops & Events</a></li>
                             </ul>-->
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree Programmes </a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma Programmes </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./certification-courses.html">Certificate
+                                        Programmes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="./workshops-event.html">Workshops</a></li>
-                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma</a></li>
-                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree</a></li>
-                                <li><a class="dropdown-item" href="./certification-courses.html">Certification
-                                        Courses</a></li>
                             </ul>
 
 
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Campuses
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="sahara-star.html">Sahara Star</a></li>
-                                <li><a class="dropdown-item" href="aamby-valley-city.html">Aamby Valley City</a></li>
-                                <!--<li><a class="dropdown-item" href="events.html">Events</a></li>-->
+                            <ul class="dropdown-menu" aria-labelledby="campusesDropdown">
+                                <li><a class="dropdown-item" href="sahara-star.html">Mumbai Campus</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="aamby-valley-city.html">Lonavala Campus</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -111,9 +254,11 @@
                 <a class="navbar-brand mx-auto" href="index.html">
                     <img src="./img/logo.png" alt="Logo" height="40">
                 </a>
+                <a class="navbar-brand mx-auto">
+                    <img src="./img/Logo-as.png" alt="Logo" class="logo-as" height="40">
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -126,8 +271,7 @@
                             <a class="nav-link" href="admissions.html">Admissions</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Connect
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -140,31 +284,56 @@
                     </ul>
                 </div>
             </div>
+            
         </nav>
 
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
             </div>
 
             <div class="carousel-inner">
 
+
+
                 <div class="carousel-item active">
-                    <img src="img/home/banner/3.png" alt="INDIA'S ONLY HOTEL SCHOOL" class="d-block home-d-img"
+                    <img src="img/home/banner/as-banner.jpg" alt="INDIA'S ONLY HOTEL SCHOOL" class="d-block home-d-img"
                         style="width:100%" />
 
-                    <img src="img/home/banner/mobile/3.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
+                    <img src="img/home/banner/mobile/as-bnr-1.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
                         class="d-block home-mobile-img" style="width:100%" />
 
                     <div class="carousel-caption">
                         <div class="home-bg-option">
                             <div class="home-banner-bottom-wrapper">
                                 <div>
-                                    <h1>India's Only Hotel School<sup>*</sup></h1>
-                                    <p>WHERE YOU BECOME A HOTELIER ON DAY ONE</p>
+                                    <h1>India's Only Hotel School<sup>*</sup><br> Where You Become a Hotelier on Day One</h1>
+                                    <!-- <p>WHERE YOU BECOME A HOTELIER ON DAY ONE</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/home/banner/banner2.jpg" alt="LEARN FROM INDUSTRY EXPERTS" class="d-block home-d-img"
+                        style="width:100%" />
+                    <img src="img/home/banner/mobile/as-bnr-2.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
+                        class="d-block home-mobile-img" style="width:100%" />
+
+                    <div class="carousel-caption">
+                        <div class="home-bg-option">
+                            <div class="home-banner-bottom-wrapper">
+                                <div>
+                                    <h1>Master Hospitality with <br> Our Industry-Focused Diploma Programmes</h1>
+                                    <!-- <p>EXPERIENCE THE MAGIC OF HOSPITALITY VIA WORKSHOPS CURATED BY EXPERTS. <br />
+                                        ONE-ON-ONE
+                                        INTERACTION WITH A SUPERIOR NETWORKING
+                                        OPPORTUNITY.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -181,35 +350,33 @@
                         <div class="home-bg-option">
                             <div class="home-banner-bottom-wrapper">
                                 <div>
-                                    <h1>Workshops Hosted in the Heart of the City</h1>
-                                    <p>Sahara Star hosts curated A-STAR ACADEMY workshops nestled amidst the plush
-                                        comfort of the renowned 5-star Hotel.</p>
+                                    <h1>Learn from Industry Leaders, <br>Train with the Best in Hospitality</h1>
+                                    <!-- <p>Sahara Star hosts curated A-STAR ACADEMY workshops nestled amidst the plush
+                                        comfort of the renowned 5-star Hotel.</p> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- <div class="carousel-item">
-                    <img src="img/home/banner/1.jpg" alt="LEARN FROM INDUSTRY EXPERTS" class="d-block home-d-img"
-                        style="width:100%" />
-                    <img src="img/home/banner/mobile/1.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
+                <div class="carousel-item">
+                    <img src="img/home/banner/as-banner-2.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
+                        class="d-block home-d-img" style="width:100%" />
+
+                    <img src="img/home/banner/mobile/as-bnr-4.jpg" alt="INDIA'S ONLY HOTEL SCHOOL"
                         class="d-block home-mobile-img" style="width:100%" />
 
                     <div class="carousel-caption">
                         <div class="home-bg-option">
                             <div class="home-banner-bottom-wrapper">
                                 <div>
-                                    <h1>Learn from Industry Experts</h1>
-                                    <p>EXPERIENCE THE MAGIC OF HOSPITALITY VIA WORKSHOPS CURATED BY EXPERTS. <br />
-                                        ONE-ON-ONE
-                                        INTERACTION WITH A SUPERIOR NETWORKING
-                                        OPPORTUNITY.</p>
+                                    <h1>Boost Your Career with<br> Government-Certified Skill-Based Programmes</h1>
+                                    <!-- <p>WHERE YOU BECOME A HOTELIER ON DAY ONE</p> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="carousel-item">
                     <img src="img/home/banner/cert-1.jpg" alt="LEARN FROM INDUSTRY EXPERTS" class="d-block home-d-img"
@@ -250,15 +417,17 @@
                         </div>
                         <div class="box-caption-wrap">
                             <div class="box-caption">
-                                <h3 class="title">3-Year Degree <br /> Courses</h3>
+                                <h3 class="title">Degree Programmes</h3>
 
                                 <div class="tm-button-wrapper">
                                     <div class="tm-button style-text tm-button-nm icon-right">
                                         <div class="button-content-wrapper">
-                                            <a class="button-text" href="./degree-programmes.html">Learn more</a>
-                                            <span class="button-icon">
-                                                <img src="img/right-arrow.png" alt="right arrow" class="img-fluid" />
-                                            </span>
+                                            <a class="button-text" href="./degree-programmes.html">Know more
+                                                <span class="button-icon">
+                                                    <img src="img/right-arrow.png" alt="right arrow"
+                                                        class="img-fluid" />
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +435,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="col-md-3">
                     <div class="content-wrap">
                         <div class="unicamp-image image">
@@ -275,15 +444,17 @@
                         </div>
                         <div class="box-caption-wrap">
                             <div class="box-caption">
-                                <h3 class="title">Short Course <br /> Unit</h3>
+                                <h3 class="title">Diploma Programmes</h3>
 
                                 <div class="tm-button-wrapper">
                                     <div class="tm-button style-text tm-button-nm icon-right">
                                         <div class="button-content-wrapper">
-                                            <a class="button-text" href="./diploma-programmes.html">Learn more</a>
-                                            <span class="button-icon">
-                                                <img src="img/right-arrow.png" alt="right arrow" class="img-fluid" />
-                                            </span>
+                                            <a class="button-text" href="./diploma-programmes.html">Know more
+                                                <span class="button-icon">
+                                                    <img src="img/right-arrow.png" alt="right arrow"
+                                                        class="img-fluid" />
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -300,15 +471,17 @@
                         </div>
                         <div class="box-caption-wrap">
                             <div class="box-caption">
-                                <h3 class="title">Workshops</h3>
+                                <h3 class="title">Certificate Programmes</h3>
 
                                 <div class="tm-button-wrapper">
                                     <div class="tm-button style-text tm-button-nm icon-right">
                                         <div class="button-content-wrapper">
-                                            <a class="button-text" href="./workshops-event.html">Learn more</a>
-                                            <span class="button-icon">
-                                                <img src="img/right-arrow.png" alt="right arrow" class="img-fluid" />
-                                            </span>
+                                            <a class="button-text" href="./certification-courses.html">Know more
+                                                <span class="button-icon">
+                                                    <img src="img/right-arrow.png" alt="right arrow"
+                                                        class="img-fluid" />
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -325,22 +498,23 @@
                         </div>
                         <div class="box-caption-wrap">
                             <div class="box-caption">
-                                <h3 class="title">Careers @ A-Star Academy</h3>
+                                <h3 class="title">Culinary Workshops</h3>
 
                                 <div class="tm-button-wrapper">
                                     <div class="tm-button style-text tm-button-nm icon-right">
                                         <div class="button-content-wrapper">
-                                            <a class="button-text" href="./diploma-programmes.html">Learn more</a>
-                                            <span class="button-icon">
-                                                <img src="img/right-arrow.png" alt="right arrow" class="img-fluid" />
-                                            </span>
+                                            <a class="button-text" href="./workshops.html">Know more
+                                                <span class="button-icon">
+                                                    <img src="img/right-arrow.png" alt="right arrow"
+                                                        class="img-fluid" />
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -358,13 +532,13 @@
 
                                 <div class="description-wrap">
                                     <div class="description">
-                                        Our vision at A-Star Academy is to equip India's youth with the essential
-                                        hospitality skills they need to thrive</div>
+                                        At A-Star Academy, our pedagogy blends expert guidance with hands-on training,
+                                        equipping students with industry-leading skills to excel in hospitality.</div>
                                 </div>
 
                                 <button class="btn btn-primary custom-btn"
-                                    onclick="gotoPage('./executive-directors-message.html')">Learn
-                                    more...</button>
+                                    onclick="gotoPage('./our-padeogy.html')">Know
+                                    more</button>
 
 
                             </div>
@@ -373,34 +547,82 @@
                 </div>
                 <div class="col-md-6">
                     <div class="right-img">
-                        <img decoding="async" src="./img/home/empowering-india.png" title="home-04-about-image"
+                        <img decoding="async" src="./img/home/as-939x545.jpg" title="home-04-about-image"
                             alt="home-04-about-image" loading="lazy" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="Explore-Majors">
-            <div class="gradient-bg"></div>
-            <div class="container">
-                <div class="wrapper">
-                    <div class="content">
-                        <h2>Workshop Registrations Are Open</h2>
-                        <p>Limited seats available. Secure yours now. <br /> More than 80
-                            curated
-                            Workshops to choose from.</p>
+
+        <div class="container owl-carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="Explore-Majors image-1">
+                        <img src="./img/home/banner/as-sahara-1264x450.jpg" alt="Explore Majors" />
+                        <div class="gradient-bg">
+                            <div class="container">
+                                <div class="wrapper">
+                                    <div class="content">
+                                        <h2>Mumbai Campus</h2>
+                                        <!-- <p>Limited seats available. Secure yours now. <br /> More than 80 curated Workshops to choose from.</p> -->
+                                    </div>
+                                    <button class="btn btn-primary custom-btn custom-btn-1"
+                                        onclick="gotoPage('./sahara-star.html')">Know More</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn-primary custom-btn" onclick="gotoPage('./workshops-event.html')">View
-                        Session</button>
+                </div>
+                <div class="item">
+                    <div class="Explore-Majors image-2">
+                        <img src="./img/home/banner/as-avc-1264x450.jpg" alt="Explore-Majors">
+                        <div class="gradient-bg">
+                            <div class="container">
+                                <div class="wrapper">
+                                    <div class="content">
+                                        <h2 class="content-head">Residential Campus</h2>
+                                        <!-- <p>Limited seats available. Secure yours now. <br /> More than 80 curated Workshops to choose from.</p> -->
+                                    </div>
+                                    <button class="btn btn-primary custom-btn custom-btn-1"
+                                        onclick="gotoPage('./aamby-valley-city.html')">Know More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 1
+                        }
+                    }
+                });
+            });
+        </script>
+
 
         <div class="why-choose">
             <div class="container">
 
                 <h2>
-                    CAMPUS LIFE SECTION
+                    Why Choose A star Academy ?
                 </h2>
 
                 <div class="row campus-row">
@@ -408,10 +630,14 @@
                         <div class="box">
                             <img src="./img/home/campus/1.png" class="img-fluid" alt="THE A-Star ADVANTAGE" />
                             <div class="content">
-                                <h3>The A-Star Advantage</h3>
-                                <p>What makes us the black sheep of hospitality education?</p>
-                                <!-- <a href="#" class="learn-more">learn
-                                    more</a> -->
+                                <h3>The A-Star<br> Advantage</h3>
+                                <p>What makes A-Star Academy unique? Our innovative pedagogy blends theory with
+                                    real-world learning. With 100% internship placements, global career opportunities,
+                                    and world-class facilities, we provide the perfect launchpad for hospitality
+                                    professionals, equipping them with hands-on skills to thrive in this
+                                    dynamic industry.</p>
+                                <button class="btn btn-primary custom-btn mt-2" onclick="gotoPage('./a-star-advantages.html')">Know
+                                    more</button>
                             </div>
                         </div>
                     </div>
@@ -420,12 +646,12 @@
                             <img src="./img/home/campus/2.jpg" class="img-fluid" alt="Game Changing Pedagogy" />
                             <div class="content">
                                 <h3>Game-Changing Pedagogy</h3>
-                                <p>Unlike other hospitality colleges, A-Star Academy throws you into the heart of the
-                                    action from day one. Gain hands-on
-                                    experience in a real 5-star hotel environment, learning both on the job and in the
-                                    classroom simultaneously.</p>
-                                <!-- <a href="#" class="learn-more">learn
-                                    more</a> -->
+                                <p>A-Star Academy takes you straight into the action, offering a 5-star hotel learning
+                                    environment from day one. Our students gain hands-on experience while mastering
+                                    hospitality through both classroom learning and real-world exposure, making them
+                                    industry-ready with practical training in every aspect of the field.</p>
+                                <button class="btn btn-primary custom-btn mt-2" onclick="gotoPage('./our-padeogy.html')">Know
+                                    more</button>
                             </div>
                         </div>
                     </div>
@@ -433,14 +659,13 @@
                         <div class="box">
                             <img src="./img/home/campus/3.jpg" class="img-fluid" alt="Earn While You Learn" />
                             <div class="content">
-                                <h3>Earn While You Learn</h3>
-                                <p>We believe in empowering our students with entrepreneurial skills. You'll have the
-                                    opportunity to lead and manage an
-                                    operational fine-dining restaurant, driving revenue while gaining invaluable
-                                    experience. The cherry on top? Earn a
-                                    commission on the revenue generated!</p>
-                                <!-- <a href="#" class="learn-more">learn
-                                    more</a> -->
+                                <h3>Career options in Hospitality</h3>
+                                <p>At A-Star Academy, students develop entrepreneurial skills while managing fine-dining
+                                    operations. This unique hands-on experience helps them understand revenue
+                                    management, gain real-world expertise, and even earn a commission on revenue—all
+                                    while preparing for a successful career in the global hospitality industry.</p>
+                                <button class="btn btn-primary custom-btn mt-2" onclick="gotoPage('./Career-Options-in-Hospitality-&-Culinary-Arts.html')">Know
+                                    more</button>
                             </div>
                         </div>
                     </div>
@@ -448,15 +673,15 @@
                         <div class="box">
                             <img src="./img/home/campus/4.jpg" class="img-fluid" alt="Strategic Industry Connections" />
                             <div class="content">
-                                <h3>Strategic Industry Connections</h3>
-                                <p>Through our partnership with the prestigious Hotel Sahara Star (a leading 5-star
-                                    deluxe hotel in Mumbai), internships
-                                    and job placements are practically guaranteed for A-Star Academy graduates. Our
-                                    connections extend beyond India, with
-                                    affiliations with top international colleges and exciting student exchange programs.
-
+                                <h3>Our Alliances & Affiliations</h3>
+                                <p>Through our exclusive partnership with Hotel Sahara Star, A-Star Academy guarantees
+                                    top-tier internships and job placements. Our global affiliations extend beyond
+                                    India, providing students with international learning opportunities and exciting
+                                    student exchange Programmes, opening doors to promising careers in
+                                    hospitality worldwide.
                                 </p>
-                                <!-- <a href="#" class="learn-more">learn more</a> -->
+                                <button class="btn btn-primary custom-btn mt-2" onclick="gotoPage('./our-alliances-&-affilaitions.html')">Know
+                                    more</button>
                             </div>
                         </div>
                     </div>
@@ -693,7 +918,7 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <img src="./img/footer-logo.jpg" class="img-fluid" alt="logo" />
                         <!-- <p>
                             <span>Aamby Star Academy</span>
@@ -708,12 +933,14 @@
                             <span>Hotel Sahara Star</span>
                             <span>Opp. Domestic Airport</span>
                             <span>Mumbai 400099</span>
-                            <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel:+91 8657411591</a> <a class="telephone" href="tel:+91 8657411592">,+91 8657411592</a></span>
-                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
+                            <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel:+91 8657411591</a> <a
+                                    class="telephone" href="tel:+91 8657411592">,+91 8657411592</a></span>
+                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
+                                target="_blank">info@astaracademy.in</a>
                         </p>
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="footer-link-wrapper">
                             <div>
                                 <ul>
@@ -721,21 +948,27 @@
                                     <li><a href="mission-vision.html">About Us</a></li>
 
                                     <li><a href="executive-directors-message.html">ED's Message</a></li>
-                                    <li><a href="./degree-programmes.html">Programmes</a></li>
+                                    <li><a href="our-padeogy.html">Our Padegogy</a></li>
+                                    <li><a href="advisory-board.html">Advisory Board</a></li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
-                                    <li><a href="team-a-star.html">Management Team</a></li>
+                                    <li><a href="degree-programmes.html">Degree Programmes</a></li>
+                                    <li><a href="diploma-programmes.html">Diploma Programmes</a></li>
+                                    <li><a href="certification-courses.html">Certificate Programmes</a></li>
+                                    <li><a href="workshops.html">Workshops</a></li>
+                                    <li><a href="admissions.html">Admissions</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="sahara-star.html">Mumbai Campuses</a></li>
+                                    <li><a href="aamby-valley-city.html">Lonavala Campuses</a></li>
                                     <li><a href="life-at-astar.html">Life at A-Star</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
                                     <li><a href="careers-at-a-star.html">Careers at A-Star</a></li>
-                                    <li><a href="terms-&-conditions.html">Terms & Conditions</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -795,12 +1028,8 @@
                                         class="img-fluid" /></a>
                             </div> -->
                             <div class="carousel-item active">
-                                <a href="./workshops-event.html"><img src="./img/pop/A-Star-Acedemy-Pop-up-jan.jpg" alt="modal image"
-                                        class="img-fluid" /></a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="./workshops-event.html"><img src="./img/pop/A-Star-Workshop-Carousal-2.png" alt="modal image"
-                                        class="img-fluid" /></a>
+                                <a href="./workshops-event.html"><img src="./img/pop/A-Star-Workshop-Carousal-2.png"
+                                        alt="modal image" class="img-fluid" /></a>
                             </div>
                             <div class="carousel-item">
                                 <a href="./workshops-event.html"><img src="./img/pop/2.jpg" alt="modal image"

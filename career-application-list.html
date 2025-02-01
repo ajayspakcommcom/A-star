@@ -35,51 +35,199 @@
     <div class="main-layout-wrapper">
 
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <!-- desktop view -->
+        <nav class="navbar navbar-expand-lg fixed-top lg-nav">
+            <div class="container-fluid custom-container">                
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="Logo" height="40">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="executive-directors-message.html">Executive
+                                        Director’s Message</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="our-padeogy.html">Our Pedagogy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="team-a-star.html">Our Faculty & <br> Professors of
+                                        Practice</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="programmesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programmes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree Programmes </a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma Programmes </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./certification-courses.html">Certificate
+                                        Programmes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./workshops-event.html">Workshops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="campusesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Campuses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="campusesDropdown">
+                                <li><a class="dropdown-item" href="sahara-star.html">Mumbai Campus</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="aamby-valley-city.html">Lonavala Campus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="life-at-astar.html">Life at A-Star</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider custom-divider">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admissions.html">Admissions</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider custom-divider">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="connectDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Connect
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="connectDropdown">
+                                <li><a class="dropdown-item" href="careers-at-a-star.html">Careers at A-Star</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand mx-auto" href="https://www.aambyvalley.com/" target="_blank">
+                    <img src="./img/avclogo.png" alt="Logo" height="40">
+                </a>
+                <a class="navbar-brand mx-auto" href="https://www.saharastar.com/" target="_blank">
+                    <img src="./img/SSlogo.png" alt="Logo" height="40">
+                </a>
+
+            </div>
+        </nav> 
+
+
+        <!-- mobile view -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed xs-nav">
             <div class="container navigation">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto">
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="executive-directors-message.html">Executive
-                                        Director’s
-                                        Message</a></li>
+                                        Director’s Message</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="our-padeogy.html">Our Pedagogy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
-                                <li><a class="dropdown-item" href="team-a-star.html">Team A-Star</a></li>
-                                <!--<li><a class="dropdown-item" href="affiliations.html">Affiliations</a></li>-->
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="team-a-star.html">Our Faculty & <br> Professors of
+                                        Practice</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Programmes
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <!--<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Courses</a></li>
+                                <li><a class="dropdown-item" href="./workshops-event.html">Workshops & Events</a></li>
+                            </ul>-->
+
+                            <ul class="dropdown-menu" aria-labelledby="programmesDropdown">
+                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree Programmes </a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma Programmes </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./certification-courses.html">Certificate
+                                        Programmes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="./workshops-event.html">Workshops</a></li>
-                                <li><a class="dropdown-item" href="./diploma-programmes.html">Diploma</a></li>
-                                <li><a class="dropdown-item" href="./degree-programmes.html">Degree</a></li>
-                                <li><a class="dropdown-item" href="./certification-courses.html">Certification
-                                        Courses</a></li>
                             </ul>
+
+
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Campuses
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="sahara-star.html">Sahara Star</a></li>
-                                <li><a class="dropdown-item" href="aamby-valley-city.html">Aamby Valley City</a></li>
-                                <!--<li><a class="dropdown-item" href="events.html">Events</a></li>-->
+                            <ul class="dropdown-menu" aria-labelledby="campusesDropdown">
+                                <li><a class="dropdown-item" href="sahara-star.html">Mumbai Campus</a></li>
+                                <li>
+                                    <hr class="dropdown-divider custom-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="aamby-valley-city.html">Lonavala Campus</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -88,9 +236,11 @@
                 <a class="navbar-brand mx-auto" href="index.html">
                     <img src="./img/logo.png" alt="Logo" height="40">
                 </a>
+                <a class="navbar-brand mx-auto">
+                    <img src="./img/Logo-as.png" alt="Logo" class="logo-as" height="40">
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -103,8 +253,7 @@
                             <a class="nav-link" href="admissions.html">Admissions</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Connect
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -117,6 +266,7 @@
                     </ul>
                 </div>
             </div>
+            
         </nav>
         <div class="course-banner">
             <img src="./img/banner/contact.png" class="img-fluid" alt="logo" />
@@ -153,17 +303,29 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <img src="./img/footer-logo.jpg" class="img-fluid" alt="logo" />
+                        <!-- <p>
+                            <span>Aamby Star Academy</span>
+                            <span>Aamby Valley City</span>
+                            <span>Post - Ambavane, District - Pune 410 401, Maharashtra,
+                                India</span>
+                            <span>Tel: Tel: +91 8657411591, +91 8657411592</span>
+                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
+                        </p> -->
+
                         <p>
                             <span>Hotel Sahara Star</span>
                             <span>Opp. Domestic Airport</span>
                             <span>Mumbai 400099</span>
-                            <span><span><a class="telephone" href="tel:Tel: +91 8657411591">Tel: +91 8657411591</a> <a class="telephone" href="tel:+91 8657411592">,+91 8657411592</a></span></span>
-                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
+                            <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel:+91 8657411591</a> <a
+                                    class="telephone" href="tel:+91 8657411592">,+91 8657411592</a></span>
+                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
+                                target="_blank">info@astaracademy.in</a>
                         </p>
+
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="footer-link-wrapper">
                             <div>
                                 <ul>
@@ -171,21 +333,27 @@
                                     <li><a href="mission-vision.html">About Us</a></li>
 
                                     <li><a href="executive-directors-message.html">ED's Message</a></li>
-                                    <li><a href="degree-programmes.html">Programmes</a></li>
+                                    <li><a href="our-padeogy.html">Our Padegogy</a></li>
+                                    <li><a href="advisory-board.html">Advisory Board</a></li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
-                                    <li><a href="team-a-star.html">Management Team</a></li>
+                                    <li><a href="degree-programmes.html">Degree Programmes</a></li>
+                                    <li><a href="diploma-programmes.html">Diploma Programmes</a></li>
+                                    <li><a href="certification-courses.html">Certificate Programmes</a></li>
+                                    <li><a href="workshops.html">Workshops</a></li>
+                                    <li><a href="admissions.html">Admissions</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><a href="sahara-star.html">Mumbai Campuses</a></li>
+                                    <li><a href="aamby-valley-city.html">Lonavala Campuses</a></li>
                                     <li><a href="life-at-astar.html">Life at A-Star</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
                                     <li><a href="careers-at-a-star.html">Careers at A-Star</a></li>
-                                    <li><a href="terms-&-conditions.html">Terms & Conditions</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
