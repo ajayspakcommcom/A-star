@@ -155,7 +155,7 @@
 
 
         <!-- mobile view -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed xs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top xs-nav">
             <div class="container navigation">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto">
@@ -274,49 +274,54 @@
 
         <div class="course-heading-wrapper">
             <div class="container">
-                <h2>Contact Us</h2>
-
-                <div class="contact-page-wrapper">
-
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="uname" id="uname" placeholder="Name" />
+                <h2 class="text-center mb-4">Contact Us</h2>
+        
+                <div class="row">
+                    <!-- Contact Form (Left Side) -->
+                    <div class="col-md-6">
+                        <div class="contact-page-wrapper">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="uname" id="uname" placeholder="Name" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="uemail" id="uemail" placeholder="Email" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="umobile" id="umobile" placeholder="Mobile" />
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="uquery" name="uquery" rows="3" placeholder="Enquiry"></textarea>
+                            </div>
+                            <div class="btn-wrapper">
+                                <button onclick="saveData()" class="btn btn-primary" id="saveBtn">Submit</button>
+                            </div>
+                            <p class="thankyou hide mt-3">Thank you for reaching out. <br> We will ensure that a representative
+                                contacts you promptly.</p>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" name="uemail" id="uemail" placeholder="Email" />
+        
+                    <!-- Contact Details (Right Side) -->
+                    <div class="col-md-6">
+                        <div class="contact-page-wrapper">
+                            <h2 class="contact-header">Mumbai Campus</h2>
+                            <p> Hotel Sahara Star, Opposite Domestic Airport, Mumbai 400099.</p>
+        
+                            <h2 class="contact-header mt-3">Lonavala Campus</h2>
+                            <p>Aamby Valley City, Post - Ambavane, District: Pune - 410401, Maharashtra, India</p>
+                            <hr class="custom-divider">
+                            <p><strong>Mobile:</strong> 
+                                <a href="tel:+918657411591">+91 8657411591</a> / 
+                                <a href="tel:+918657411592">+91 8657411592</a>
+                            </p>
+                            <p><strong>Email:</strong> 
+                                <a href="mailto:info@astaracademy.in">info@astaracademy.in</a>
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="umobile" id="umobile" placeholder="Mobile" />
-                    </div>
-
-                    <div class="mb-3">
-                        <textarea class="form-control" id="uquery" name="uquery" rows="3"
-                            placeholder="Enquiry"></textarea>
-                    </div>
-
-                    <div class="btn-wrapper">
-                        <button onclick="saveData()" class="btn btn-primary" id="saveBtn">Submit</button>
-                    </div>
-
-                    <p class="thankyou hide">Thank you for reaching out. <br> We will ensure that a representative
-                        contacts you promptly.</p>
-
                 </div>
-
-                <div class="contact-page-wrapper">
-                    <h2 class="contact-header">Registered Head Office</h2>
-                    <p>Mumbai Office - Hotel Sahara Star, Opposite Domestic Airport, Mumbai
-                        400099.</p>
-
-                    <p><strong>Mobile:</strong> <a href="tel:+918657411591">+91 8657411591</a> / <a
-                            href="tel:+918657411592">+91 8657411592</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@astaracademy.in">info@astaracademy.in</a></p>
-
-                </div>
-
-
             </div>
         </div>
+        
 
 
         <!-- <div class="courses-feature-wrapper">
@@ -376,81 +381,98 @@
         </div>
     </div> -->
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="./img/footer-logo.jpg" class="img-fluid" alt="logo" />
-                        <!-- <p>
-                            <span>Aamby Star Academy</span>
-                            <span>Aamby Valley City</span>
-                            <span>Post - Ambavane, District - Pune 410 401, Maharashtra,
-                                India</span>
-                            <span>Tel: Tel: +91 8657411591, +91 8657411592</span>
-                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
-                        </p> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="./img/footer-logo.jpg" class="img-fluid" alt="logo" />
+                    <!-- <p>
+                        <span>Aamby Star Academy</span>
+                        <span>Aamby Valley City</span>
+                        <span>Post - Ambavane, District - Pune 410 401, Maharashtra,
+                            India</span>
+                        <span>Tel: Tel: +91 8657411591, +91 8657411592</span>
+                        <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in" target="_blank">info@astaracademy.in</a>
+                    </p> -->
 
-                        <p>
-                            <span>Hotel Sahara Star</span>
-                            <span>Opp. Domestic Airport</span>
-                            <span>Mumbai 400099</span>
-                            <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel:+91 8657411591</a> <a
-                                    class="telephone" href="tel:+91 8657411592">,+91 8657411592</a></span>
-                            <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
-                                target="_blank">info@astaracademy.in</a>
-                        </p>
+                    <p>
+                        <!-- <span>Hotel Sahara Star</span>
+                        <span>Opp. Domestic Airport</span> -->
+                        <span><strong>Mumbai Campus</strong> - Hotel Sahara Star, Opposite Domestic Airport, Mumbai - 400099, Maharashtra.</span>
+                        <span><strong>Lonavala Campus</strong> -  Aamby Valley City, Post - Ambavane, District: Pune - 410401, Maharashtra.</span>
+                        <hr class="custom-divider" style="width: 90%; margin-bottom: 5px;">
+                        <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel: +91 8657411591</a> <a
+                                class="telephone" href="tel:+91 8657411592">,+91 8657411592 | <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
+                                target="_blank">Email: info@astaracademy.in</a></a></span>
+                        
 
-                    </div>
-                    <div class="col-md-5">
-                        <div class="footer-link-wrapper">
-                            <div>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="mission-vision.html">About Us</a></li>
 
-                                    <li><a href="executive-directors-message.html">ED's Message</a></li>
-                                    <li><a href="our-padeogy.html">Our Padegogy</a></li>
-                                    <li><a href="advisory-board.html">Advisory Board</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="degree-programmes.html">Degree Programmes</a></li>
-                                    <li><a href="diploma-programmes.html">Diploma Programmes</a></li>
-                                    <li><a href="certification-courses.html">Certificate Programmes</a></li>
-                                    <li><a href="workshops.html">Workshops</a></li>
-                                    <li><a href="admissions.html">Admissions</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li><a href="sahara-star.html">Mumbai Campuses</a></li>
-                                    <li><a href="aamby-valley-city.html">Lonavala Campuses</a></li>
-                                    <li><a href="life-at-astar.html">Life at A-Star</a></li>
-                                    <li><a href="careers-at-a-star.html">Careers at A-Star</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                    
-                                </ul>
-                            </div>
+                    </p>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-wrapper">
+                        <div>
+                            <ul>
+                                <!-- <li><a href="index.html">Home</a></li> -->
+                                <li><a href="mission-vision.html">About Us</a></li>
+
+                                <li><a href="executive-directors-message.html">ED's Message</a></li>
+                                <li><a href="our-padeogy.html">Our Padegogy</a></li>
+                                <li><a href="advisory-board.html">Advisory Board</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
                         </div>
+                        <div>
+                            <ul>
+                                <li><a href="degree-programmes.html">Degree Programmes</a></li>
+                                <li><a href="diploma-programmes.html">Diploma Programmes</a></li>
+                                <li><a href="certification-courses.html">Certificate Programmes</a></li>
+                                <li><a href="workshops.html">Workshops</a></li>
+                                <li><a href="admissions.html">Admissions</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="sahara-star.html">Mumbai Campuses</a></li>
+                                <li><a href="aamby-valley-city.html">Lonavala Campuses</a></li>
+                                <li><a href="life-at-astar.html">Life at A-Star</a></li>
+                                <li><a href="careers-at-a-star.html">Careers at A-Star</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
 
-                        <ul class="footer-social-link">
-                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61556820487501"><img
-                                        src="./img/social/facebook.png" class="img-fluid" alt="facebook" /></a>
-                            </li>
-                            <li><a target="_blank" href="https://www.instagram.com/astar.academy.aambyvalley/"><img
-                                        src="./img/social/instagram.png" class="img-fluid" alt="instagram" /></a>
-                            </li>
-                            <li><a target="_blank"
-                                    href="https://www.linkedin.com/company/a-star-academy-indias-only-hotel-school/"><img
-                                        src="./img/social/linkedin.png" class="img-fluid" alt="linkedin" /></a>
-                            </li>
-                        </ul>
-
+                            </ul>
+                        </div>
                     </div>
+
+
+                    <ul class="footer-social-link">
+                        <div class="footer-btn">
+                            <button class="btn btn-secondary custom"
+                                onclick="gotoPage('./workshop-event-form.html')">Apply
+                                now</button>
+                            <button class="d-btn"><a href="./img/astar-brochure.pdf" download
+                                    class="btn btn-primary custom">
+                                    Download brochure
+                                </a></button>
+                        </div>
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61556820487501"><img
+                                    src="./img/social/facebook.png" class="img-fluid" alt="facebook" /></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com/astar.academy.aambyvalley/"><img
+                                    src="./img/social/instagram.png" class="img-fluid" alt="instagram" /></a>
+                        </li>
+                        <li><a target="_blank"
+                                href="https://www.linkedin.com/company/a-star-academy-indias-only-hotel-school/"><img
+                                    src="./img/social/linkedin.png" class="img-fluid" alt="linkedin" /></a>
+                        </li>
+                        <li><img src="./img/sahara-img/A-star-Logos-01.png" alt=""></li>
+                        <li><img src="./img/sahara-img/A-star-Logos-02.png" alt=""></li>
+                    </ul>
+
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
         <div class="copy-write-wrapper">
             <p>
@@ -462,6 +484,11 @@
     </div>
 
     <script src="./js/app.js"></script>
+    <script>
+        function gotoPage(url) {
+            window.location.href = url;
+        }
+    </script>
 
     <script>
         // $(document).ready(function () {

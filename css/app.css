@@ -66,7 +66,7 @@ nav.navbar {
   text-transform: uppercase;
 }
 nav.navbar .navbar-brand img {
-  width: 140px;
+  width: 120px;
   height: auto;
 }
 nav.navbar .mx-auto img {
@@ -79,6 +79,9 @@ nav.navbar #navbarNav {
   font-size: 15px;
   cursor: pointer;
 }
+nav.navbar .navbar-nav {
+  gap: 10px;
+}
 nav.navbar.fixed-top {
   position: sticky;
   top: 0;
@@ -86,7 +89,7 @@ nav.navbar.fixed-top {
   width: 100%;
   z-index: 2;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
-  height: 155px;
+  height: 125px;
 }
 nav.navbar.normal-nav {
   background-color: #d6b376 !important;
@@ -174,7 +177,7 @@ nav .dropdown:hover .dropdown-menu {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 140px;
+  height: 100px;
   text-align: center;
   color: #fff;
   display: flex;
@@ -875,7 +878,7 @@ footer [src="./img/footer-logo.jpg"] {
 }
 footer p,
 footer a {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 25px;
 }
 footer p > span,
@@ -904,12 +907,19 @@ footer .footer-social-link {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 50px;
+  margin-top: 25px;
+}
+footer .footer-social-link .footer-btn {
+  margin-bottom: 1rem !important;
 }
 footer .footer-social-link > li {
   display: inline-block;
   margin-right: 15px;
   margin-right: 30px;
+}
+footer .footer-social-link > li img {
+  width: 70px;
+  height: auto;
 }
 footer .footer-social-link > li > a {
   display: block;
@@ -1031,6 +1041,8 @@ footer .footer-social-link > li > a > img {
 .course-heading-wrapper .contact-header,
 .about-us-wrapper .contact-header {
   text-align: start;
+  font-size: 15px;
+  font-weight: bold;
 }
 .course-heading-wrapper p,
 .about-us-wrapper p {
@@ -2286,7 +2298,6 @@ select:first-of-type {
 p {
   font-family: "Poppins-Regular";
   line-height: 22px;
-  margin-bottom: 30px;
 }
 
 .file-upload-wrapper {
@@ -2497,6 +2508,33 @@ p {
 
 .borcher-wrapper {
   width: 700px;
+}
+
+.carousel-indicators {
+  margin-bottom: 0rem !important;
+}
+
+.custom {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #ca933b;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  color: #ca933b;
+  background: transparent;
+}
+.custom:hover {
+  background-color: #ca933b;
+  color: #fff;
+  border-color: #ca933b !important;
+}
+
+.d-btn {
+  background: transparent;
+  border: 0;
 }
 
 @media (max-width: 1366px) {

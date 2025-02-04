@@ -39,7 +39,7 @@ nav {
         text-transform: uppercase;
 
         .navbar-brand img {
-            width: 140px;
+            width: 120px;
             height: auto;
         }
 
@@ -55,9 +55,9 @@ nav {
             cursor: pointer;
         }
 
-        // .navbar-nav{
-        //     gap: 10px;
-        // }
+        .navbar-nav {
+            gap: 10px;
+        }
 
         &.fixed-top {
             position: sticky;
@@ -66,7 +66,7 @@ nav {
             width: 100%;
             z-index: 2;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
-            height: 155px;
+            height: 125px;
         }
 
         &.normal-nav {
@@ -182,7 +182,7 @@ nav {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         // height: 300px;
-        height: 140px;
+        height: 100px;
         text-align: center;
         color: #fff;
 
@@ -1046,7 +1046,7 @@ footer {
     p,
     a {
         // font-family: 'Poppins-Regular';
-        font-size: 13px;
+        font-size: 11px;
         line-height: 25px;
 
 
@@ -1083,12 +1083,21 @@ footer {
         margin: 0;
         padding: 0;
         list-style: none;
-        margin-top: 50px;
+        margin-top: 25px;
+
+        .footer-btn {
+            margin-bottom: 1rem !important;
+        }
 
         &>li {
             display: inline-block;
             margin-right: 15px;
             margin-right: 30px;
+
+            img {
+                width: 70px;
+                height: auto;
+            }
 
             &>a {
                 display: block;
@@ -1228,6 +1237,8 @@ footer {
 
     .contact-header {
         text-align: start;
+        font-size: 15px;
+        font-weight: bold;
     }
 
     p {
@@ -2360,6 +2371,7 @@ select:first-of-type {
         margin-right: 10px;
     }
 
+
     footer .footer-social-link>li>a>img {
         width: 25px;
     }
@@ -2812,7 +2824,7 @@ select:first-of-type {
 p {
     font-family: "Poppins-Regular";
     line-height: 22px;
-    margin-bottom: 30px;
+    
 }
 
 .file-upload-wrapper {
@@ -3058,6 +3070,36 @@ p {
     width: 700px;
 }
 
+.carousel-indicators {
+    margin-bottom: 0rem !important;
+}
+
+
+
+.custom {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #ca933b;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    color: #ca933b;
+    background: transparent;
+
+    &:hover {
+        background-color: #ca933b;
+        color: #fff;
+        border-color: #ca933b !important;
+    }
+}
+
+.d-btn {
+    background: transparent;
+    border: 0;
+}
+
 //   screen 1366px
 @media (max-width: 1366px) {
     .carousel-indicators [data-bs-target] {
@@ -3069,3 +3111,5 @@ p {
         height: 100px;
     }
 }
+
+
