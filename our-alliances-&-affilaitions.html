@@ -219,7 +219,7 @@
 
 
 
-        <footer>
+         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -236,13 +236,16 @@
                         <p>
                             <!-- <span>Hotel Sahara Star</span>
                             <span>Opp. Domestic Airport</span> -->
-                            <span><strong>Mumbai Campus</strong> - Hotel Sahara Star, Opposite Domestic Airport, Mumbai - 400099, Maharashtra.</span>
-                            <span><strong>Lonavala Campus</strong> -  Aamby Valley City, Post - Ambavane, District: Pune - 410401, Maharashtra.</span>
+                            <span><strong>Mumbai Campus</strong> - Hotel Sahara Star, Opposite Domestic Airport, Mumbai
+                                - 400099, Maharashtra.</span>
+                            <span><strong>Lonavala Campus</strong> - Aamby Valley City, Post - Ambavane, District: Pune
+                                - 410401, Maharashtra.</span>
                             <hr class="custom-divider" style="width: 90%; margin-bottom: 5px;">
                             <span><a class="telephone" href="tel:Tel: +91 8657411591">Tel: +91 8657411591</a> <a
-                                    class="telephone" href="tel:+91 8657411592">,+91 8657411592 | <a style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
-                                    target="_blank">Email: info@astaracademy.in</a></a></span>
-                            
+                                    class="telephone" href="tel:+91 8657411592">,+91 8657411592 | <a
+                                        style="text-decoration: none; color:#fff;" href="mailto:info@astaracademy.in"
+                                        target="_blank">Email: info@astaracademy.in</a></a></span>
+
 
 
                         </p>
@@ -288,11 +291,57 @@
                                 <button class="btn btn-secondary custom"
                                     onclick="gotoPage('./workshop-event-form.html')">Apply
                                     now</button>
-                                <button class="d-btn"><a href="./img/astar-brochure.pdf" download
+                                <!-- <button class="d-btn"><a href="./img/astar-brochure.pdf" download
                                         class="btn btn-primary custom">
                                         Download brochure
-                                    </a></button>
+                                    </a></button> -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Proceed to Download</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="contact-page-wrapper">
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" name="uname" id="uname"
+                                                            placeholder="Name" />
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="email" class="form-control" name="uemail"
+                                                            id="uemail" placeholder="Email" />
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <input type="text" class="form-control" name="umobile"
+                                                            id="umobile" placeholder="Mobile" />
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <button onclick="saveData()" class="btn btn-primary"
+                                                            id="saveBtn">Submit</button>
+                                                    </div>
+                                                    <p class="thankyou hide mt-3">Thank you for reaching out. <br>
+                                                        We will ensure that a representative
+                                                        contacts you promptly.</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- <button type="button" class="btn btn-secondary custom"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary custom">Download</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary custom" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Download Brochure
+                                </button>
                             </div>
+
+
                             <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61556820487501"><img
                                         src="./img/social/facebook.png" class="img-fluid" alt="facebook" /></a>
                             </li>
