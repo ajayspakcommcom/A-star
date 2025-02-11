@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/landing.css">
+
+    <title>A-Star Academy | India's Only Hotel School*</title>
+    <meta name="description"
+        content="Apply now to A-Star Academy and kick-start your career in hospitality management. Learn about our admission process, requirements, and how to join our prestigious programs.">
+    <meta name="keywords"
+        content="A-Star Academy admissions, hospitality management courses, apply for hotel management, education enrollment, admission process">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5WFJW026Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D5WFJW026Z');
+    </script>
+
+</head>
+
+<body class="landing-wrapper">
+
+    <div>
+        <img src="img/landing-page/Landing-Page-Image-1.jpg" class="img-fluid" alt="Chef">
+    </div>
+
+    <div class="container">
+
+        <h2 class="mt-4 text-center">Thank You For Your Interest in a Career <br /> in Hotel Management</h2>
+        <p class="mt-3 text-center">As a certificate holder from Sahara and Aamby <br /> Valley's A-Star Academy you can
+            look forward to</p>
+
+        <div class="text-with-list">
+            <ul class="list-unstyled">
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Gain paid internships and apply your
+                        skills <br /> in a real-time hotel project</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Global career in the Hospitality<br />
+                        Sector</span></li>
+            </ul>
+
+            <ul class="list-unstyled">
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Learn from seasoned Hoteliers and <br />
+                        Professors</span></li>
+                <li><img src="img/landing-page/Landing-Page-Image-3.png"> <span>Be in a uniquely advantageous position
+                        to <br /> start your own hotel business</span></li>
+            </ul>
+        </div>
+        <p class="text-center regular-font">Transform from a Novice to an Industry Expert</p>
+    </div>
+
+    <div>
+        <img src="img/landing-page/Landing-Page-Image-2.jpg" class="img-fluid" alt="Chef">
+    </div>
+
+    <div class="landing-form">
+       <div class="container-fluid custom-container">
+            <h2 class="text-center">Avail free consulting</h2>
+
+            <p class="thankyou hide">Thank you for reaching out. <br> We will ensure that a representative contacts you
+                promptly.</p>
+
+            <div class="landing-input-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="text" class="form-control" name="uname" id="uname" placeholder="FULL NAME" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="text" class="form-control" name="uaddress" id="uaddress"
+                                placeholder="ADDRESS" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="text" class="form-control" name="umobile" id="umobile"
+                                placeholder="MOBILE NO." />
+                            <span id="mobile-error" class="hide">Please enter valid mobile number</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="text" class="form-control" name="uqualification" id="uqualification"
+                                placeholder="QUALIFICATION" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="email" class="form-control" name="uemail" id="uemail" placeholder="EMAIL ID" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <input type="number" class="form-control" name="uage" id="uage" placeholder="AGE" />
+                            <span id="age-error" class="hide">Please enter valid valid</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="btn-wrapper text-center">
+                    <button onclick="saveData()" class="btn btn-primary" id="saveBtn">Submit</button>
+                </div>
+            </div>
+            <img src="img/landing-page/Landing-Page-Image-4.png" alt="" class="img-fluid buttom-img">
+        </div>
+
+    </div>
+
+    <script>
+
+        $('#umobile').on('input', function () {
+            const mobileInput = $(this).val();
+            const mobileError = $('#mobile-error');
+
+            //Regular expression for validating mobile number
+            const mobileRegex = /^[0-9]{10}$/;
+
+            if (mobileRegex.test(mobileInput)) {
+                mobileError.text(''); // Clear any previous error message
+                mobileError.addBack('hide');
+            } else {
+                mobileError.removeClass('hide');
+                mobileError.text('Invalid mobile number. Please enter a 10-digit number.');
+            }
+        });
+
+        $('#uage').on('input', function () {
+            const ageInput = $(this).val();
+            const ageError = $('#age-error');
+
+            //Regular expression for validating mobile number
+            const ageRegex = /^(?:[1-9]|[1-9][0-9]|100)$/;
+
+            if (ageRegex.test(ageInput)) {
+                ageError.text(''); // Clear any previous error message
+                ageError.addBack('hide');
+            } else {
+                ageError.removeClass('hide');
+                ageError.text('Invalid age.');
+            }
+        });
+
+        function saveData() {
+
+            let uname, uaddress, umobile, uqualification, uemail, uage;
+
+            if ($("#uname").val() === "") {
+                alert("Please Enter Your Name");
+                $("#uname").focus();
+                return false;
+            } else {
+                uname = $("#uname").val();
+            }
+
+            if ($("#uaddress").val() === "") {
+                alert("Please Enter Your Address");
+                $("#uaddress").focus();
+                return false;
+            } else {
+                uaddress = $("#uaddress").val();
+            }
+
+            if ($("#umobile").val() === "") {
+                alert("Please Enter Your Mobile");
+                $("#umobile").focus();
+                return false;
+            } else {
+                const mobilePattern = /^\d{10}$/;
+                if (!mobilePattern.test($("#umobile").val())) {
+                    alert("Please Enter Valid Mobile Number");
+                    $("#umobile").focus();
+                    return false;
+                }
+                umobile = $("#umobile").val();
+            }
+
+            if ($("#uqualification").val() === "") {
+                alert("Please Enter Your Qualification");
+                $("#uqualification").focus();
+                return false;
+            } else {
+                uqualification = $("#uqualification").val();
+            }
+
+            if ($("#uemail").val() === "") {
+                alert("Please Enter Your Email");
+                $("#uemail").focus();
+                return false;
+            } else {
+                uemail = $("#uemail").val();
+            }
+
+            if ($("#uage").val() === "") {
+                alert("Please Enter Your Age");
+                $("#uage").focus();
+                return false;
+            } else {
+
+                const mobilePattern = /^\d{2}$/;
+                if (!mobilePattern.test($("#uage").val())) {
+                    alert("Please Enter Valid Age");
+                    $("#uage").focus();
+                    return false;
+                }
+                uage = $("#uage").val();
+            }
+
+            $('#saveBtn').text('Submitting...');
+            $('#saveBtn').attr('disabled', 'disabled');
+
+            // console.log("Name: " + uname);
+            // console.log("Address: " + uaddress);
+            // console.log("Mobile: " + umobile);
+            // console.log("Qualification: " + uqualification);
+            // console.log("Email: " + uemail);
+            // console.log("Age: " + uage);
+
+            $.ajax({
+                url: 'https://spak-it.com/api/astar-free-counselling', //'http://localhost:3000/api/contact', 
+                method: 'POST',
+                contentType: "application/json; charset=utf-8",
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+                data: {
+                    "type": "CREATE",
+                    "Name": uname,
+                    "Address": uaddress,
+                    "Mobile": umobile,
+                    "Qualification": uqualification,
+                    "Email": uemail,
+                    "Age": uage
+                },
+                success: function (data, textStatus, jqXHR) {
+
+                    if (textStatus === 'success') {
+                        console.log('Success');
+                        //$('.thankyou').removeClass('hide');
+                        $("#uname").val('');
+                        $("#uaddress").val('');
+                        $("#umobile").val('');
+                        $("#uqualification").val('');
+                        $("#uemail").val('');
+                        $("#uage").val('');
+                        //$('.thankyou').removeClass('hide');
+                        $('#myModal').modal('show');
+
+
+                        setTimeout(function () {
+                            $('#saveBtn').text('Submit');
+                            $('#saveBtn').removeAttr('disabled', 'disabled');
+                        }, 2000);
+
+                    }
+
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(textStatus);
+                }
+            });
+
+        }
+
+    </script>
+
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+    </button> -->
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Free Consulting</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Thank you for submitting the form. We will connect with you to explain further. You can reach us
+                    at <a href="tel:8879961280">8879961280</a> for any queries.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
