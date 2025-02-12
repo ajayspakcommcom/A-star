@@ -180,7 +180,8 @@ nav .dropdown-submenu:hover > .dropdown-menu {
   right: 0;
   left: calc(100% + 15px) !important;
 }
-nav .dropdown-submenu > .dropdown-menu::after, nav .dropdown-submenu a::after {
+nav .dropdown-submenu > .dropdown-menu::after,
+nav .dropdown-submenu a::after {
   content: "";
   font-size: 15px;
   margin-top: 5px;
@@ -951,6 +952,9 @@ footer .footer-link-wrapper > div ul li {
 footer .footer-link-wrapper > div ul li > a {
   color: #fff;
   text-decoration: none;
+}
+footer .footer-link-wrapper > div ul li > a:hover {
+  color: #ca933b;
 }
 footer .footer-social-link {
   margin: 0;
@@ -2602,6 +2606,10 @@ p {
      object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 [data-bs-target="#imageModal"] {
