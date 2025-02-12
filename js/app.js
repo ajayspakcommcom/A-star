@@ -626,7 +626,7 @@ function programmes() {
 function mobile() {
 
     const widthWidthSize = $(window).width();
-    console.log(widthWidthSize);
+    // console.log(widthWidthSize);
 
     if (widthWidthSize < 767) {
         $('.navigation .navbar-collapse > ul').slideUp();
