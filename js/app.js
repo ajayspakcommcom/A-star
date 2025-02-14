@@ -72,9 +72,9 @@ const advisoryMembers = [
         description: "Dr. Norel Peter Marpuri Illo is the Master in Hospitality Management Program Chair and Assistant Professor IV at Camarines Sur Polytechnic Colleges, Nabua, Camarines Sur, Philippines. With extensive experience in the food service industry, including pastry, baking, and food and beverage services, he is known for his leadership, organizational skills, and commitment to continuous improvement. Norel has also served as OIC Dean, College Instructor, and Distinguished Reviewer for Global Professional Advancement, showcasing his ability to connect with diverse individuals and build strong relationships.",
         imgUrl: "Dr. Norel Peter Marpuri Illo.jpg"
     }
-    
-    
-    
+
+
+
 ];
 
 function renderAdvisoryMembers() {
@@ -125,7 +125,7 @@ const facultyMembers = [
         imgUrl: "rajiv-mishra.png",
         designation: 'Director',
         experience: "26 Years of Experience"
-        
+
     },
     {
         id: 2,
@@ -255,7 +255,7 @@ const professors = [
         designation: 'Assistant Director',
         passion: 'Sahara Hospitality Limited',
         experience: "22 Years of Experience"
-        
+
     },
     // {
     //     id: 2,
@@ -460,7 +460,7 @@ const Mentors = [
         designation: 'Jr Sous-chef',
         passion: 'Cold appetizer',
         experience: "26 Years of Experience"
-        
+
     },
     {
         id: 2,
@@ -507,7 +507,7 @@ const Mentors = [
         passion: 'Patisserie',
         experience: "11 Years of Experience"
     }
-    
+
 ];
 
 function renderMentors() {
@@ -557,13 +557,13 @@ function togglePopContent(event) {
 }
 
 function getModalObject(obj, types) {
-   
+
     if (!obj || !obj.description || obj.description.trim().length === 0) {
         console.warn('No content available for this modal');
         return;
     }
 
-    
+
     if (types === 'advisory') {
         $('#modalImage').attr('src', `./img/advisory/${obj.imgUrl}`);
     } else if (types === 'faculty') {
@@ -576,23 +576,23 @@ function getModalObject(obj, types) {
         $('#modalImage').attr('src', `./img/mentor/${obj.imgUrl}`);
     }
 
-   
+
     $('#modalName').text(obj.name);
 
-    
+
     //  document.getElementById('modalName').innerHTML = `<b>${obj.name}</b>`;
 
     // Log the object for debugging
     // console.clear();
     // console.log('Modal Object:', obj);
 
-   
+
     $('#modalParagraph').html(`
         <div class="pop-modal-content-box">${obj.description}</div>
         <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
     `);
 
-   
+
     $('#myModal').modal('show');
 
     document.getElementById('modalName').innerHTML = `<b>${person.name}</b>`;
@@ -651,8 +651,93 @@ mobile();
 programmes();
 
 
-
-
 function gotoPage(url) {
     window.location.href = url;
+}
+
+function saveBrochure() {
+    let name, email, mobile;
+
+    // Name validation (non-empty)
+    if ($("#uname").val().trim() === "") {
+        alert("Please Enter Your Name");
+        $("#uname").focus();
+        return false;
+    } else {
+        name = $("#uname").val().trim();
+    }
+
+    // Email validation (must match a valid email format)
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if ($("#uemail").val().trim() === "") {
+        alert("Please Enter Your Email");
+        $("#uemail").focus();
+        return false;
+    } else if (!emailRegex.test($("#uemail").val().trim())) {
+        alert("Please Enter a Valid Email Address");
+        $("#uemail").focus();
+        return false;
+    } else {
+        email = $("#uemail").val().trim();
+    }
+
+    // Mobile validation (only digits, 10-15 characters)
+    let mobileRegex = /^[0-9]{10,12}$/;
+    if ($("#umobile").val().trim() === "") {
+        alert("Please Enter Your Mobile");
+        $("#umobile").focus();
+        return false;
+    } else if (!mobileRegex.test($("#umobile").val().trim())) {
+        alert("Please Enter a Valid Mobile Number");
+        $("#umobile").focus();
+        return false;
+    } else {
+        mobile = $("#umobile").val().trim();
+    }
+
+    $.ajax({
+        url: 'https://spak-it.com/api/brochure',
+        method: 'POST',
+        contentType: "application/json; charset=utf-8",
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+        data: {
+            "type": "CREATE",
+            "Name": name,
+            "Email": email,
+            "Mobile": mobile,
+            "CountrtName": "*****",
+            "ProgrammeName": "*****",
+        },
+        success: function (data, textStatus, jqXHR) {
+            if (textStatus === 'success') {
+                console.log('Success');
+                $('.thankyou').removeClass('hide');
+                $("#uname").val('');
+                $("#uemail").val('');
+                $("#umobile").val('');
+                $("#uquery").val('');
+                $('.thankyou').removeClass('hide');
+
+                setTimeout(function () {
+                    $('#saveBtn').text('Submit');
+                    $('#saveBtn').removeAttr('disabled', 'disabled');
+                }, 2000);
+
+                // **Trigger the PDF download**
+                setTimeout(function () {
+                    let link = document.createElement('a');
+                    link.href = '../img/astar-brochure.pdf'; // Adjust the path if needed
+                    link.download = 'astar-brochure.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }, 1000); // Delay for a smooth user experience
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
 }
