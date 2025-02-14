@@ -2614,4 +2614,17 @@ p {
 
 [data-bs-target="#imageModal"] {
   cursor: pointer;
+}
+
+.affiliations {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.affiliations img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=app.css.map */
