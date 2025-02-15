@@ -655,6 +655,9 @@ function gotoPage(url) {
     window.location.href = url;
 }
 
+
+
+// api for brochure
 function saveBrochure() {
     let name, email, mobile;
 
@@ -723,15 +726,15 @@ function saveBrochure() {
                     $('#saveBtn').removeAttr('disabled', 'disabled');
                 }, 2000);
 
-                // **Trigger the PDF download**
+                
                 setTimeout(function () {
                     let link = document.createElement('a');
-                    link.href = '../img/astar-brochure.pdf'; // Adjust the path if needed
+                    link.href = '../img/astar-brochure.pdf'; 
                     link.download = 'astar-brochure.pdf';
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
-                }, 1000); // Delay for a smooth user experience
+                }, 1000); 
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
