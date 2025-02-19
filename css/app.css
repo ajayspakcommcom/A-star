@@ -2651,4 +2651,9 @@ p {
 .affiliation-logos img {
   height: 40px;
   width: auto;
+}
+
+.mumbai-campus span {
+  display: flex;
+  justify-content: start;
 }/*# sourceMappingURL=app.css.map */
