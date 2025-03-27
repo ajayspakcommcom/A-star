@@ -729,8 +729,8 @@ function saveBrochure() {
                 
                 setTimeout(function () {
                     let link = document.createElement('a');
-                    link.href = '../img/astar-brochure.pdf'; 
-                    link.download = 'astar-brochure.pdf';
+                    link.href = '../img/A-Star-Brochure.pdf'; 
+                    link.download = 'A-Star-Brochure.pdf';
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
