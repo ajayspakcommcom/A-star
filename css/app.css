@@ -2656,4 +2656,13 @@ p {
 .mumbai-campus span {
   display: flex;
   justify-content: start;
+}
+
+@media (max-width: 768px) {
+  .city-guilds {
+    display: none !important;
+  }
+  td {
+    font-size: 12px !important;
+  }
 }/*# sourceMappingURL=app.css.map */
