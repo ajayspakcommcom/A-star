@@ -108,4 +108,10 @@ body{
 }
 
 
+.navbar-nav.ms-auto {
+  background: white !important;
+}
 
+.navbar-nav.me-auto {
+  background: white !important;
+}
