@@ -2671,7 +2671,9 @@ p {
 }
 .admission-form-section .form-card .form-heading {
   font-size: 1.75rem;
-  font-weight: 700;
+  background: #4a4949;
+  padding: 20px;
+  color: white;
 }
 .admission-form-section .form-card .form-subheading {
   font-size: 1rem;

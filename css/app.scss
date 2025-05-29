@@ -3255,7 +3255,9 @@ p {
 
         .form-heading {
             font-size: 1.75rem;
-            font-weight: 700;
+            background: #4a4949;
+            padding: 20px;
+            color: white;
         }
 
         .form-subheading {
@@ -3274,7 +3276,7 @@ p {
             &:hover {
                 background-color: transparent;
                 border: 1px solid #ca933b;
-                color: #ca933b; 
+                color: #ca933b;
             }
         }
     }
