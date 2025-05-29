@@ -3247,3 +3247,35 @@ p {
         font-size: 12px !important;
     }
 }
+
+.admission-form-section {
+
+    .form-card {
+        background-color: #ffffff;
+
+        .form-heading {
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+
+        .form-subheading {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        label {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: #ca933b;
+            border: none;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #ca933b;
+                color: #ca933b; 
+            }
+        }
+    }
+}

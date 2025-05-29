@@ -2665,4 +2665,27 @@ p {
   td {
     font-size: 12px !important;
   }
+}
+.admission-form-section .form-card {
+  background-color: #ffffff;
+}
+.admission-form-section .form-card .form-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.admission-form-section .form-card .form-subheading {
+  font-size: 1rem;
+  color: #555;
+}
+.admission-form-section .form-card label {
+  font-weight: 500;
+}
+.admission-form-section .form-card .btn-primary {
+  background-color: #ca933b;
+  border: none;
+}
+.admission-form-section .form-card .btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid #ca933b;
+  color: #ca933b;
 }/*# sourceMappingURL=app.css.map */
