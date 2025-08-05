@@ -143,49 +143,6 @@ const facultyMembers = [
         experience: "23 Years of Experience"
     },
     {
-        id: 3,
-        name: "Mr. Blesson Jacob",
-        description: `<p>
-            Blesson is an Assistant Lecturer specializing in Bakery and Patisserie, with extensive experience in
-            hospitality and a B.Sc. in Hotel and Hospitality Administration from IHM-Bhopal (2003-2006). He has
-            worked internationally, including roles with Royal Caribbean Cruise Lines and in Doha, Qatar. He has
-            been Chef De Partie at Mumbai Airport Lounge Services, overseeing the setup of the first Pastry Kitchen.
-            With almost 14 years in the industry, blesson has shifted focus to mentoring and training future hospitality
-            professionals.</p>`,
-        imgUrl: "blesson.png",
-        designation: 'Assistant Professor',
-        experience: "18 Years of Experience"
-    },
-    {
-        id: 4,
-        name: "Ms. Apurva C A Kulshrestha",
-        description: `<p>
-            After graduating from CAI College, she refined her culinary skills at Fairmont Hotels in Jaipur, specializing in high-end culinary arts. Transitioning into academia at IHM College, Hyderabad, she spent nearly 8 years teaching Indian, Continental cuisines, and bakery to aspiring chefs.
-        </p>
-        <p>
-        Throughout her career, she had the honor of serving distinguished dignitaries as head chef, including the Prime Minister, Defence Ministry, and Home Minister. Her commitment to delivering exceptional culinary experiences underscored her passion for shaping the future of culinary professionals.
-        </p>
-        `,
-        imgUrl: "apurva.png",
-        designation: 'Assistant Professor',
-        experience: "8 Years of Experience"
-    },
-    {
-        id: 5,
-        name: "Ms. Merle Almeida",
-        description: `<p>With over 19 years in the hospitality industry, including a decade in management, she is a dedicated
-                        Assistant Professor of Rooms Division Management passionate about delivering exceptional guest
-                        experiences. Currently pursuing a Ph.D. in Hotel Management, she holds an MBA in HR, a Master&#39;s in
-                        Tourism Management, a B.Sc. in Hospitality Studies and Catering Services, and a Professional Diploma
-                        in Hotel Management and Catering Technology.</p>
-                        <p>She has extensive experience conducting professional training at institutes in Mumbai, Lonavala-
-                        Khandala, and Pune, and as an outsourced trainer for properties such as The Fern, Fariyas Resort, VITS
-                        Hotels, Ginger Hotel, Specialty Restaurants Pvt. Ltd. and Concept Hospitality Pvt. Ltd.</p> `,
-        imgUrl: "merle.png",
-        designation: 'Assistant Professor',
-        experience: "21 Years of Experience"
-    },
-    {
         id: 6,
         name: "Ms. Srusti Singh",
         description: ``,
@@ -193,21 +150,7 @@ const facultyMembers = [
         designation: 'Teaching Assistant',
         experience: "3 Years of Experience"
     },
-    {
-        id: 7,
-        name: "Ms. Diana Dsouza",
-        description: `<p>With over 15 years of professional experience in education, hospitality, and finance, and a strong
-                       international background, she leverages this unique blend to support students in achieving their
-                       educational goals. She brings a wealth of expertise in education counselling, enrolment, and international
-                       student guidance, dedicating eight years to counselling students for opportunities in the US and Europe,
-                       ensuring they find the best-fit institutions for their academic aspirations.</p>
-                       <p>Her prior experience in international finance and hospitality provides a unique perspective, fostering
-                       informed decisions. She is committed to using her diverse skill set to facilitate informed educational
-                       decisions and support students in achieving their academic and career goals globally.</p>`,
-        imgUrl: "diana.png",
-        designation: 'Manager - Counsellor &amp; Enrolments',
-        experience: "15 Years of Experience"
-    }
+
 ];
 
 function renderFacultyMembers() {
@@ -385,15 +328,6 @@ const professorsChef = [
         designation: 'Chef De Cuisine (Head Chef - Mabruk)',
         passion: 'Lebansese Cuisine',
         experience: "33 Years of Experience"
-    },
-    {
-        id: 5,
-        name: "Vikas Rane",
-        description: "",
-        imgUrl: "vikas-rane(2).jpg",
-        designation: 'Chef De Partie',
-        passion: 'Oriental Cuisine',
-        experience: "18 Years of Experience"
     },
     {
         id: 6,

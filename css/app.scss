@@ -1542,6 +1542,7 @@ footer {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 
     li {
@@ -1654,7 +1655,7 @@ footer {
     li {
         &:first-child {
             width: 100%;
-            flex: 0 1 calc(100%);
+            // flex: 0 1 calc(100%);
             display: flex;
             justify-content: center;
 

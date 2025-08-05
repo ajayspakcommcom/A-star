@@ -1285,6 +1285,7 @@ footer .footer-social-link > li > a > img {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .advisory-wrapper li,
 .management-team-ul li {
@@ -1374,7 +1375,6 @@ footer .footer-social-link > li > a > img {
 
 .management-team-ul li:first-child {
   width: 100%;
-  flex: 0 1 100%;
   display: flex;
   justify-content: center;
 }
