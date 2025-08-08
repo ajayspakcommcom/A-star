@@ -142,14 +142,14 @@ const facultyMembers = [
         designation: 'Dean (F&amp;B Service)',
         experience: "23 Years of Experience"
     },
-    {
-        id: 6,
-        name: "Ms. Srusti Singh",
-        description: ``,
-        imgUrl: "Shruti-Singh.jpg",
-        designation: 'Teaching Assistant',
-        experience: "3 Years of Experience"
-    },
+    // {
+    //     id: 6,
+    //     name: "Ms. Srusti Singh",
+    //     description: ``,
+    //     imgUrl: "Shruti-Singh.jpg",
+    //     designation: 'Teaching Assistant',
+    //     experience: "3 Years of Experience"
+    // },
 
 ];
 
