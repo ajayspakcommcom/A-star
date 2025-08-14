@@ -73,6 +73,10 @@ nav.navbar .mx-auto img {
   width: 250px;
   height: auto;
 }
+nav.navbar .pune-ui img {
+  width: 175px !important;
+  height: auto;
+}
 nav.navbar #navbarNav {
   display: flex;
   justify-content: center;
