@@ -2706,4 +2706,24 @@ p {
 
 .button-2 {
   margin-right: -4rem;
+}
+
+#course,
+#course option,
+#course optgroup {
+  font-style: normal !important;
+}
+
+/* Bold for group headings, normal for items */
+#course optgroup {
+  font-weight: 700;
+}
+
+#course option {
+  font-weight: 400;
+}
+
+/* (Optional) dim the placeholder */
+#course option[disabled] {
+  opacity: 0.7;
 }/*# sourceMappingURL=app.css.map */
