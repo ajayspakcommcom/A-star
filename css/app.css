@@ -318,7 +318,7 @@ nav .dropdown-submenu a::after {
 }
 
 #demo .carousel-inner .carousel-item {
-  height: calc(100vh - 135px);
+  height: calc(100vh - 125px);
 }
 #demo .carousel-inner .carousel-item img {
   min-height: inherit;
@@ -926,7 +926,7 @@ footer {
   background-color: #1f1d1d;
   color: #fff;
 }
-footer [src="./img/footer-logo.jpg"] {
+footer [src="./img/footer-logo.png"] {
   margin-bottom: 20px;
   width: 50%;
 }
