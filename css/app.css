@@ -74,7 +74,7 @@ nav.navbar .mx-auto img {
   height: auto;
 }
 nav.navbar .pune-ui img {
-  width: 175px !important;
+  width: 145px !important;
   height: auto;
 }
 nav.navbar #navbarNav {
@@ -1912,7 +1912,7 @@ select:first-of-type {
     color: #000;
   }
   .mx-auto img {
-    width: 110px !important;
+    width: 100px !important;
     height: auto;
   }
   .mx-auto > .logo-as {
