@@ -414,33 +414,33 @@ const Mentors = [
         passion: 'Kebabs',
         experience: "12 Years of Experience"
     },
-    {
-        id: 4,
-        name: "Bimal Gurung",
-        description: ``,
-        imgUrl: "bimal-gurung(2).jpg",
-        designation: 'Chef de Parti',
-        passion: 'Dim Sum',
-        experience: "13 Years of Experience"
-    },
-    {
-        id: 5,
-        name: "Lohare Singh",
-        description: ``,
-        imgUrl: "lohare-singh(2).jpg",
-        designation: 'Demi Chef de Partie',
-        passion: 'Halwai',
-        experience: "16 Years of Experience"
-    },
-    {
-        id: 6,
-        name: "Mohammad Aasif",
-        description: ``,
-        imgUrl: "Mohammad-Aasif(2).jpg",
-        designation: 'Demi Chef de Partie',
-        passion: 'Patisserie',
-        experience: "11 Years of Experience"
-    }
+    // {
+    //     id: 4,
+    //     name: "Bimal Gurung",
+    //     description: ``,
+    //     imgUrl: "bimal-gurung(2).jpg",
+    //     designation: 'Chef de Parti',
+    //     passion: 'Dim Sum',
+    //     experience: "13 Years of Experience"
+    // },
+    // {
+    //     id: 5,
+    //     name: "Lohare Singh",
+    //     description: ``,
+    //     imgUrl: "lohare-singh(2).jpg",
+    //     designation: 'Demi Chef de Partie',
+    //     passion: 'Halwai',
+    //     experience: "16 Years of Experience"
+    // },
+    // {
+    //     id: 6,
+    //     name: "Mohammad Aasif",
+    //     description: ``,
+    //     imgUrl: "Mohammad-Aasif(2).jpg",
+    //     designation: 'Demi Chef de Partie',
+    //     passion: 'Patisserie',
+    //     experience: "11 Years of Experience"
+    // }
 
 ];
 
