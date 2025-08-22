@@ -139,7 +139,7 @@ const facultyMembers = [
                         acumen to nurture future leaders in the hospitality sector. His passion for education and wealth of
                         experience makes him a valuable asset in shaping the next generation of hospitality professionals.</p>`,
         imgUrl: "vishvanath.png",
-        designation: 'Dean (F&amp;B Service)',
+        designation: 'Dean',
         experience: "23 Years of Experience"
     },
     // {
@@ -211,10 +211,10 @@ const professors = [
     // },
     {
         id: 3,
-        name: "Ranjan Ranjani",
+        name: "Ranjan Rajani",
         description: ``,
         imgUrl: "Ranjan Ranjani.jpg",
-        designation: 'Director Food & Beverage',
+        designation: 'Coporate Chef - Aamby Valley City & Sahara Star',
         passion: 'Sahara Star',
         experience: "24 Years of Experience"
     },
@@ -238,7 +238,7 @@ const professors = [
     },
     {
         id: 6,
-        name: "Deepali Rambade",
+        name: "Deepali Pinheiro",
         description: ``,
         imgUrl: "deepali.jpg",
         designation: 'Front Office Manager',
