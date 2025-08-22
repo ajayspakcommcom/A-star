@@ -38,13 +38,17 @@ nav {
         background: white !important;
         text-transform: uppercase;
 
-        .navbar-brand img {
-            width: 120px;
-            height: auto;
+        .navbar-brand {
+            padding: 0;
+
+            img {
+                width: 110px;
+                height: auto;
+            }
         }
 
         .mx-auto img {
-            width: 250px;
+            width: 200px;
             height: auto;
         }
 
@@ -71,7 +75,8 @@ nav {
             width: 100%;
             z-index: 2;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
-            height: 125px;
+            height: 110px;
+            padding: 0;
         }
 
         &.normal-nav {
@@ -231,14 +236,14 @@ nav {
 .home-bg,
 .home-bg-option {
     width: 100%;
-    min-height: calc(100vh);
+    // min-height: calc(100vh);
     z-index: 1;
     position: relative;
     // top: -126px;
-    background-image: url("../img/home-bg.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    // background-image: url("../img/home-bg.png");
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
 
     .home-banner-bottom-wrapper {
         position: absolute;
@@ -351,7 +356,7 @@ nav {
 
         .carousel-item {
             // min-height: inherit;
-            height: calc(100vh - 125px);
+            height: calc(100vh - 110px);
 
             img {
                 min-height: inherit;
@@ -3141,7 +3146,7 @@ p {
 }
 
 .carousel-indicators {
-    margin-bottom: 0rem !important;
+    margin-bottom: 0% !important;
 }
 
 
@@ -3323,4 +3328,45 @@ p {
 /* (Optional) dim the placeholder */
 #course option[disabled] {
     opacity: .7;
+}
+
+
+
+
+
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: calc(env(safe-area-inset-bottom) + 20px);
+    right: calc((100vw - min(100vw, 1440px)) / 2 + 20px);
+    z-index: 999;
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+.whatsapp-fixed li {
+    list-style: none;
+}
+
+.whatsapp-fixed a {
+    color: #99a1a9;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+
+.whatsapp>.fa {
+    font-size: 35px;
+}
+
+.whatsapp-fixed i {
+    color: white;
+    font-size: 30px;
 }
