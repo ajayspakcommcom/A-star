@@ -37,6 +37,12 @@ const advisoryMembers = [
         imgUrl: "Manjit-Singh-Gill.jpg"
     },
     {
+        id: 12,
+        name: "Mr. Ajay Grover",
+        description: "<p>Ajay Grover, an esteemed alumnus of IHM Pusa (1978) and Best All-Round Student, boasts over 45 years of extensive experience across multiple industries. Throughout his illustrious career, he has held senior positions, including General Manager at Taj Hotels, GM of the Flight Catering Unit at Taj, Area Sales Manager at Jet Airways, GM Sales at Air Sahara, and VP Sales & Marketing at Paramount Airways. Additionally, he has served as COO for a developer company specializing in hotels, malls, multiplexes, and casinos and as Head of Catering for the Commonwealth Games Delhi. Currently, Ajay is a co-owner of a management consulting company, leveraging his expertise in M&A, introducing international luxury and F&B brands to India, and auditing hotels and airlines.</p>",
+        imgUrl: "Mr. Ajay Grover.jpeg"
+    },
+    {
         id: 3,
         name: " Chef Sabyasachi Gorai",
         description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge, Chef Saby's passion for food and cooking shines through. Armed with specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’  by the President of India.</p>",
@@ -142,14 +148,15 @@ const facultyMembers = [
         designation: 'Dean',
         experience: "23 Years of Experience"
     },
-    // {
-    //     id: 6,
-    //     name: "Ms. Srusti Singh",
-    //     description: ``,
-    //     imgUrl: "Shruti-Singh.jpg",
-    //     designation: 'Teaching Assistant',
-    //     experience: "3 Years of Experience"
-    // },
+
+    {
+        id: 3,
+        name: "Mr. Prashant Kumar",
+        description: `<p>An IHM PUSA alumnus with 33+ years in hospitality, from ITC’s Hotels to The Bristol, India Habitat Centre , IL&FS. Now General Manager at Aamby Valley City, he inspires future hoteliers with a passion for excellence, service, and world-class guest experiences.</p>`,
+        imgUrl: "Mr-Prashant.jpg",
+        designation: 'Head of Strategic Alliances & PR',
+        experience: "33+ Years of Experience"
+    },
 
 ];
 
@@ -660,15 +667,15 @@ function saveBrochure() {
                     $('#saveBtn').removeAttr('disabled', 'disabled');
                 }, 2000);
 
-                
+
                 setTimeout(function () {
                     let link = document.createElement('a');
-                    link.href = '../img/A-Star-Brochure.pdf'; 
+                    link.href = '../img/A-Star-Brochure.pdf';
                     link.download = 'A-Star-Brochure.pdf';
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
-                }, 1000); 
+                }, 1000);
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
