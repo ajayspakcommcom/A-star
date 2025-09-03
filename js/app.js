@@ -179,7 +179,7 @@ function renderFacultyMembers() {
                         <div class="designation-name">
                             <div><span><b>${member.name}</b></span></div>
                             <div><span>${member.designation}</span></div>
-                            <div><span>${member.experience}</span></div>
+                            <div><span class="text-muted">${member.experience}</span></div>
                             <p>${renderFirst100Characters(member.description)}</p>
                         </div>
                     </div>                
@@ -221,8 +221,8 @@ const professors = [
         name: "Ranjan Rajani",
         description: ``,
         imgUrl: "Ranjan Ranjani.jpg",
-        designation: 'Coporate Chef - Aamby Valley City & Sahara Star',
-        passion: 'Sahara Star',
+        designation: 'Corporate Chef',
+        passion: 'Aamby Valley City & Sahara Star',
         experience: "24 Years of Experience"
     },
     {
@@ -239,7 +239,7 @@ const professors = [
         name: "Karishma Raghuvanshi",
         description: ` `,
         imgUrl: "karishma.jpg",
-        designation: 'Consultant-HR Training & Recruitment',
+        designation: 'Business Development Head',
         passion: 'Sahara Star',
         experience: "17 Years of Experience"
     },
@@ -248,7 +248,7 @@ const professors = [
         name: "Deepali Pinheiro",
         description: ``,
         imgUrl: "deepali.jpg",
-        designation: 'Front Office Manager',
+        designation: 'Room Division Manager',
         passion: 'Sahara Star',
         experience: "21 Years of Experience"
     },
@@ -283,7 +283,7 @@ function renderProfessors() {
                     <div><span><b>${professor.name}</b></span></div>
                     <div><span>${professor.designation}</span></div>
                     <div><span>${professor.passion}</span></div>
-                    <div><span>${professor.experience}</span></div>
+                    <div><span class="text-muted">${professor.experience}</span></div>
                     <p>${renderFirst100Characters(professor.description)}</p>                    
                 </div>
             </div>                
@@ -376,7 +376,7 @@ function renderProfessorsChef() {
                     <div><span><b>${professor.name}</b></span></div>
                     <div><span>${professor.designation}</span></div>
                     <div><span>${professor.passion}</span></div>
-                    <div><span>${professor.experience}</span></div>
+                    <div><span class="text-muted">${professor.experience}</span></div>
                     <p>${renderFirst100Characters(professor.description)}</p>
                 </div>
             </div>                
@@ -472,7 +472,7 @@ function renderMentors() {
                     <div><span><b>${mentor.name}</b></span></div>
                     <div><span>${mentor.designation}</span></div>
                     <div><span>${mentor.passion}</span></div>
-                    <div><span>${mentor.experience}</span></div>
+                    <div><span class="text-muted">${mentor.experience}</span></div>
                     <p>${renderFirst100Characters(mentor.description)}</p>                    
                 </div>
             </div>                
