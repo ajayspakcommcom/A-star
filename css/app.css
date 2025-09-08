@@ -2773,4 +2773,30 @@ p {
 .whatsapp-fixed i {
   color: white;
   font-size: 30px;
+}
+
+.home-page-btn {
+  width: 5% !important;
+}
+
+.contact-us-btn {
+  position: fixed;
+  bottom: calc(env(safe-area-inset-bottom) + 20px);
+  left: calc((100vw - min(100vw, 1440px)) / 2 + 20px);
+  z-index: 999;
+}
+.contact-us-btn a {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.5s ease-in-out;
+}
+.contact-us-btn a:hover {
+  background-color: #ca933b;
+  color: #fff;
 }/*# sourceMappingURL=app.css.map */
