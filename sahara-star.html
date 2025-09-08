@@ -389,9 +389,39 @@
 
         </nav>
 
-        <div class="course-banner">
-            <img src="./img/banner/banner-sahara.jpg" class="img-fluid" alt="logo" />
+        <div id="courseCarousel" class="carousel slide course-banner" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#courseCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner/banner-sahara.jpg" class="d-block w-100" alt="banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner/banner-sahara.jpg" class="d-block w-100" alt="banner2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner/banner-sahara.jpg" class="d-block w-100" alt="banner3">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
 
         <div class="course-heading-wrapper sahara-wrapper">
             <div class="container">
@@ -400,7 +430,8 @@
                 <div class="row mumbai-campus">
                     <div class="row align-items-center">
                         <div class="col-md-4 image-container">
-                            <img src="./img/sahara-img/astar-sahara.jpg" alt="A- Star Academy" style="width: 100%;">
+                            <img src="./img/sahara-img/astar-sahara.jpg" alt="A- Star Academy"
+                                style="width: 100%; cursor: pointer;">
                         </div>
                         <div class="col-md-8 text-container">
                             <span><strong>Welcome to A- Star Academy at Hotel Sahara Star, Mumbai</strong></span>
@@ -486,7 +517,8 @@
                             </p>
                         </div>
                         <div class="col-md-5 image-container">
-                            <img src="./img/sahara-img/sahara.jpg" alt="A- Star Academy" class="img-fluid rounded">
+                            <img src="./img/sahara-img/sahara.jpg" alt="A- Star Academy" class="img-fluid rounded"
+                                style="cursor: pointer;">
                         </div>
                     </div>
                 </div>
@@ -692,6 +724,59 @@
             });
         });
     </script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Select all images inside .image-container
+            const images = document.querySelectorAll(".image-container img");
+
+            images.forEach(img => {
+                img.addEventListener("click", () => {
+                    // Create overlay
+                    const overlay = document.createElement("div");
+                    overlay.style.position = "fixed";
+                    overlay.style.top = "0";
+                    overlay.style.left = "0";
+                    overlay.style.width = "100%";
+                    overlay.style.height = "100%";
+                    overlay.style.background = "rgba(0,0,0,0.8)";
+                    overlay.style.display = "flex";
+                    overlay.style.alignItems = "center";
+                    overlay.style.justifyContent = "center";
+                    overlay.style.zIndex = "1000";
+
+                    // Create full image
+                    const fullImg = document.createElement("img");
+                    fullImg.src = img.src;
+                    fullImg.style.maxWidth = "90%";
+                    fullImg.style.maxHeight = "80%";
+                    fullImg.style.borderRadius = "8px";
+                    fullImg.style.boxShadow = "0 0 20px rgba(255,255,255,0.3)";
+
+                    // Create close button
+                    const closeBtn = document.createElement("span");
+                    closeBtn.innerHTML = "&times;";
+                    closeBtn.style.position = "absolute";
+                    closeBtn.style.top = "20px";
+                    closeBtn.style.right = "30px";
+                    closeBtn.style.fontSize = "30px";
+                    closeBtn.style.color = "#fff";
+                    closeBtn.style.cursor = "pointer";
+
+                    // Append
+                    overlay.appendChild(fullImg);
+                    overlay.appendChild(closeBtn);
+                    document.body.appendChild(overlay);
+
+                    // Close on X or outside click
+                    closeBtn.addEventListener("click", () => overlay.remove());
+                    overlay.addEventListener("click", (e) => {
+                        if (e.target === overlay) overlay.remove();
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 
