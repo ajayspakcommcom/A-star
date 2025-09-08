@@ -1296,7 +1296,7 @@ footer {
 .course-heading-wrapper,
 .about-us-wrapper {
 
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     text-align: center;
 
 
@@ -3120,11 +3120,20 @@ p {
 }
 
 .course-content {
-    text-align: center;
-    /* Center-align all content */
-    margin: 1rem 0;
-    /* Add spacing between sections */
-    padding: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+    box-shadow: 1px 2px 5px 3px rgba(128, 128, 128, 0.2);
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    text-align: left;
+    margin: 0 0;
+    padding: 15px 15px;
+    min-height: 250px;
 
     img {
         max-width: 100%;

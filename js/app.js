@@ -45,7 +45,7 @@ const advisoryMembers = [
     {
         id: 3,
         name: " Chef Sabyasachi Gorai",
-        description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge, Chef Saby's passion for food and cooking shines through. Armed with specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’  by the President of India.</p>",
+        description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity Chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge, Chef Saby's passion for food and cooking shines through. Armed with specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’  by the President of India.</p>",
         imgUrl: "Sabyasachi-Gorai.jpg"
     },
     {
@@ -314,7 +314,7 @@ const professorsChef = [
         name: "Vinod Rana",
         description: "",
         imgUrl: "vinod-rana(2).jpg",
-        designation: 'Executive Sous chef',
+        designation: 'Executive Sous Chef',
         passion: 'Indian Breads',
         experience: "35 Years of Experience"
     },
@@ -323,7 +323,7 @@ const professorsChef = [
         name: "Rupesh Khandekar",
         description: "",
         imgUrl: "rupesh-khandekar(2).jpg",
-        designation: 'Executive Sous chef',
+        designation: 'Executive Sous Chef',
         passion: 'Continental Cuisine',
         experience: "24 Years of Experience"
     },
@@ -341,7 +341,7 @@ const professorsChef = [
         name: "Prashant Lad",
         description: "",
         imgUrl: "prashant-lad(2).jpg",
-        designation: 'Jr. Sous chef',
+        designation: 'Jr. Sous Chef',
         passion: 'Italian Cuisine',
         experience: "15 Years of Experience"
     },
@@ -357,20 +357,20 @@ const professorsChef = [
 ];
 
 function renderProfessorsChef() {
-    const professorsChefList = document.getElementById('professors-chef');
+    const professorsChefList = document.getElementById('professors-Chef');
 
     professorsChef.forEach(professor => {
         const listItem = document.createElement('li');
         listItem.classList.add('faculty-item');
 
         listItem.onclick = function () {
-            getModalObject(professor, 'professos-chef');
+            getModalObject(professor, 'professos-Chef');
         };
 
         const professorContent = `
             <div>
                 <span class='img-wrapper'>
-                    <img src="./img/professos-chef/${professor.imgUrl}" class="img-fluid" alt="" />
+                    <img src="./img/professos-Chef/${professor.imgUrl}" class="img-fluid" alt="" />
                 </span>
                 <div class="designation-name">
                     <div><span><b>${professor.name}</b></span></div>
@@ -398,7 +398,7 @@ const Mentors = [
         name: "Bharat Singh Rawat",
         description: ``,
         imgUrl: "bharat-singh.jpg",
-        designation: 'Jr Sous chef',
+        designation: 'Jr Sous Chef',
         passion: 'Cold appetizer',
         experience: "26 Years of Experience"
 
@@ -408,7 +408,7 @@ const Mentors = [
         name: "Savar Singh",
         description: ``,
         imgUrl: "savar-singh(2).jpg",
-        designation: 'Chef de partie',
+        designation: 'Chef de Partie',
         passion: 'Indian Breads',
         experience: "13 Years of Experience"
     },
@@ -511,8 +511,8 @@ function getModalObject(obj, types) {
         $('#modalImage').attr('src', `./img/faculty/${obj.imgUrl}`);
     } else if (types === 'new-image') {
         $('#modalImage').attr('src', `./img/new-image/${obj.imgUrl}`);
-    } else if (types === 'professos-chef') {
-        $('#modalImage').attr('src', `./img/professos-chef/${obj.imgUrl}`);
+    } else if (types === 'professos-Chef') {
+        $('#modalImage').attr('src', `./img/professos-Chef/${obj.imgUrl}`);
     } else if (types === 'mentor') {
         $('#modalImage').attr('src', `./img/mentor/${obj.imgUrl}`);
     }
