@@ -39,7 +39,7 @@ nav {
         text-transform: uppercase;
 
         .navbar-brand {
-            padding: 0;
+            padding-top: 14px;
 
             img {
                 width: 110px;
@@ -3417,4 +3417,9 @@ body.modal-open{
 
 .home-carsoul-btn{
     width: 5% !important;
+}
+
+.SPPU-image{
+    height: auto;
+    width: 420px;
 }
