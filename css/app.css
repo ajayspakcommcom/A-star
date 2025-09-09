@@ -2800,4 +2800,12 @@ p {
 .contact-us-btn a:hover {
   background-color: #ca933b;
   color: #fff;
+}
+
+body.modal-open {
+  padding-right: 0 !important;
+}
+
+.home-carsoul-btn {
+  width: 5% !important;
 }/*# sourceMappingURL=app.css.map */
