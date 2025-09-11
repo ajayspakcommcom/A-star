@@ -240,7 +240,7 @@ const professors = [
         description: ` `,
         imgUrl: "karishma.jpg",
         designation: 'Business Development Head',
-        passion: 'Sahara Star',
+        passion: 'A-Star Academy',
         experience: "17 Years of Experience"
     },
     {
