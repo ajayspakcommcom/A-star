@@ -357,7 +357,7 @@ const professorsChef = [
 ];
 
 function renderProfessorsChef() {
-    const professorsChefList = document.getElementById('professors-Chef');
+    const professorsChefList = document.getElementById('professors-chef');
 
     professorsChef.forEach(professor => {
         const listItem = document.createElement('li');
