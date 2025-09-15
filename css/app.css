@@ -85,6 +85,7 @@ nav.navbar #navbarNav {
   justify-content: center;
   font-size: 15px;
   cursor: pointer;
+  padding-top: 18px;
 }
 nav.navbar .navbar-nav {
   gap: 10px;
