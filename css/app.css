@@ -45,7 +45,6 @@ body {
   min-height: 100vh;
   height: 100vh;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 .main-layout-wrapper {
@@ -65,11 +64,8 @@ nav.navbar {
   background: white !important;
   text-transform: uppercase;
 }
-nav.navbar .navbar-brand {
-  padding-top: 14px;
-}
 nav.navbar .navbar-brand img {
-  width: 110px;
+  width: 90px;
   height: auto;
 }
 nav.navbar .mx-auto img {
@@ -85,7 +81,6 @@ nav.navbar #navbarNav {
   justify-content: center;
   font-size: 15px;
   cursor: pointer;
-  padding-top: 18px;
 }
 nav.navbar .navbar-nav {
   gap: 10px;
@@ -97,7 +92,7 @@ nav.navbar.fixed-top {
   width: 100%;
   z-index: 2;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
-  height: 110px;
+  height: 90px;
   padding: 0;
 }
 nav.navbar.normal-nav {
@@ -197,6 +192,20 @@ nav .dropdown-submenu a::after {
   transform: rotate(-90deg);
   right: 100% !important;
   top: 5px;
+}
+
+#demo .carousel-inner {
+  position: relative;
+}
+#demo .carousel-inner .carousel-item {
+  position: relative;
+}
+#demo .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 
 @media (max-width: 992px) {
@@ -318,7 +327,7 @@ nav .dropdown-submenu a::after {
 }
 
 #demo .carousel-inner .carousel-item {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 90px);
 }
 #demo .carousel-inner .carousel-item img {
   min-height: inherit;
@@ -1908,6 +1917,9 @@ select:first-of-type {
 }
 
 @media (max-width: 767px) {
+  nav .dropdown:focus > .dropdown-menu {
+    display: block !important;
+  }
   nav .dropdown .dropdown-menu a:hover {
     background-color: transparent;
     opacity: 0.9;
@@ -2353,6 +2365,10 @@ select:first-of-type {
     width: 100% !important;
     margin-bottom: 15px;
   }
+  .our-padeogy-p .second-para {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 }
 p {
   font-family: "Poppins-Regular";
@@ -2532,6 +2548,10 @@ p {
 
 .our-padeogy-p p {
   margin-bottom: 15px;
+  font-size: 14px;
+}
+.our-padeogy-p ul li {
+  font-size: 13px;
 }
 
 .header-row {
@@ -2621,6 +2641,7 @@ p {
      object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img:hover {
@@ -2746,7 +2767,7 @@ p {
 .whatsapp-fixed {
   position: fixed;
   bottom: calc(env(safe-area-inset-bottom) + 20px);
-  right: calc((100vw - min(100vw, 1440px)) / 2 + 20px);
+  right: 50px;
   z-index: 999;
   background-color: #25d366;
   width: 60px;
@@ -2785,7 +2806,7 @@ p {
 .contact-us-btn {
   position: fixed;
   bottom: calc(env(safe-area-inset-bottom) + 20px);
-  left: calc((100vw - min(100vw, 1440px)) / 2 + 20px);
+  left: 50px;
   z-index: 999;
 }
 .contact-us-btn a {

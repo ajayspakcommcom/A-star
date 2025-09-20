@@ -670,8 +670,8 @@ function saveBrochure() {
 
                 setTimeout(function () {
                     let link = document.createElement('a');
-                    link.href = '../img/A-Star-Brochure.pdf';
-                    link.download = 'A-Star-Brochure.pdf';
+                    link.href = '../img/astar-broch-sept19.pdf';
+                    link.download = 'astar-broch-sept19.pdf';
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
