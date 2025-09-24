@@ -208,22 +208,22 @@ nav {
 
 }
 
-#demo {
-    .carousel-inner {
-        position: relative;
+// #demo {
+//     .carousel-inner {
+//         position: relative;
 
-        .carousel-item {
-            position: relative;
+//         .carousel-item {
+//             position: relative;
 
-            img {
-                width: 100%;
-                height: 100vh; // full screen height
-                object-fit: cover; // keeps image ratio without stretching
-                display: block;
-            }
-        }
-    }
-}
+//             img {
+//                 width: 100%;
+//                 height: 100vh; // full screen height
+//                 object-fit: cover; // keeps image ratio without stretching
+//                 display: block;
+//             }
+//         }
+//     }
+// }
 
 
 @media (max-width: 992px) {
@@ -366,8 +366,6 @@ nav {
 }
 
 #demo {
-    // min-height: 100vh;
-    // height: 100vh;
 
     .carousel-inner {
         // min-height: inherit;
@@ -377,7 +375,11 @@ nav {
             height: calc(100vh - 90px);
 
             img {
-                min-height: inherit;
+                width: 100%;
+                // margin: 0 auto;
+                // height: inherit;
+                // max-width: 100%;
+                // object-fit: fill;
             }
         }
 
@@ -928,14 +930,14 @@ nav {
 
 .why-choose {
     background-color: #eff0f0;
-    padding-top: 50px;
+    padding-top: 20px;
 
     h2 {
         text-align: center;
         font-family: "Cinzel-SemiBold";
         font-size: 35px;
         line-height: 45px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         span {
             font-family: 'Cinzel-Medium';
@@ -944,14 +946,15 @@ nav {
 
     .box {
         .content {
-            margin-top: 30px;
+            margin-top: 18px;
             margin-bottom: 30px;
 
             h3 {
                 font-family: 'Cinzel-Medium';
-                font-size: 25px;
+                font-size: 18px;
                 margin: 0;
                 margin-bottom: 5px;
+                text-align: left;
             }
 
             p {
@@ -960,6 +963,7 @@ nav {
                 // font-family: 'Poppins-Regular';
                 // font-size: 15px;
                 line-height: 20px;
+                min-height: 100px;
             }
 
 
@@ -1101,10 +1105,10 @@ nav {
 }
 
 .custom-btn {
-    border: 2px solid #ca933b;
+    border: 1px solid #ca933b;
     background-color: transparent;
     outline: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 13px;
     // font-family: 'Poppins-Regular';
     padding: 10px 15px;
