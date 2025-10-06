@@ -1,36 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Poppins-Regular";
-  src: url("../fonts/Poppins-Regular/Poppins-Regular.eot");
-  src: url("../fonts/Poppins-Regular/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular/Poppins-Regular.svg#Poppins-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cinzel-Medium";
-  src: url("../fonts/Cinzel-Medium/Cinzel-Medium.eot");
-  src: url("../fonts/Cinzel-Medium/Cinzel-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Cinzel-Medium/Cinzel-Medium.woff2") format("woff2"), url("../fonts/Cinzel-Medium/Cinzel-Medium.woff") format("woff"), url("../fonts/Cinzel-Medium/Cinzel-Medium.ttf") format("truetype"), url("../fonts/Cinzel-Medium/Cinzel-Medium.svg#Cinzel-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Cinzel-SemiBold";
-  src: url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.eot");
-  src: url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.woff2") format("woff2"), url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.woff") format("woff"), url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.ttf") format("truetype"), url("../fonts/Cinzel-SemiBold/Cinzel-SemiBold.svg#Cinzel-SemiBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Commissioner-Medium";
-  src: url("../fonts/Commissioner-Medium/Commissioner-Medium.eot");
-  src: url("../fonts/Commissioner-Medium/Commissioner-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Commissioner-Medium/Commissioner-Medium.woff2") format("woff2"), url("../fonts/Commissioner-Medium/Commissioner-Medium.woff") format("woff"), url("../fonts/Commissioner-Medium/Commissioner-Medium.ttf") format("truetype"), url("../fonts/Commissioner-Medium/Commissioner-Medium.svg#Commissioner-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import './fonts.css';
 html,
 body {
   padding: 0 0;
@@ -913,7 +882,7 @@ nav .dropdown-submenu a::after {
   color: #ca933b;
 }
 .custom-btn:hover {
-  border: 2px solid #ca933b;
+  border: 1px solid #ca933b;
   color: #fff;
   background-color: #ca933b;
 }
@@ -2826,4 +2795,41 @@ body.modal-open {
 .SPPU-image {
   height: auto;
   width: 420px;
+}
+
+.course-banner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.course-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Shadows ON TOP of the image */
+.course-banner::before,
+.course-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top shadow */
+.course-banner::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+}
+
+/* Bottom shadow */
+.course-banner::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
 }/*# sourceMappingURL=app.css.map */

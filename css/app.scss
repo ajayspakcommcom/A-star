@@ -1,4 +1,4 @@
-@import './fonts.scss';
+@import './fonts.css';
 
 
 html,
@@ -1119,7 +1119,7 @@ nav {
 
 
     &:hover {
-        border: 2px solid #ca933b;
+        border: 1px solid #ca933b;
         color: #fff;
         background-color: #ca933b;
     }
@@ -3468,4 +3468,41 @@ body.modal-open {
 .SPPU-image {
     height: auto;
     width: 420px;
+}
+
+.course-banner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.course-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Shadows ON TOP of the image */
+.course-banner::before,
+.course-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px; 
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top shadow */
+.course-banner::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+}
+
+/* Bottom shadow */
+.course-banner::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
 }
