@@ -3470,22 +3470,22 @@ body.modal-open {
     width: 420px;
 }
 
-.course-banner {
+.gallery-banner {
   position: relative;
   display: inline-block;
   width: 100%;
   overflow: hidden;
 }
 
-.course-banner img {
+.gallery-banner img {
   display: block;
   width: 100%;
   height: auto;
 }
 
 /* Shadows ON TOP of the image */
-.course-banner::before,
-.course-banner::after {
+.gallery-banner::before,
+.gallery-banner::after {
   content: "";
   position: absolute;
   left: 0;
@@ -3496,13 +3496,13 @@ body.modal-open {
 }
 
 /* Top shadow */
-.course-banner::before {
+.gallery-banner::before {
   top: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
 }
 
 /* Bottom shadow */
-.course-banner::after {
+.gallery-banner::after {
   bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
 }
