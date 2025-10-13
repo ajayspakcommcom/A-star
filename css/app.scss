@@ -2224,11 +2224,12 @@ select:first-of-type {
     .modal-header {
         display: flex;
         justify-content: flex-end;
+        padding: 5px;
     }
 
     .close {
         float: right;
-        font-size: 21px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 1;
         color: #000;
@@ -3471,38 +3472,94 @@ body.modal-open {
 }
 
 .gallery-banner {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
 }
 
 .gallery-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* Shadows ON TOP of the image */
 .gallery-banner::before,
 .gallery-banner::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 40px; 
-  pointer-events: none;
-  z-index: 2;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    pointer-events: none;
+    z-index: 2;
 }
 
 /* Top shadow */
 .gallery-banner::before {
-  top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
 }
 
 /* Bottom shadow */
 .gallery-banner::after {
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+
+
+.pan-india-academy {
+    width: 132px;
+}
+
+.pan-india-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pan-india-img img {
+    max-height: 60px;
+}
+
+.pan-india {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 6px 25px;
+}
+.number-grid a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 11px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+@media (max-width: 576px) {
+    .pan-india-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .number-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .number-grid a {
+        font-size: 14px;
+    }
+
+    .pan-india-img img {
+        max-height: 50px;
+    }
 }
