@@ -2845,6 +2845,13 @@ body.modal-open {
   gap: 20px;
   flex-wrap: wrap;
 }
+.pan-india-section p {
+  font-size: 15px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+}
 
 .pan-india-img img {
   max-height: 60px;
@@ -2854,12 +2861,6 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.number-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 6px 25px;
 }
 
 .number-grid a {

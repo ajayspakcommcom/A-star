@@ -3517,7 +3517,15 @@ body.modal-open {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    
+    p{
+        font-size: 15px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+    }
 }
 
 .pan-india-img img {
@@ -3530,11 +3538,11 @@ body.modal-open {
     justify-content: center;
 }
 
-.number-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 6px 25px;
-}
+// .number-grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, auto);
+//     gap: 6px 25px;
+// }
 .number-grid a {
     color: #fff;
     text-decoration: none;
