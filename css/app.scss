@@ -1,6 +1,5 @@
 @import './fonts.css';
 
-
 html,
 body {
     padding: 0 0;
@@ -1568,31 +1567,25 @@ footer {
     padding: 0 0;
     margin: 40px 0 0 0;
     cursor: pointer;
-    // display: grid;
-    // column-gap: 30px;
-    // grid-template-columns: auto auto auto auto auto;
-
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto auto auto auto auto;
+    // display: flex;
+    // flex-wrap: wrap;
     justify-content: center;
 
-
     li {
-
         strong {
-
             font-family: 'Poppins-Regular';
             font-weight: 600;
         }
+        // flex: 0 1 calc(25% - 30px);
+        // margin-right: 30px;
+        // margin-bottom: 30px;
+        // box-sizing: border-box;
 
-        flex: 0 1 calc(25% - 30px);
-        margin-right: 30px;
-        margin-bottom: 30px;
-        box-sizing: border-box;
-
-        margin-bottom: 30px;
-        text-align: left;
-
+        // margin-bottom: 30px;
+        // text-align: left;
         // &:nth-child(4n) {
         //     margin-right: 0;
         // }
@@ -1664,15 +1657,8 @@ footer {
 
                 p {
                     display: none;
-                    // font-size: 12px;
                     line-height: 18px;
                     margin-bottom: 0;
-
-                    // width: 100px;
-                    // white-space: nowrap;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
-
                 }
             }
 
@@ -3509,9 +3495,9 @@ body.modal-open {
 }
 
 
-.pan-india-academy {
-    width: 132px;
-}
+// .pan-india-academy {
+//     width: 132px;
+// }
 
 .pan-india-section {
     display: flex;
@@ -3529,7 +3515,9 @@ body.modal-open {
 }
 
 .pan-india-img img {
-    max-height: 60px;
+    // max-height: 60px;
+    max-width: 130px;
+    height: auto;
 }
 
 .pan-india {
@@ -3538,11 +3526,23 @@ body.modal-open {
     justify-content: center;
 }
 
-// .number-grid {
-//     display: grid;
-//     grid-template-columns: repeat(2, auto);
-//     gap: 6px 25px;
-// }
+.number-grid {
+    display: flex;
+    margin-top: 10px;
+    & > a {
+        display: inline-block;
+        border-right: 1px solid #fff;
+        line-height: 10px;
+        padding: 0 10px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
 .number-grid a {
     color: #fff;
     text-decoration: none;
@@ -3551,6 +3551,27 @@ body.modal-open {
     white-space: nowrap;
     transition: color 0.3s ease;
 }
+
+.footer-mob-text {
+  display: flex;
+  margin-bottom: 15px;
+  & > a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    line-height: 10px;
+    padding: 0 10px;
+    &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+  }
+}
+
+
 @media (max-width: 576px) {
     .pan-india-section {
         flex-direction: column;
