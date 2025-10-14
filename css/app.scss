@@ -1,6 +1,5 @@
 @import './fonts.css';
 
-
 html,
 body {
     padding: 0 0;
@@ -1320,6 +1319,7 @@ footer {
 
     padding-bottom: 30px;
     text-align: center;
+    padding-top: 30px;
 
 
     h2 {
@@ -1568,31 +1568,27 @@ footer {
     padding: 0 0;
     margin: 40px 0 0 0;
     cursor: pointer;
-    // display: grid;
-    // column-gap: 30px;
+    display: grid;
+    column-gap: 30px;
     // grid-template-columns: auto auto auto auto auto;
-
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    // display: flex;
+    // flex-wrap: wrap;
     justify-content: center;
 
-
     li {
-
+        margin-bottom: 30px;
         strong {
-
             font-family: 'Poppins-Regular';
             font-weight: 600;
         }
+        // flex: 0 1 calc(25% - 30px);
+        // margin-right: 30px;
+        // margin-bottom: 30px;
+        // box-sizing: border-box;
 
-        flex: 0 1 calc(25% - 30px);
-        margin-right: 30px;
-        margin-bottom: 30px;
-        box-sizing: border-box;
-
-        margin-bottom: 30px;
-        text-align: left;
-
+        // margin-bottom: 30px;
+        // text-align: left;
         // &:nth-child(4n) {
         //     margin-right: 0;
         // }
@@ -1615,7 +1611,7 @@ footer {
 
             .img-wrapper {
                 display: block;
-                height: 200px;
+                // height: 200px;
                 overflow: hidden;
                 border: 5px solid #fff;
                 border-bottom: 0;
@@ -1664,15 +1660,8 @@ footer {
 
                 p {
                     display: none;
-                    // font-size: 12px;
                     line-height: 18px;
                     margin-bottom: 0;
-
-                    // width: 100px;
-                    // white-space: nowrap;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
-
                 }
             }
 
@@ -1692,7 +1681,7 @@ footer {
             justify-content: center;
 
             &>div {
-                width: 300px;
+                // width: 300px;
             }
         }
     }
@@ -2868,14 +2857,6 @@ select:first-of-type {
         margin-bottom: 15px;
     }
 
-    .management-team-ul li:first-child {
-        display: block;
-
-        &>div {
-            width: 100%;
-        }
-    }
-
     .advisory-wrapper li>div .img-wrapper,
     .management-team-ul li>div .img-wrapper {
         height: auto;
@@ -3304,17 +3285,6 @@ p {
     justify-content: start;
 }
 
-
-@media (max-width: 768px) {
-    .city-guilds {
-        display: none !important;
-    }
-
-    td {
-        font-size: 12px !important;
-    }
-}
-
 .admission-form-section {
 
     .form-card {
@@ -3509,9 +3479,9 @@ body.modal-open {
 }
 
 
-.pan-india-academy {
-    width: 132px;
-}
+// .pan-india-academy {
+//     width: 132px;
+// }
 
 .pan-india-section {
     display: flex;
@@ -3529,7 +3499,9 @@ body.modal-open {
 }
 
 .pan-india-img img {
-    max-height: 60px;
+    // max-height: 60px;
+    max-width: 130px;
+    height: auto;
 }
 
 .pan-india {
@@ -3538,11 +3510,23 @@ body.modal-open {
     justify-content: center;
 }
 
-// .number-grid {
-//     display: grid;
-//     grid-template-columns: repeat(2, auto);
-//     gap: 6px 25px;
-// }
+.number-grid {
+    display: flex;
+    margin-top: 10px;
+    & > a {
+        display: inline-block;
+        border-right: 1px solid #fff;
+        line-height: 10px;
+        padding: 0 10px;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
 .number-grid a {
     color: #fff;
     text-decoration: none;
@@ -3551,23 +3535,76 @@ body.modal-open {
     white-space: nowrap;
     transition: color 0.3s ease;
 }
-@media (max-width: 576px) {
-    .pan-india-section {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+
+.footer-mob-text {
+  display: flex;
+  margin-bottom: 15px;
+  & > a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    line-height: 10px;
+    padding: 0 10px;
+    &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+  }
+}
+
+
+// @media (max-width: 576px) {
+//     .pan-india-section {
+//         flex-direction: column;
+//         align-items: flex-start;
+//         gap: 10px;
+//     }
+
+//     .number-grid {
+//         grid-template-columns: 1fr;
+//         gap: 6px;
+//     }
+
+//     .number-grid a {
+//         font-size: 14px;
+//     }
+
+//     .pan-india-img img {
+//         max-height: 50px;
+//     }
+// }
+
+.footer-btn {
+    &>:first-child {
+        margin-right: 15px;
+    }
+}
+
+#demo {
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    .carousel-inner {
+        height: calc(100vh - 90px);
+        overflow: hidden;
+        .carousel-item {
+            height: calc(100vh - 90px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .city-guilds {
+        display: none !important;
     }
 
-    .number-grid {
-        grid-template-columns: 1fr;
-        gap: 6px;
+    td {
+        font-size: 12px !important;
     }
 
-    .number-grid a {
-        font-size: 14px;
-    }
-
-    .pan-india-img img {
-        max-height: 50px;
+      .advisory-wrapper, .management-team-ul {
+        grid-template-columns: auto;
     }
 }
