@@ -1319,6 +1319,7 @@ footer {
 
     padding-bottom: 30px;
     text-align: center;
+    padding-top: 30px;
 
 
     h2 {
@@ -1570,7 +1571,7 @@ footer {
     display: grid;
     column-gap: 30px;
     // grid-template-columns: auto auto auto auto auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     // display: flex;
     // flex-wrap: wrap;
     justify-content: center;
@@ -1610,7 +1611,7 @@ footer {
 
             .img-wrapper {
                 display: block;
-                height: 200px;
+                // height: 200px;
                 overflow: hidden;
                 border: 5px solid #fff;
                 border-bottom: 0;
@@ -3579,6 +3580,18 @@ body.modal-open {
 .footer-btn {
     &>:first-child {
         margin-right: 15px;
+    }
+}
+
+#demo {
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    .carousel-inner {
+        height: calc(100vh - 90px);
+        overflow: hidden;
+        .carousel-item {
+            height: calc(100vh - 90px);
+        }
     }
 }
 

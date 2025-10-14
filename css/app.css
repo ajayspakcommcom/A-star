@@ -1062,6 +1062,7 @@ footer .footer-social-link > li > a > img {
 .about-us-wrapper {
   padding-bottom: 30px;
   text-align: center;
+  padding-top: 30px;
 }
 .course-heading-wrapper h2,
 .about-us-wrapper h2 {
@@ -1266,7 +1267,7 @@ footer .footer-social-link > li > a > img {
   cursor: pointer;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   justify-content: center;
 }
 .advisory-wrapper li,
@@ -1294,7 +1295,6 @@ footer .footer-social-link > li > a > img {
 .advisory-wrapper li > div .img-wrapper,
 .management-team-ul li > div .img-wrapper {
   display: block;
-  height: 200px;
   overflow: hidden;
   border: 5px solid #fff;
   border-bottom: 0;
@@ -2891,6 +2891,18 @@ body.modal-open {
 
 .footer-btn > :first-child {
   margin-right: 15px;
+}
+
+#demo {
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+#demo .carousel-inner {
+  height: calc(100vh - 90px);
+  overflow: hidden;
+}
+#demo .carousel-inner .carousel-item {
+  height: calc(100vh - 90px);
 }
 
 @media (max-width: 768px) {
