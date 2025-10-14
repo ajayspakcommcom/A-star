@@ -1266,8 +1266,12 @@ footer .footer-social-link > li > a > img {
   cursor: pointer;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: center;
+}
+.advisory-wrapper li,
+.management-team-ul li {
+  margin-bottom: 30px;
 }
 .advisory-wrapper li strong,
 .management-team-ul li strong {
@@ -1351,10 +1355,6 @@ footer .footer-social-link > li > a > img {
   display: flex;
   justify-content: center;
 }
-.management-team-ul li:first-child > div {
-  width: 300px;
-}
-
 #modalParagraph p {
   margin-bottom: 5px;
   font-family: "Poppins-Regular";
@@ -2288,12 +2288,6 @@ select:first-of-type {
     margin: 0;
     margin-bottom: 15px;
   }
-  .management-team-ul li:first-child {
-    display: block;
-  }
-  .management-team-ul li:first-child > div {
-    width: 100%;
-  }
   .advisory-wrapper li > div .img-wrapper,
   .management-team-ul li > div .img-wrapper {
     height: auto;
@@ -2651,14 +2645,6 @@ p {
   justify-content: start;
 }
 
-@media (max-width: 768px) {
-  .city-guilds {
-    display: none !important;
-  }
-  td {
-    font-size: 12px !important;
-  }
-}
 .admission-form-section .form-card {
   background-color: #ffffff;
 }
@@ -2903,21 +2889,19 @@ body.modal-open {
   border-right: 0;
 }
 
-@media (max-width: 576px) {
-  .pan-india-section {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+.footer-btn > :first-child {
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .city-guilds {
+    display: none !important;
   }
-  .number-grid {
-    grid-template-columns: 1fr;
-    gap: 6px;
+  td {
+    font-size: 12px !important;
   }
-  .number-grid a {
-    font-size: 14px;
-  }
-  .pan-india-img img {
-    max-height: 50px;
+  .advisory-wrapper, .management-team-ul {
+    grid-template-columns: auto;
   }
 }
 
