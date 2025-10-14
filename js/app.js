@@ -260,6 +260,33 @@ const professors = [
         designation: 'Customer Excellence',
         passion: 'Aamby Valley City',
         experience: "20+ Years of Experience"
+    },
+    {
+        id: 8,
+        name: "Ms. Rosemary Jerry Thekkekara",
+        description: `Ms. Rosemary Jerry Thekkekara is a dedicated hospitality professional with over nine years of experience in Room Division management. Her extensive experience in hospitality education has enabled her to combine practical industry knowledge with academic insight, equipping students with a thorough understanding of room division operations. With a focus on operational excellence, leadership, and service standards, Ms. Thekkekara is committed to mentoring aspiring hospitality professionals.`,
+        imgUrl: "Rosemary-Jerry-Thekkekara.jpg",
+        designation: 'Assistant Professor – Room Divisions',
+        passion: '',
+        experience: "9+ Years of Experience"
+    },
+    {
+        id: 9,
+        name: "Ms. Neha Purushwani",
+        description: `Ms. Neha Purushwani is a passionate pastry chef with over three years of industry experience, bringing creativity, precision, and artistry to her work. A graduate with a Bachelor’s in Culinary Arts and a Diploma in Bakery and Patisserie, she has trained under renowned chefs who have shaped her refined approach to pastry arts.`,
+        imgUrl: "Neha-Purushwani.jpg",
+        designation: 'Teaching Assistant – Executive',
+        passion: '',
+        experience: "3+ Years of Experience"
+    },
+    {
+        id: 10,
+        name: "Mr. Siddhesh Wadkar",
+        description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
+        imgUrl: "Siddhesh-Wadkar.jpg",
+        designation: 'Assistant Professor',
+        passion: '',
+        experience: "18+ Years of Experience"
     }
 ];
 
