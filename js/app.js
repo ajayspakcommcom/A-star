@@ -260,33 +260,6 @@ const professors = [
         designation: 'Customer Excellence',
         passion: 'Aamby Valley City',
         experience: "20+ Years of Experience"
-    },
-    {
-        id: 8,
-        name: "Ms. Rosemary Jerry Thekkekara",
-        description: `Ms. Rosemary Jerry Thekkekara is a dedicated hospitality professional with over nine years of experience in Room Division management. Her extensive experience in hospitality education has enabled her to combine practical industry knowledge with academic insight, equipping students with a thorough understanding of room division operations. With a focus on operational excellence, leadership, and service standards, Ms. Thekkekara is committed to mentoring aspiring hospitality professionals.`,
-        imgUrl: "Rosemary-Jerry-Thekkekara.jpg",
-        designation: 'Assistant Professor – Room Divisions',
-        passion: '',
-        experience: "9+ Years of Experience"
-    },
-    {
-        id: 9,
-        name: "Ms. Neha Purushwani",
-        description: `Ms. Neha Purushwani is a passionate pastry chef with over three years of industry experience, bringing creativity, precision, and artistry to her work. A graduate with a Bachelor’s in Culinary Arts and a Diploma in Bakery and Patisserie, she has trained under renowned chefs who have shaped her refined approach to pastry arts.`,
-        imgUrl: "Neha-Purushwani.jpg",
-        designation: 'Teaching Assistant – Executive',
-        passion: '',
-        experience: "3+ Years of Experience"
-    },
-    {
-        id: 10,
-        name: "Mr. Siddhesh Wadkar",
-        description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
-        imgUrl: "Siddhesh-Wadkar.jpg",
-        designation: 'Assistant Professor',
-        passion: '',
-        experience: "18+ Years of Experience"
     }
 ];
 
@@ -323,6 +296,78 @@ function renderProfessors() {
 }
 
 renderProfessors();
+
+
+// New our faculty member
+const ourfaculty = [
+    {
+        id: 1,
+        name: "Ms. Rosemary Jerry Thekkekara",
+        description: `Ms. Rosemary Jerry Thekkekara is a dedicated hospitality professional with over nine years of experience in Room Division management. Her extensive experience in hospitality education has enabled her to combine practical industry knowledge with academic insight, equipping students with a thorough understanding of room division operations. With a focus on operational excellence, leadership, and service standards, Ms. Thekkekara is committed to mentoring aspiring hospitality professionals.`,
+        imgUrl: "Rosemary-Jerry-Thekkekara.jpg",
+        designation: "Assistant Professor",
+        passion: "",
+        experience: "9+ Years of Experience"
+    },
+    {
+        id: 2,
+        name: "Ms. Neha Purushwani",
+        description: `Ms. Neha Purushwani is a passionate pastry chef with over three years of industry experience, bringing creativity, precision, and artistry to her work. A graduate with a Bachelor’s in Culinary Arts and a Diploma in Bakery and Patisserie, she has trained under renowned chefs who have shaped her refined approach to pastry arts.`,
+        imgUrl: "Neha-Purushwani.jpg",
+        designation: "Teaching Assistant",
+        passion: "",
+        experience: "3+ Years of Experience"
+    },
+    {
+        id: 3,
+        name: "Mr. Siddhesh Wadkar",
+        description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
+        imgUrl: "Siddhesh-Wadkar.jpg",
+        designation: "Assistant Professor",
+        passion: "",
+        experience: "18+ Years of Experience"
+    }
+];
+
+// Render faculty list
+function renderFaculty() {
+    const facultyList = document.getElementById("ourfaculty");
+    if (!facultyList) {
+        console.error("Element with id 'ourfaculty' not found!");
+        return;
+    }
+
+    ourfaculty.forEach(faculty => {
+        const listItem = document.createElement("li");
+        listItem.classList.add("mentor-item");
+
+        listItem.onclick = function () {
+            console.log("faculty:", faculty.imgUrl);
+            getModalObject(faculty, "ourfaculty");
+        };
+
+        listItem.innerHTML = `
+      <div>
+        <span class="img-wrapper">
+          <img src="./img/new-image/${faculty.imgUrl}" class="img-fluid" alt="${faculty.name}" />
+        </span>
+        <div class="designation-name">
+          <div><span><b>${faculty.name}</b></span></div>
+          <div><span>${faculty.designation}</span></div>
+          <div><span>${faculty.passion || ""}</span></div>
+          <div><span class="text-muted">${faculty.experience}</span></div>
+          <p>${renderFirst100Characters(faculty.description)}</p>
+        </div>
+      </div>
+    `;
+
+        facultyList.appendChild(listItem);
+    });
+}
+
+// Initialize rendering
+renderFaculty();
+
 
 
 
@@ -537,6 +582,8 @@ function getModalObject(obj, types) {
     } else if (types === 'faculty') {
         $('#modalImage').attr('src', `./img/faculty/${obj.imgUrl}`);
     } else if (types === 'new-image') {
+        $('#modalImage').attr('src', `./img/new-image/${obj.imgUrl}`);
+    } else if (types === 'ourfaculty') {
         $('#modalImage').attr('src', `./img/new-image/${obj.imgUrl}`);
     } else if (types === 'professos-Chef') {
         $('#modalImage').attr('src', `./img/professos-Chef/${obj.imgUrl}`);
