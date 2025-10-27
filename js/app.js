@@ -425,7 +425,35 @@ const professorsChef = [
         designation: 'Sous Chef',
         passion: 'Indian Curries',
         experience: "16 Years of Experience"
-    }
+    },
+    {
+        id: 8,
+        name: "Bharat Singh Rawat",
+        description: ``,
+        imgUrl: "bharat-singh.jpg",
+        designation: 'Jr Sous Chef',
+        passion: 'Cold appetizer',
+        experience: "26 Years of Experience"
+
+    },
+    {
+        id: 9,
+        name: "Savar Singh",
+        description: ``,
+        imgUrl: "savar-singh(2).jpg",
+        designation: 'Chef de Partie',
+        passion: 'Indian Breads',
+        experience: "13 Years of Experience"
+    },
+    {
+        id: 10,
+        name: "Guddu Singh",
+        description: ``,
+        imgUrl: "guddu-singh(2).jpg",
+        designation: 'Chef de Partie',
+        passion: 'Kebabs',
+        experience: "12 Years of Experience"
+    },
 ];
 
 function renderProfessorsChef() {
@@ -464,35 +492,35 @@ renderProfessorsChef();
 
 
 
-const Mentors = [
-    {
-        id: 1,
-        name: "Bharat Singh Rawat",
-        description: ``,
-        imgUrl: "bharat-singh.jpg",
-        designation: 'Jr Sous Chef',
-        passion: 'Cold appetizer',
-        experience: "26 Years of Experience"
+// const Mentors = [
+//     {
+//         id: 1,
+//         name: "Bharat Singh Rawat",
+//         description: ``,
+//         imgUrl: "bharat-singh.jpg",
+//         designation: 'Jr Sous Chef',
+//         passion: 'Cold appetizer',
+//         experience: "26 Years of Experience"
 
-    },
-    {
-        id: 2,
-        name: "Savar Singh",
-        description: ``,
-        imgUrl: "savar-singh(2).jpg",
-        designation: 'Chef de Partie',
-        passion: 'Indian Breads',
-        experience: "13 Years of Experience"
-    },
-    {
-        id: 3,
-        name: "Guddu Singh",
-        description: ``,
-        imgUrl: "guddu-singh(2).jpg",
-        designation: 'Chef de Partie',
-        passion: 'Kebabs',
-        experience: "12 Years of Experience"
-    },
+//     },
+//     {
+//         id: 2,
+//         name: "Savar Singh",
+//         description: ``,
+//         imgUrl: "savar-singh(2).jpg",
+//         designation: 'Chef de Partie',
+//         passion: 'Indian Breads',
+//         experience: "13 Years of Experience"
+//     },
+//     {
+//         id: 3,
+//         name: "Guddu Singh",
+//         description: ``,
+//         imgUrl: "guddu-singh(2).jpg",
+//         designation: 'Chef de Partie',
+//         passion: 'Kebabs',
+//         experience: "12 Years of Experience"
+//     },
     // {
     //     id: 4,
     //     name: "Bimal Gurung",
@@ -521,42 +549,42 @@ const Mentors = [
     //     experience: "11 Years of Experience"
     // }
 
-];
+// ];
 
-function renderMentors() {
-    const mentorsList = document.getElementById('Mentors');
+// function renderMentors() {
+//     const mentorsList = document.getElementById('Mentors');
 
-    Mentors.forEach(mentor => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('mentor-item');
+//     Mentors.forEach(mentor => {
+//         const listItem = document.createElement('li');
+//         listItem.classList.add('mentor-item');
 
-        listItem.onclick = function () {
-            console.log('mentor', mentor.imgUrl);
-            getModalObject(mentor, 'mentor');
-        };
+//         listItem.onclick = function () {
+//             console.log('mentor', mentor.imgUrl);
+//             getModalObject(mentor, 'mentor');
+//         };
 
-        const mentorContent = `
-            <div>
-                <span class='img-wrapper'>
-                    <img src="./img/mentor/${mentor.imgUrl}" class="img-fluid" alt="" />
-                </span>
-                <div class="designation-name">
-                    <div><span><b>${mentor.name}</b></span></div>
-                    <div><span>${mentor.designation}</span></div>
-                    <div><span>${mentor.passion}</span></div>
-                    <div><span class="text-muted">${mentor.experience}</span></div>
-                    <p>${renderFirst100Characters(mentor.description)}</p>                    
-                </div>
-            </div>                
-        `;
-        listItem.innerHTML = mentorContent;
-        if (mentorsList) {
-            mentorsList.appendChild(listItem);
-        }
-    });
-}
+//         const mentorContent = `
+//             <div>
+//                 <span class='img-wrapper'>
+//                     <img src="./img/mentor/${mentor.imgUrl}" class="img-fluid" alt="" />
+//                 </span>
+//                 <div class="designation-name">
+//                     <div><span><b>${mentor.name}</b></span></div>
+//                     <div><span>${mentor.designation}</span></div>
+//                     <div><span>${mentor.passion}</span></div>
+//                     <div><span class="text-muted">${mentor.experience}</span></div>
+//                     <p>${renderFirst100Characters(mentor.description)}</p>                    
+//                 </div>
+//             </div>                
+//         `;
+//         listItem.innerHTML = mentorContent;
+//         if (mentorsList) {
+//             mentorsList.appendChild(listItem);
+//         }
+//     });
+// }
 
-renderMentors();
+// renderMentors();
 
 
 // raunak
