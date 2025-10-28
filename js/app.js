@@ -301,6 +301,15 @@ renderProfessors();
 // New our faculty member
 const ourfaculty = [
     {
+        id: 3,
+        name: "Mr. Siddhesh Wadkar",
+        description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
+        imgUrl: "Siddhesh-Wadkar.jpg",
+        designation: "Assistant Professor",
+        passion: "",
+        experience: "18+ Years of Experience"
+    },
+    {
         id: 1,
         name: "Ms. Rosemary Jerry Thekkekara",
         description: `Ms. Rosemary Jerry Thekkekara is a dedicated hospitality professional with over nine years of experience in Room Division management. Her extensive experience in hospitality education has enabled her to combine practical industry knowledge with academic insight, equipping students with a thorough understanding of room division operations. With a focus on operational excellence, leadership, and service standards, Ms. Thekkekara is committed to mentoring aspiring hospitality professionals.`,
@@ -318,15 +327,6 @@ const ourfaculty = [
         passion: "",
         experience: "3+ Years of Experience"
     },
-    {
-        id: 3,
-        name: "Mr. Siddhesh Wadkar",
-        description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
-        imgUrl: "Siddhesh-Wadkar.jpg",
-        designation: "Assistant Professor",
-        passion: "",
-        experience: "18+ Years of Experience"
-    }
 ];
 
 // Render faculty list
