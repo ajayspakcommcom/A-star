@@ -742,7 +742,7 @@ function saveBrochure() {
     }
 
     $.ajax({
-        url: 'https://spak-it.com/api/brochure',
+        url: 'https://spakcommgroup.com/api/brochure',
         method: 'POST',
         contentType: "application/json; charset=utf-8",
         headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
