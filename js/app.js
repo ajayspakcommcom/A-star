@@ -4,7 +4,6 @@ let toggleMore = false;
 $('#myModal').on('hidden.bs.modal', function () {
     toggleMore = false;
     let toggleText = 'more...'
-    console.log('Modal closed');
 });
 
 const customSort = (a, b) => {
@@ -13,7 +12,6 @@ const customSort = (a, b) => {
     const nameB = removeTitle(b.name);
     return nameA.localeCompare(nameB);
 };
-
 
 function renderFirst100Characters(str) {
     if (str.length > 80) {
@@ -78,8 +76,6 @@ const advisoryMembers = [
         description: "Dr. Norel Peter Marpuri Illo is the Master in Hospitality Management Program Chair and Assistant Professor IV at Camarines Sur Polytechnic Colleges, Nabua, Camarines Sur, Philippines. With extensive experience in the food service industry, including pastry, baking, and food and beverage services, he is known for his leadership, organizational skills, and commitment to continuous improvement. Norel has also served as OIC Dean, College Instructor, and Distinguished Reviewer for Global Professional Advancement, showcasing his ability to connect with diverse individuals and build strong relationships.",
         imgUrl: "Dr. Norel Peter Marpuri Illo.jpg"
     }
-
-
 
 ];
 
@@ -152,9 +148,9 @@ const facultyMembers = [
     {
         id: 3,
         name: "Mr. Prashant Kumar",
-        description: `<p>An IHM PUSA alumnus with 33+ years in hospitality, from ITC’s Hotels to The Bristol, India Habitat Centre , IL&FS. Now General Manager at Aamby Valley City, he inspires future hoteliers with a passion for excellence, service, and world-class guest experiences.</p>`,
+        description: `<p>An IHM PUSA alumnus with 33+ years in hospitality, from ITC’s Hotels to The Bristol, India Habitat Centre , IL&FS. Now General Manager at Aamby Valley City, he inspires future hoteliers with a passion for excellence, service, and world-class guest experiences.</p>`,
         imgUrl: "Mr-Prashant.jpg",
-        designation: 'Head of Strategic Alliances & PR',
+        designation: 'Head of Strategic Alliances & PR',
         experience: "33+ Years of Experience"
     },
 
@@ -193,9 +189,6 @@ function renderFacultyMembers() {
 
 renderFacultyMembers();
 
-
-// raunak
-
 const professors = [
     {
         id: 1,
@@ -207,15 +200,6 @@ const professors = [
         experience: "22 Years of Experience"
 
     },
-    // {
-    //     id: 2,
-    //     name: "Sumeet Kumar",
-    //     description: ``,
-    //     imgUrl: "Sumeet Kumar.jpg",
-    //     designation: 'Vice President Hospitality',
-    //     passion: 'Aamby Valley City',
-    //     experience: "25+ Years of Experience"
-    // },
     {
         id: 3,
         name: "Ranjan Rajani",
@@ -239,7 +223,7 @@ const professors = [
         name: "Karishma Raghuvanshi",
         description: ` `,
         imgUrl: "karishma.jpg",
-        designation: 'Business Development Head',
+        designation: 'Business Development Head',
         passion: 'A-Star Academy',
         experience: "17 Years of Experience"
     },
@@ -297,8 +281,6 @@ function renderProfessors() {
 
 renderProfessors();
 
-
-// New our faculty member
 const ourfaculty = [
     {
         id: 3,
@@ -329,7 +311,6 @@ const ourfaculty = [
     },
 ];
 
-// Render faculty list
 function renderFaculty() {
     const facultyList = document.getElementById("ourfaculty");
     if (!facultyList) {
@@ -342,7 +323,6 @@ function renderFaculty() {
         listItem.classList.add("mentor-item");
 
         listItem.onclick = function () {
-            console.log("faculty:", faculty.imgUrl);
             getModalObject(faculty, "ourfaculty");
         };
 
@@ -365,11 +345,7 @@ function renderFaculty() {
     });
 }
 
-// Initialize rendering
 renderFaculty();
-
-
-
 
 const professorsChef = [
     {
@@ -490,105 +466,6 @@ function renderProfessorsChef() {
 
 renderProfessorsChef();
 
-
-
-// const Mentors = [
-//     {
-//         id: 1,
-//         name: "Bharat Singh Rawat",
-//         description: ``,
-//         imgUrl: "bharat-singh.jpg",
-//         designation: 'Jr Sous Chef',
-//         passion: 'Cold appetizer',
-//         experience: "26 Years of Experience"
-
-//     },
-//     {
-//         id: 2,
-//         name: "Savar Singh",
-//         description: ``,
-//         imgUrl: "savar-singh(2).jpg",
-//         designation: 'Chef de Partie',
-//         passion: 'Indian Breads',
-//         experience: "13 Years of Experience"
-//     },
-//     {
-//         id: 3,
-//         name: "Guddu Singh",
-//         description: ``,
-//         imgUrl: "guddu-singh(2).jpg",
-//         designation: 'Chef de Partie',
-//         passion: 'Kebabs',
-//         experience: "12 Years of Experience"
-//     },
-    // {
-    //     id: 4,
-    //     name: "Bimal Gurung",
-    //     description: ``,
-    //     imgUrl: "bimal-gurung(2).jpg",
-    //     designation: 'Chef de Parti',
-    //     passion: 'Dim Sum',
-    //     experience: "13 Years of Experience"
-    // },
-    // {
-    //     id: 5,
-    //     name: "Lohare Singh",
-    //     description: ``,
-    //     imgUrl: "lohare-singh(2).jpg",
-    //     designation: 'Demi Chef de Partie',
-    //     passion: 'Halwai',
-    //     experience: "16 Years of Experience"
-    // },
-    // {
-    //     id: 6,
-    //     name: "Mohammad Aasif",
-    //     description: ``,
-    //     imgUrl: "Mohammad-Aasif(2).jpg",
-    //     designation: 'Demi Chef de Partie',
-    //     passion: 'Patisserie',
-    //     experience: "11 Years of Experience"
-    // }
-
-// ];
-
-// function renderMentors() {
-//     const mentorsList = document.getElementById('Mentors');
-
-//     Mentors.forEach(mentor => {
-//         const listItem = document.createElement('li');
-//         listItem.classList.add('mentor-item');
-
-//         listItem.onclick = function () {
-//             console.log('mentor', mentor.imgUrl);
-//             getModalObject(mentor, 'mentor');
-//         };
-
-//         const mentorContent = `
-//             <div>
-//                 <span class='img-wrapper'>
-//                     <img src="./img/mentor/${mentor.imgUrl}" class="img-fluid" alt="" />
-//                 </span>
-//                 <div class="designation-name">
-//                     <div><span><b>${mentor.name}</b></span></div>
-//                     <div><span>${mentor.designation}</span></div>
-//                     <div><span>${mentor.passion}</span></div>
-//                     <div><span class="text-muted">${mentor.experience}</span></div>
-//                     <p>${renderFirst100Characters(mentor.description)}</p>                    
-//                 </div>
-//             </div>                
-//         `;
-//         listItem.innerHTML = mentorContent;
-//         if (mentorsList) {
-//             mentorsList.appendChild(listItem);
-//         }
-//     });
-// }
-
-// renderMentors();
-
-
-// raunak
-
 function togglePopContent(event) {
     toggleMore = !toggleMore;
     toggleMore
@@ -604,7 +481,6 @@ function getModalObject(obj, types) {
         return;
     }
 
-
     if (types === 'advisory') {
         $('#modalImage').attr('src', `./img/advisory/${obj.imgUrl}`);
     } else if (types === 'faculty') {
@@ -619,36 +495,21 @@ function getModalObject(obj, types) {
         $('#modalImage').attr('src', `./img/mentor/${obj.imgUrl}`);
     }
 
-
     $('#modalName').text(obj.name);
-
-
-    //  document.getElementById('modalName').innerHTML = `<b>${obj.name}</b>`;
-
-    // Log the object for debugging
-    // console.clear();
-    // console.log('Modal Object:', obj);
-
 
     $('#modalParagraph').html(`
         <div class="pop-modal-content-box">${obj.description}</div>
         <span class="pop-read-more-btn" onclick="togglePopContent(this)">more...</span>
     `);
 
-
     $('#myModal').modal('show');
 
     document.getElementById('modalName').innerHTML = `<b>${person.name}</b>`;
 }
 
-
-
-
 function programmes() {
     $('.courses-tabs .nav-link').on('click', function () {
         const text = $(this).text().trim().toLowerCase();
-        console.log(text);
-
         switch (text) {
             case 'degree':
                 window.location.href = './degree-programmes.html';
@@ -660,7 +521,6 @@ function programmes() {
                 window.location.href = './workshops-event.html';
                 break;
             default:
-                console.log('No case matched');
                 break;
         }
     });
@@ -669,7 +529,6 @@ function programmes() {
 function mobile() {
 
     const widthWidthSize = $(window).width();
-    // console.log(widthWidthSize);
 
     if (widthWidthSize < 767) {
         $('.navigation .navbar-collapse > ul').slideUp();
@@ -681,7 +540,6 @@ function mobile() {
         });
 
         $('.navigation .nav-link').on('click', function (e) {
-            //e.preventDefault();
             const $this = $(this);
             $this.parent('li').find('ul').slideToggle();
         });
@@ -693,18 +551,13 @@ mobile();
 
 programmes();
 
-
 function gotoPage(url) {
     window.location.href = url;
 }
 
-
-
-// api for brochure
 function saveBrochure() {
     let name, email, mobile;
 
-    // Name validation (non-empty)
     if ($("#uname").val().trim() === "") {
         alert("Please Enter Your Name");
         $("#uname").focus();
@@ -713,7 +566,6 @@ function saveBrochure() {
         name = $("#uname").val().trim();
     }
 
-    // Email validation (must match a valid email format)
     let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if ($("#uemail").val().trim() === "") {
         alert("Please Enter Your Email");
@@ -727,7 +579,6 @@ function saveBrochure() {
         email = $("#uemail").val().trim();
     }
 
-    // Mobile validation (only digits, 10-15 characters)
     let mobileRegex = /^[0-9]{10,12}$/;
     if ($("#umobile").val().trim() === "") {
         alert("Please Enter Your Mobile");
@@ -756,7 +607,6 @@ function saveBrochure() {
         },
         success: function (data, textStatus, jqXHR) {
             if (textStatus === 'success') {
-                console.log('Success');
                 $('.thankyou').removeClass('hide');
                 $("#uname").val('');
                 $("#uemail").val('');
@@ -769,7 +619,6 @@ function saveBrochure() {
                     $('#saveBtn').removeAttr('disabled', 'disabled');
                 }, 2000);
 
-
                 setTimeout(function () {
                     let link = document.createElement('a');
                     link.href = '../img/A-Star-Brochure.pdf';
@@ -781,9 +630,7 @@ function saveBrochure() {
             }
         },
         error: function (jqXHR, textStatus, errorThrown) {
-            console.log(jqXHR);
-            console.log(textStatus);
-            console.log(errorThrown);
         }
     });
 }
+

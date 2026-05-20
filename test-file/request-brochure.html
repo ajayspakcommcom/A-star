@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="./css/app.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/landing.css">
 
@@ -18,7 +17,7 @@
     <meta name="keywords"
         content="request brochure, A Star Academy, hospitality education, program information, hotel management school brochure">
 
-    <!-- Google tag (gtag.js) -->
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5WFJW026Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -34,12 +33,10 @@
 
     <div class="main-layout-wrapper">
 
-
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container navigation">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto">
-
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -54,7 +51,7 @@
                                 <li><a class="dropdown-item" href="our-pedagogy.html">Our Pedagogy</a></li>   
                                 <li><a class="dropdown-item" href="advisory-board.html">Advisory Board</a></li>
                                 <li><a class="dropdown-item" href="team-a-star.html"> Our Faculty & <br> Professors of Practice</a></li>
-                                <!--<li><a class="dropdown-item" href="affiliations.html">Affiliations</a></li>-->
+                                
                             </ul>
                         </li>
 
@@ -79,7 +76,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                <li><a class="dropdown-item" href="sahara-star.html">Mumbai Campus</a></li>
                                 <li><a class="dropdown-item" href="aamby-valley-city.html">Lonavala Campus</a></li>
-                                <!--<li><a class="dropdown-item" href="events.html">Events</a></li>-->
+                                
                             </ul>
                         </li>
                     </ul>
@@ -108,12 +105,12 @@
                                 Connect
                             </a>
                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <!--<li><a class="dropdown-item" href="request-brochure.html">Request Brochure</a></li>-->
+                                
                                 <li><a class="dropdown-item" href="careers-at-a-star.html">Careers at A-Star</a></li>
                                 <li>
                                     <hr class="dropdown-divider custom-divider">
                                 </li>
-                                <!--<li><a class="dropdown-item" href="blogs.html">Blogs</a></li>-->
+                                
                                 <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
                             </ul>
                         </li>
@@ -163,11 +160,7 @@
 
                     </div>
 
-                    <!-- <div class="form-check checkbox-wrapper">
-                    <input class="form-check-input" type="checkbox" id="confirm-check" name="option"
-                        value="something" />
-                    <label class="form-check-label">I confirm i am happy for AStaracademy</label>
-                </div> -->
+                    
 
                     <div class="btn-wrapper">
                         <button onclick="saveData()" class="btn btn-primary" id="saveBtn">Submit</button>
@@ -201,7 +194,7 @@
                         <div class="footer-link-wrapper">
                             <div>
                                 <ul>
-                                   <!-- <li><a href="index.html">Home</a></li> -->
+                                   
                                     <li><a href="mission-vision.html">About Us</a></li>
 
                                     <li><a href="executive-directors-message.html">ED's Message</a></li>
@@ -250,7 +243,6 @@
 
     </div>
 
-
     <div class="whatsapp-fixed">
         <li>
             <a href="https://wa.me/8657411591" class="whatsapp" target="_blank">
@@ -263,8 +255,6 @@
     <script src="https://kit.fontawesome.com/7fce4b5f90.js" crossorigin="anonymous"></script>
 
     <script>
-
-
 
         const countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
             "Antigua and Barbuda", "Argentina", "Armenia", "Australia",
@@ -357,7 +347,6 @@
             });
         }
 
-
         function saveData() {
 
             let name, email, mobile, contryName, programmeName;
@@ -402,49 +391,8 @@
                 programmeName = $("#programms").val();
             }
 
-            // if (!$("#confirm-check").is(":checked")) {
-            //     alert("You must agree to the terms and conditions.");
-            //     $("#confirm-check").focus();
-            //     return false;
-            // }
-
             $('#saveBtn').text('Submitting...');
             $('#saveBtn').attr('disabled', 'disabled');
-
-            // $.ajax({
-            //     url: 'https://astaracademy.in/api/AStarRequestBrochure',  //'http://localhost:44309/api/AStarRequestBrochure',    
-            //     method: 'POST',
-            //     contentType: "application/json; charset=utf-8",
-            //     headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
-            //     data: {
-            //         "Name": name,
-            //         "Email": email,
-            //         "Mobile": mobile,
-            //         "CountrtName": contryName,
-            //         "ProgrammeName": programmeName,
-            //         "type": "CREATE"
-            //     },
-            //     success: function (data, textStatus, jqXHR) {
-
-            //         if (textStatus === 'success') {
-            //             console.log('Success');
-            //             $('.thankyou').removeClass('hide');
-            //             $("#uname").val('');
-            //             $("#uemail").val('');
-            //             $("#umobile").val('');
-
-            //             setTimeout(function () {
-            //                 $('#saveBtn').text('Saving');
-            //                 $('#saveBtn').removeAttr('disabled', 'disabled');
-            //                 $('.thankyou').addClass('hide');
-            //             }, 2000);
-
-            //         }
-            //     },
-            //     error: function (jqXHR, textStatus, errorThrown) {
-            //         console.log(textStatus);
-            //     }
-            // });
 
             $.ajax({
                 url: 'https://spakcommgroup.com/api/brochure',
@@ -462,7 +410,6 @@
                 success: function (data, textStatus, jqXHR) {
 
                     if (textStatus === 'success') {
-                        console.log('Success');
                         $('.thankyou').removeClass('hide');
                         $("#uname").val('');
                         $("#uemail").val('');
@@ -477,13 +424,10 @@
                     }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
-                    console.log(textStatus);
                 }
             });
 
-
         }
-
 
         $(document).ready(function () {
             populateCountries();
@@ -495,3 +439,4 @@
 </body>
 
 </html>
+
