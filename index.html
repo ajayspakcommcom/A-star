@@ -347,8 +347,8 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active hero-video-slide">
-                    <video id="heroBannerVideo" class="d-block home-banner-video" autoplay muted playsinline
-                        preload="metadata" aria-label="A-Star Academy banner video">
+                    <video id="heroBannerVideo" class="d-block home-banner-video" playsinline preload="auto"
+                        aria-label="A-Star Academy banner video">
                         <source src="img/banner/ASA%20Rissa%20Landscape.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -1226,6 +1226,72 @@
             const $heroCarousel = $('#demo');
             let heroCarouselAutoStarted = false;
             let heroCarouselInstance = null;
+            let heroBannerInView = true;
+
+            function enableHeroVideoAudio() {
+                if (!heroBannerVideo) return;
+                heroBannerVideo.muted = false;
+                heroBannerVideo.defaultMuted = false;
+                heroBannerVideo.volume = 1;
+            }
+
+            function pauseHeroVideo() {
+                if (!heroBannerVideo) return;
+                heroBannerVideo.pause();
+                heroBannerVideo.muted = true;
+            }
+
+            function updateHeroBannerInViewFromScroll() {
+                if (!heroCarouselEl) {
+                    heroBannerInView = true;
+                    return;
+                }
+                const rect = heroCarouselEl.getBoundingClientRect();
+                const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+                heroBannerInView = rect.bottom > 60 && rect.top < viewHeight - 60;
+            }
+
+            function isHeroVideoSlideActive() {
+                return getHeroSlideIndex() === 0 && !document.hidden && heroBannerInView;
+            }
+
+            function playHeroVideoWithAudio() {
+                if (!heroBannerVideo || !isHeroVideoSlideActive()) return;
+                enableHeroVideoAudio();
+                const playPromise = heroBannerVideo.play();
+                if (playPromise && typeof playPromise.then === 'function') {
+                    playPromise.catch(function () {
+                        if (!isHeroVideoSlideActive()) return;
+                        heroBannerVideo.muted = true;
+                        heroBannerVideo.play().then(function () {
+                            if (!isHeroVideoSlideActive()) {
+                                pauseHeroVideo();
+                                return;
+                            }
+                            enableHeroVideoAudio();
+                            return heroBannerVideo.play();
+                        }).catch(function () { });
+                    });
+                }
+            }
+
+            function resumeHeroVideoOnSlide() {
+                if (!heroBannerVideo) return;
+                heroBannerVideo.loop = false;
+                if (heroBannerVideo.ended || (heroBannerVideo.duration && heroBannerVideo.currentTime >= heroBannerVideo.duration - 0.25)) {
+                    heroBannerVideo.currentTime = 0;
+                }
+                playHeroVideoWithAudio();
+            }
+
+            function syncHeroVideoPlayback() {
+                if (!heroBannerVideo) return;
+                if (isHeroVideoSlideActive()) {
+                    resumeHeroVideoOnSlide();
+                } else {
+                    pauseHeroVideo();
+                }
+            }
 
             if (heroCarouselEl && typeof bootstrap !== 'undefined') {
                 heroCarouselInstance = bootstrap.Carousel.getOrCreateInstance(heroCarouselEl, {
@@ -1261,16 +1327,44 @@
                 if (!heroBannerVideo) return;
                 heroBannerVideo.loop = false;
                 heroBannerVideo.currentTime = 0;
-                const playPromise = heroBannerVideo.play();
-                if (playPromise && typeof playPromise.catch === 'function') {
-                    playPromise.catch(function () { });
-                }
+                playHeroVideoWithAudio();
             }
 
             function setupHeroVideoSlide() {
                 pauseHeroCarousel();
-                playHeroVideoFromStart();
+                if (isHeroVideoSlideActive()) {
+                    playHeroVideoFromStart();
+                } else {
+                    pauseHeroVideo();
+                }
             }
+
+            function unlockHeroVideoAudioOnGesture() {
+                if (!isHeroVideoSlideActive()) return;
+                enableHeroVideoAudio();
+                heroBannerVideo.play().catch(function () { });
+            }
+
+            document.addEventListener('click', unlockHeroVideoAudioOnGesture, { once: true, capture: true });
+            document.addEventListener('touchstart', unlockHeroVideoAudioOnGesture, { once: true, capture: true });
+
+            document.addEventListener('visibilitychange', function () {
+                syncHeroVideoPlayback();
+            });
+
+            if (heroCarouselEl && 'IntersectionObserver' in window) {
+                const heroBannerObserver = new IntersectionObserver(function (entries) {
+                    const entry = entries[0];
+                    heroBannerInView = entry.isIntersecting && entry.intersectionRatio >= 0.12;
+                    syncHeroVideoPlayback();
+                }, { threshold: [0, 0.12, 0.25, 0.5, 0.75] });
+                heroBannerObserver.observe(heroCarouselEl);
+            }
+
+            $(window).on('scroll.heroVideo', function () {
+                updateHeroBannerInViewFromScroll();
+                syncHeroVideoPlayback();
+            });
 
             if (heroBannerVideo) {
                 heroBannerVideo.addEventListener('ended', function () {
@@ -1284,17 +1378,20 @@
 
             if (heroCarouselEl) {
                 heroCarouselEl.addEventListener('slide.bs.carousel', function (e) {
-                    const leavingVideo = getHeroSlideIndex() === 0;
                     const nextIndex = Array.from(heroCarouselEl.querySelectorAll('.carousel-item')).indexOf(e.relatedTarget);
+                    const leavingVideo = getHeroSlideIndex() === 0;
+
+                    if (nextIndex !== 0) {
+                        pauseHeroVideo();
+                    }
+
                     if (leavingVideo && nextIndex !== 0) {
                         heroCarouselAutoStarted = true;
-                        if (heroBannerVideo) {
-                            heroBannerVideo.pause();
-                        }
                     }
                 });
             }
 
+            updateHeroBannerInViewFromScroll();
             setupHeroVideoSlide();
 
             const heroFormPanel = document.getElementById('heroFormPanel');
@@ -1352,10 +1449,14 @@
             $heroCarousel.on('slid.bs.carousel', function () {
                 syncHeroFormWithCarousel();
                 const slideIndex = getHeroSlideIndex();
+
                 if (slideIndex === 0) {
                     setupHeroVideoSlide();
-                } else if (heroCarouselAutoStarted) {
-                    startHeroCarouselAuto();
+                } else {
+                    pauseHeroVideo();
+                    if (heroCarouselAutoStarted) {
+                        startHeroCarouselAuto();
+                    }
                 }
             });
 
