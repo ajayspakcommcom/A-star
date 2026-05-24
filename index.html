@@ -347,8 +347,8 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active hero-video-slide">
-                    <video id="heroBannerVideo" class="d-block home-banner-video" playsinline preload="auto"
-                        aria-label="A-Star Academy banner video">
+                    <video id="heroBannerVideo" class="d-block home-banner-video" autoplay muted playsinline
+                        preload="auto" aria-label="A-Star Academy banner video">
                         <source src="img/banner/ASA%20Rissa%20Landscape.mp4" type="video/mp4" />
                     </video>
                 </div>
@@ -1113,6 +1113,27 @@
         <a href="contact-us.html">Book Free Counselling<br> & Campus Visit</a>
     </div>
 
+    <!-- Home promo popup -->
+    <div class="modal fade home-promo-modal" id="homePromoModal" tabindex="-1" role="dialog"
+        aria-labelledby="homePromoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered home-promo-modal-dialog">
+            <div class="modal-content home-promo-modal-content">
+                <button type="button" class="home-promo-modal-close" data-bs-dismiss="modal"
+                    aria-label="Close promotion popup">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <a href="https://admission.astaracademy.in/" class="home-promo-modal-link" target="_blank"
+                        rel="noopener noreferrer" id="homePromoModalLabel"
+                        aria-label="Apply for admission at A-Star Academy – opens in a new tab">
+                        <img src="./img/pop/astarpopup.jpeg" alt="A-Star Academy admission promotion"
+                            class="home-promo-modal-img" width="819" height="1280" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="hero-floating-actions" id="heroFloatingActions">
         <button type="button" class="hero-apply-cta is-hidden" id="heroApplyCta"
             aria-label="Apply now – open admission form">
@@ -1252,12 +1273,21 @@
             }
 
             function isHeroVideoSlideActive() {
-                return getHeroSlideIndex() === 0 && !document.hidden && heroBannerInView;
+                if (getHeroSlideIndex() !== 0 || document.hidden) {
+                    return false;
+                }
+                if (document.body.classList.contains('modal-open')) {
+                    return true;
+                }
+                return heroBannerInView;
             }
 
             function playHeroVideoWithAudio() {
                 if (!heroBannerVideo || !isHeroVideoSlideActive()) return;
+
+                heroBannerVideo.loop = false;
                 enableHeroVideoAudio();
+
                 const playPromise = heroBannerVideo.play();
                 if (playPromise && typeof playPromise.then === 'function') {
                     playPromise.catch(function () {
@@ -1367,6 +1397,12 @@
             });
 
             if (heroBannerVideo) {
+                heroBannerVideo.addEventListener('canplay', function () {
+                    if (isHeroVideoSlideActive() && heroBannerVideo.paused) {
+                        playHeroVideoWithAudio();
+                    }
+                }, { once: true });
+
                 heroBannerVideo.addEventListener('ended', function () {
                     if (getHeroSlideIndex() !== 0) return;
                     startHeroCarouselAuto();
@@ -1392,7 +1428,6 @@
             }
 
             updateHeroBannerInViewFromScroll();
-            setupHeroVideoSlide();
 
             const heroFormPanel = document.getElementById('heroFormPanel');
             const heroApplyCta = document.getElementById('heroApplyCta');
@@ -1459,6 +1494,23 @@
                     }
                 }
             });
+
+            const homePromoModalEl = document.getElementById('homePromoModal');
+            if (homePromoModalEl && typeof bootstrap !== 'undefined') {
+                const homePromoModal = bootstrap.Modal.getOrCreateInstance(homePromoModalEl, {
+                    backdrop: true,
+                    keyboard: true
+                });
+
+                setupHeroVideoSlide();
+
+                setTimeout(function () {
+                    homePromoModal.show();
+                    playHeroVideoWithAudio();
+                }, 300);
+            } else {
+                setupHeroVideoSlide();
+            }
 
         });
 
