@@ -26,55 +26,55 @@ const advisoryMembers = [
         id: 1,
         name: "Chef Satish Arora",
         description: "<p>A culinary luminary, Chef Satish Arora boasts a career spanning five decades, punctuated by his meteoric rise as the world's youngest Executive Chef of a five-star kitchen at a mere 26 years of age. Aninspirational figure within the industry, Chef Arora has not onlygarnered accolades but has also served as a beacon of guidance foraspiring chefs. His journey is marked by a constellation of awards andthe privilege of catering to royalty heads of state, celebrities, and luminaries. </p>",
-        imgUrl: "satish-arora.jpg"
+        imgUrl: "satish-arora.webp"
     },
     {
         id: 2,
         name: "Chef Manjit Singh Gill",
         description: "<p>Chef Manjit Singh Gill, a revered figure in the gastronomic world and President of the Indian Federation of Culinary Associations, has led ITC Hotels as Corporate Chef, been recognized with the Escoffier Medal, and authored works including \"Eating Wisely & Well\" and the \"Secrets of Indian Gastronomy\" series: \"Fire,\" \"Water,\" \"Earth,\" \"Air,\" and \"Ether.\"</p>",
-        imgUrl: "Manjit-Singh-Gill.jpg"
+        imgUrl: "Manjit-Singh-Gill.webp"
     },
     {
         id: 12,
         name: "Mr. Ajay Grover",
         description: "<p>Ajay Grover, an esteemed alumnus of IHM Pusa (1978) and Best All-Round Student, boasts over 45 years of extensive experience across multiple industries. Throughout his illustrious career, he has held senior positions, including General Manager at Taj Hotels, GM of the Flight Catering Unit at Taj, Area Sales Manager at Jet Airways, GM Sales at Air Sahara, and VP Sales & Marketing at Paramount Airways. Additionally, he has served as COO for a developer company specializing in hotels, malls, multiplexes, and casinos and as Head of Catering for the Commonwealth Games Delhi. Currently, Ajay is a co-owner of a management consulting company, leveraging his expertise in M&A, introducing international luxury and F&B brands to India, and auditing hotels and airlines.</p>",
-        imgUrl: "Mr. Ajay Grover.jpeg"
+        imgUrl: "Mr. Ajay Grover.webp"
     },
     {
         id: 3,
         name: " Chef Sabyasachi Gorai",
         description: "<p>Chef Sabyasachi Gorai is a multifaceted culinary virtuoso revered as an Indian celebrity Chef. With roles ranging from educator and hospitality consultant to television show host and food-show judge, Chef Saby's passion for food and cooking shines through. Armed with specialized culinary training from esteemed institutions such as Pastry School in Paris, Culinary School in the USA, and Pasta Academy in Italy, Chef Saby has amassed a plethora of achievements and accolades, culminating in his recognition as ‘India's Best Chef’  by the President of India.</p>",
-        imgUrl: "Sabyasachi-Gorai.jpg"
+        imgUrl: "Sabyasachi-Gorai.webp"
     },
     {
         id: 4,
         name: "Mr. Salil Fadnis",
         description: "<p>An alumnus of IHM Mumbai 1991 batch, Salil Fadnis began his career with Oberoi hotels joining the prestigious OCLD. Salil spent a major part of his career in the kitchen and about 15 years as an Executive Chef. His professional voyage encompasses stints across various national and international hotel chains. Over the past 30+ years he has worked in and out of the country having had the opportunity to open hotels in India and overseas. He is a founder member of The Western India Culinary Association (WICA), a networking and collaborating platform for chefs & is the current President at WICA.</p>",
-        imgUrl: "salil-fadnis.jpg"
+        imgUrl: "salil-fadnis.webp"
     },
     {
         id: 8,
         name: "Prof. Nimit Chowdhary",
         description: "<p>Prof. Nimit Chowdhary brings over 30 years of academic experience,having served as a Professor at the Indian Institute of Tourism and Travel Management across various locations. A passionate leader with a knack for innovation, he thrives on experimenting with teaching methods and shaping learning environments. Beyond his research record of 245+ publications, he boasts a global perspective gained through extensive travel across 40+ countries, further enriched by prestigious awards like the Eminent Engineer distinction.</p>",
-        imgUrl: "Prof. Nimit Chowdhary.jpg"
+        imgUrl: "Prof. Nimit Chowdhary.webp"
     },
     {
         id: 9,
         name: "Dr. Prashant Kumar Gautam",
         description: "Dr. Prashant Kumar Gautam is a highly accomplished Professor of Tourism at Panjab University with extensive leadership experience. He currently holds positions as a Nominated Fellow to the Senate, Executive Council member at HPU Shimla and Nagaland University, and member of the AICTE All India Board for Tourism and Hospitality. His impressive record includes completing research projects valued at Rs 2.5 crores, guiding 8 doctoral students, and publishing 15 books and 80 research papers, solidifying his expertise in the field.",
-        imgUrl: "DR Prashant Kumar Gautam.jpg"
+        imgUrl: "DR Prashant Kumar Gautam.webp"
     },
     {
         id: 10,
         name: "Prof. U. N. Shukla",
         description: "Prof. U. N. Shukla, a tourism education leader with 29+ years, is the director of Dr. Bhimrao Ambedkar University's Institute of Tourism and Hotel Management. He is also the Dean of the Faculty of Management. With published research in over 28 journals and experience guiding scholars, his expertise is undeniable.",
-        imgUrl: "Prof U.N. Shukla (2).jpg"
+        imgUrl: "Prof U.N. Shukla (2).webp"
     },
     {
         id: 11,
         name: "Dr. Norel Peter Marpuri Illo",
         description: "Dr. Norel Peter Marpuri Illo is the Master in Hospitality Management Program Chair and Assistant Professor IV at Camarines Sur Polytechnic Colleges, Nabua, Camarines Sur, Philippines. With extensive experience in the food service industry, including pastry, baking, and food and beverage services, he is known for his leadership, organizational skills, and commitment to continuous improvement. Norel has also served as OIC Dean, College Instructor, and Distinguished Reviewer for Global Professional Advancement, showcasing his ability to connect with diverse individuals and build strong relationships.",
-        imgUrl: "Dr. Norel Peter Marpuri Illo.jpg"
+        imgUrl: "Dr. Norel Peter Marpuri Illo.webp"
     }
 
 ];
@@ -124,7 +124,7 @@ const facultyMembers = [
             &quot;Managing Hotel Front Office Operations,&quot; was published in 2016. He has received awards for Exemplary
             Academic Leadership and Best Director-Principal. Dr. Mishra also actively contributes to curriculum
             development for various hospitality programs.</p>`,
-        imgUrl: "rajiv-mishra.png",
+        imgUrl: "rajiv-mishra.webp",
         designation: 'Director',
         experience: "26 Years of Experience"
 
@@ -140,7 +140,7 @@ const facultyMembers = [
                         in academic administration and leadership. He leverages his extensive industry experience and academic
                         acumen to nurture future leaders in the hospitality sector. His passion for education and wealth of
                         experience makes him a valuable asset in shaping the next generation of hospitality professionals.</p>`,
-        imgUrl: "vishvanath.png",
+        imgUrl: "vishvanath.webp",
         designation: 'Dean',
         experience: "23 Years of Experience"
     },
@@ -149,7 +149,7 @@ const facultyMembers = [
         id: 3,
         name: "Mr. Prashant Kumar",
         description: `<p>An IHM PUSA alumnus with 33+ years in hospitality, from ITC’s Hotels to The Bristol, India Habitat Centre , IL&FS. Now General Manager at Aamby Valley City, he inspires future hoteliers with a passion for excellence, service, and world-class guest experiences.</p>`,
-        imgUrl: "Mr-Prashant.jpg",
+        imgUrl: "Mr-Prashant.webp",
         designation: 'Head of Strategic Alliances & PR',
         experience: "33+ Years of Experience"
     },
@@ -194,7 +194,7 @@ const professors = [
         id: 1,
         name: "Ms. Shelly Mathur",
         description: ``,
-        imgUrl: "Ms. Shelly Mathur.jpg",
+        imgUrl: "Ms. Shelly Mathur.webp",
         designation: 'Assistant Director',
         passion: 'Sahara Hospitality Limited',
         experience: "22 Years of Experience"
@@ -204,7 +204,7 @@ const professors = [
         id: 3,
         name: "Ranjan Rajani",
         description: ``,
-        imgUrl: "Ranjan Ranjani.jpg",
+        imgUrl: "Ranjan Ranjani.webp",
         designation: 'Corporate Chef',
         passion: 'Aamby Valley City & Sahara Star',
         experience: "24 Years of Experience"
@@ -213,7 +213,7 @@ const professors = [
         id: 4,
         name: "Mohammed Shaikh",
         description: ``,
-        imgUrl: "shaikh.jpg",
+        imgUrl: "shaikh.webp",
         designation: 'HR Manager',
         passion: 'Sahara Star',
         experience: "25 Years of Experience"
@@ -222,7 +222,7 @@ const professors = [
         id: 5,
         name: "Karishma Raghuvanshi",
         description: ` `,
-        imgUrl: "karishma.jpg",
+        imgUrl: "karishma.webp",
         designation: 'Business Development Head',
         passion: 'A-Star Academy',
         experience: "17 Years of Experience"
@@ -231,7 +231,7 @@ const professors = [
         id: 6,
         name: "Deepali Pinheiro",
         description: ``,
-        imgUrl: "deepali.jpg",
+        imgUrl: "deepali.webp",
         designation: 'Room Division Manager',
         passion: 'Sahara Star',
         experience: "21 Years of Experience"
@@ -240,7 +240,7 @@ const professors = [
         id: 7,
         name: "Manpreet Kaur",
         description: ``,
-        imgUrl: "Manpreet Kaur.jpg",
+        imgUrl: "Manpreet Kaur.webp",
         designation: 'Customer Excellence',
         passion: 'Aamby Valley City',
         experience: "20+ Years of Experience"
@@ -286,7 +286,7 @@ const ourfaculty = [
         id: 3,
         name: "Mr. Siddhesh Wadkar",
         description: `Mr. Siddhesh Wadkar is a passionate and results-driven culinary professional with over 18 years of experience across hospitality education, food production, and kitchen operations in India and the UK. He has worked with renowned hotels, restaurants, and academic institutions, gaining extensive industry expertise. Mr. Wadkar focuses on developing engaging training programs, standardizing recipes, and optimizing kitchen operations for consistent excellence.`,
-        imgUrl: "Siddhesh-Wadkar.jpg",
+        imgUrl: "Siddhesh-Wadkar.webp",
         designation: "Assistant Professor",
         passion: "",
         experience: "18+ Years of Experience"
@@ -295,7 +295,7 @@ const ourfaculty = [
         id: 1,
         name: "Ms. Rosemary Jerry Thekkekara",
         description: `Ms. Rosemary Jerry Thekkekara is a dedicated hospitality professional with over nine years of experience in Room Division management. Her extensive experience in hospitality education has enabled her to combine practical industry knowledge with academic insight, equipping students with a thorough understanding of room division operations. With a focus on operational excellence, leadership, and service standards, Ms. Thekkekara is committed to mentoring aspiring hospitality professionals.`,
-        imgUrl: "Rosemary-Jerry-Thekkekara.jpg",
+        imgUrl: "Rosemary-Jerry-Thekkekara.webp",
         designation: "Assistant Professor",
         passion: "",
         experience: "9+ Years of Experience"
@@ -304,7 +304,7 @@ const ourfaculty = [
         id: 2,
         name: "Ms. Neha Purushwani",
         description: `Ms. Neha Purushwani is a passionate pastry chef with over three years of industry experience, bringing creativity, precision, and artistry to her work. A graduate with a Bachelor’s in Culinary Arts and a Diploma in Bakery and Patisserie, she has trained under renowned chefs who have shaped her refined approach to pastry arts.`,
-        imgUrl: "Neha-Purushwani.jpg",
+        imgUrl: "Neha-Purushwani.webp",
         designation: "Teaching Assistant",
         passion: "",
         experience: "3+ Years of Experience"
@@ -352,7 +352,7 @@ const professorsChef = [
         id: 1,
         name: "Vishal Singh",
         description: "",
-        imgUrl: "vishal-singh(2).jpg",
+        imgUrl: "vishal-singh(2).webp",
         designation: 'Head Chef',
         passion: 'Indian Heritage',
         experience: "35 Years of Experience"
@@ -361,7 +361,7 @@ const professorsChef = [
         id: 2,
         name: "Vinod Rana",
         description: "",
-        imgUrl: "vinod-rana(2).jpg",
+        imgUrl: "vinod-rana(2).webp",
         designation: 'Executive Sous Chef',
         passion: 'Indian Breads',
         experience: "35 Years of Experience"
@@ -370,7 +370,7 @@ const professorsChef = [
         id: 3,
         name: "Rupesh Khandekar",
         description: "",
-        imgUrl: "rupesh-khandekar(2).jpg",
+        imgUrl: "rupesh-khandekar(2).webp",
         designation: 'Executive Sous Chef',
         passion: 'Continental Cuisine',
         experience: "24 Years of Experience"
@@ -379,7 +379,7 @@ const professorsChef = [
         id: 4,
         name: "Jihad Shami",
         description: "",
-        imgUrl: "jihad-shami.jpg",
+        imgUrl: "jihad-shami.webp",
         designation: 'Chef de Cuisine (Head Chef - Mabruk)',
         passion: 'Lebanese Cuisine',
         experience: "33 Years of Experience"
@@ -388,7 +388,7 @@ const professorsChef = [
         id: 6,
         name: "Prashant Lad",
         description: "",
-        imgUrl: "prashant-lad(2).jpg",
+        imgUrl: "prashant-lad(2).webp",
         designation: 'Jr. Sous Chef',
         passion: 'Italian Cuisine',
         experience: "15 Years of Experience"
@@ -397,7 +397,7 @@ const professorsChef = [
         id: 7,
         name: "Yashwant Singh",
         description: "",
-        imgUrl: "yashwant-singh(2).jpg",
+        imgUrl: "yashwant-singh(2).webp",
         designation: 'Sous Chef',
         passion: 'Indian Curries',
         experience: "16 Years of Experience"
@@ -406,7 +406,7 @@ const professorsChef = [
         id: 8,
         name: "Bharat Singh Rawat",
         description: ``,
-        imgUrl: "bharat-singh.jpg",
+        imgUrl: "bharat-singh.webp",
         designation: 'Jr Sous Chef',
         passion: 'Cold appetizer',
         experience: "26 Years of Experience"
@@ -416,7 +416,7 @@ const professorsChef = [
         id: 9,
         name: "Savar Singh",
         description: ``,
-        imgUrl: "savar-singh(2).jpg",
+        imgUrl: "savar-singh(2).webp",
         designation: 'Chef de Partie',
         passion: 'Indian Breads',
         experience: "13 Years of Experience"
@@ -425,7 +425,7 @@ const professorsChef = [
         id: 10,
         name: "Guddu Singh",
         description: ``,
-        imgUrl: "guddu-singh(2).jpg",
+        imgUrl: "guddu-singh(2).webp",
         designation: 'Chef de Partie',
         passion: 'Kebabs',
         experience: "12 Years of Experience"
@@ -633,4 +633,44 @@ function saveBrochure() {
         }
     });
 }
+
+(function initMobileNav() {
+    const MOBILE_NAV_MAX = 991;
+
+    function isMobileNav() {
+        return window.innerWidth <= MOBILE_NAV_MAX;
+    }
+
+    document.querySelectorAll('.dropdown-submenu > .dropdown-toggle').forEach(function (toggle) {
+        toggle.addEventListener('click', function (event) {
+            if (!isMobileNav()) {
+                return;
+            }
+            event.preventDefault();
+            event.stopPropagation();
+            const submenu = this.nextElementSibling;
+            if (!submenu || !submenu.classList.contains('dropdown-menu')) {
+                return;
+            }
+            submenu.classList.toggle('show');
+            this.setAttribute('aria-expanded', submenu.classList.contains('show'));
+        });
+    });
+
+    document.querySelectorAll('nav.lg-nav #navbarNav .dropdown-item[href], nav.lg-nav #navbarNav .nav-link:not(.dropdown-toggle)[href]').forEach(function (link) {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') {
+            return;
+        }
+        link.addEventListener('click', function () {
+            if (!isMobileNav()) {
+                return;
+            }
+            const collapse = document.getElementById('navbarNav');
+            if (collapse && typeof bootstrap !== 'undefined') {
+                bootstrap.Collapse.getOrCreateInstance(collapse, { toggle: false }).hide();
+            }
+        });
+    });
+})();
 

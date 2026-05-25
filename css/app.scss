@@ -109,7 +109,7 @@ nav {
             }
         }
 
-        [src="./img/logo.png"] {
+        [src="./img/logo.webp"] {
             width: 140px;
             height: auto;
         }
@@ -257,7 +257,7 @@ nav {
     z-index: 1;
     position: relative;
     // top: -126px;
-    // background-image: url("../img/home-bg.png");
+    // background-image: url("../img/home-bg.webp");
     // background-size: cover;
     // background-position: center center;
     // background-repeat: no-repeat;
@@ -307,7 +307,7 @@ nav {
     }
 
     &.about-bg {
-        background-image: url("../img/about/about-banner.png");
+        background-image: url("../img/courses/about-us.webp");
         position: relative;
         color: #000;
 
@@ -677,8 +677,8 @@ nav {
 
 
 .Explore-Majors {
-    //background-image: url(https: //unicamp.thememove.com/main/wp-content/uploads/sites/2/2021/04/home-04-program-section-bg.jpg);
-    // background-image: url(../img/home/as-sahara.jpg);
+    //background-image: url(https: //unicamp.thememove.com/main/wp-content/uploads/sites/2/2021/04/home-04-program-section-bg.webp);
+    // background-image: url(../img/home/as-sahara.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -840,7 +840,7 @@ nav {
 }
 
 .contact-wrapper {
-    background-image: url("../img/contact-bg.png");
+    background-image: url("../img/contact-bg.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1081,7 +1081,7 @@ nav {
 
 .hybrid-wrapper {
 
-    background-image: url("../img/hybrid/bg.png");
+    background-image: url("../img/hybrid/bg.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1138,7 +1138,7 @@ footer {
     background-color: #1f1d1d;
     color: #fff;
 
-    [src="./img/footer-logo.png"] {
+    [src="./img/footer-logo.webp"] {
         margin-bottom: 20px;
         width: 50%;
     }
@@ -1426,7 +1426,7 @@ footer {
         margin: 0px 0;
     }
 
-    [src="./img/1.png"] {
+    [src="./img/1.webp"] {
         display: block;
         margin-left: 20px;
     }
@@ -1953,8 +1953,8 @@ select:first-of-type {
     }
 }
 
-[src="./img/ss-logo.png"],
-[src="./img/avc-logo.png"] {
+[src="./img/ss-logo.webp"],
+[src="img/avc-logo.webp"] {
     display: block;
     margin: auto;
     margin-bottom: 20px;
@@ -2448,6 +2448,226 @@ select:first-of-type {
     display: none;
 }
 
+@media (max-width: 991px) {
+    .xs-nav {
+        display: none !important;
+    }
+
+    .lg-nav {
+        display: block !important;
+    }
+
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    nav.navbar.fixed-top.lg-nav {
+        height: auto;
+        min-height: 64px;
+        padding: 8px 0;
+    }
+
+    nav.lg-nav.navbar {
+        background-color: #fff !important;
+    }
+
+    nav.lg-nav .custom-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    nav.lg-nav .navbar-brand:not(.mx-auto) {
+        order: 1;
+        margin: 0;
+    }
+
+    nav.lg-nav .navbar-brand.mx-auto {
+        display: none;
+    }
+
+    nav.lg-nav .navbar-toggler {
+        order: 2;
+        margin-left: auto;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 6px 10px;
+    }
+
+    nav.lg-nav #navbarNav:not(.show) {
+        display: none !important;
+    }
+
+    nav.lg-nav #navbarNav.show,
+    nav.lg-nav #navbarNav.collapsing {
+        display: flex !important;
+    }
+
+    nav.lg-nav #navbarNav {
+        order: 3;
+        flex-basis: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        max-height: min(75vh, 520px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-size: 14px;
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #e8e8e8;
+    }
+
+    nav.lg-nav #navbarNav .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin: 0;
+    }
+
+    nav.lg-nav #navbarNav .nav-item {
+        width: 100%;
+    }
+
+    nav.lg-nav #navbarNav .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 16px !important;
+        border-bottom: 1px solid #efefef;
+        color: #1a1a1a;
+    }
+
+    nav.lg-nav .dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    nav.lg-nav .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background: #faf6f0 !important;
+        padding: 4px 0 8px;
+    }
+
+    nav.lg-nav .dropdown-menu.show {
+        display: block !important;
+    }
+
+    nav.lg-nav .dropdown-menu::after {
+        display: none;
+    }
+
+    nav.lg-nav .dropdown-menu a,
+    nav.lg-nav .dropdown-menu .dropdown-item {
+        color: #1a1a1a !important;
+        padding: 10px 20px !important;
+        white-space: normal;
+    }
+
+    nav.lg-nav .dropdown-menu a:hover,
+    nav.lg-nav .dropdown-menu .dropdown-item:hover {
+        background: rgba(202, 147, 59, 0.15) !important;
+        color: #1a1a1a !important;
+    }
+
+    nav.lg-nav .dropdown-submenu > .dropdown-menu {
+        position: static !important;
+        left: 0 !important;
+        margin: 0;
+        padding-left: 12px;
+        background: #f3ebe0 !important;
+        display: none;
+    }
+
+    nav.lg-nav .dropdown-submenu > .dropdown-menu.show {
+        display: block !important;
+    }
+
+    nav.lg-nav .dropdown-submenu:hover > .dropdown-menu {
+        display: none;
+    }
+
+    nav.lg-nav .dropdown-submenu:hover > .dropdown-menu.show {
+        display: block !important;
+    }
+
+    nav.lg-nav .custom-divider {
+        margin: 4px 16px;
+        opacity: 0.35;
+    }
+
+    .contact-us-btn {
+        left: 12px;
+        right: 68px;
+        bottom: calc(env(safe-area-inset-bottom) + 14px);
+        z-index: 1000;
+        max-width: none;
+    }
+
+    .contact-us-btn a {
+        display: block;
+        font-size: 11px;
+        line-height: 1.25;
+        padding: 8px 10px;
+        text-align: center;
+        border-radius: 999px;
+        max-width: calc(100vw - 96px);
+    }
+
+    .hero-floating-actions {
+        right: 12px;
+        bottom: calc(env(safe-area-inset-bottom) + 14px);
+        gap: 8px;
+        z-index: 1001;
+    }
+
+    body.hero-on-video-slide .hero-apply-cta,
+    .hero-apply-cta {
+        display: none !important;
+    }
+
+    .hero-floating-actions .whatsapp-fixed {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer,
+    .footer-section {
+        padding-bottom: 88px;
+    }
+
+    .main-layout-wrapper {
+        padding-bottom: 0;
+    }
+
+    body.hero-form-active .contact-us-btn {
+        display: none;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .xs-nav {
+        visibility: hidden;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 767px) {
 
     nav .dropdown:focus>.dropdown-menu {
@@ -2469,16 +2689,7 @@ select:first-of-type {
         width: 160px !important;
     }
 
-    .xs-nav {
-        display: block;
-    }
-
-
-    .lg-nav {
-        display: none;
-    }
-
-    nav .navigation [src="./img/logo.png"] {
+    nav .navigation [src="./img/logo.webp"] {
         width: 110px;
         height: auto;
     }
@@ -2807,7 +3018,7 @@ select:first-of-type {
         margin-bottom: 15px;
     }
 
-    [src="./img/about/eds-msg.jpg"] {
+    [src="./img/about/eds-msg.webp"] {
         display: block;
         margin-bottom: 15px;
     }
@@ -2922,7 +3133,7 @@ select:first-of-type {
 
     .Explore-Majors {
         margin: 15px auto 0 auto;
-        background-image: url(../img/home/master-class-registration.jpg);
+        background-image: url(../img/home/master-class-registration.webp);
 
         .content {
 
@@ -3500,27 +3711,45 @@ p {
 .whatsapp-fixed {
     position: fixed;
     bottom: calc(env(safe-area-inset-bottom) + 20px);
-    right: 50px;
-    z-index: 999;
+    right: 28px;
+    z-index: 1000;
     background-color: #25d366;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-floating-actions .whatsapp-fixed {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    flex-shrink: 0;
 }
 
 .whatsapp-fixed li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .whatsapp-fixed a {
-    color: #99a1a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 1;
     margin-bottom: 0;
+    text-decoration: none;
 }
 
 
@@ -3622,9 +3851,10 @@ body.modal-open {
 .pan-india-section {
     display: flex;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;    
-    
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 6px 0 10px;
+
     p{
         font-size: 15px;
         display: flex;
@@ -3644,16 +3874,20 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 4px;
 }
 
 .number-grid {
     display: flex;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 0;
+    margin-top: 0;
     & > a {
         display: inline-block;
-        border-right: 1px solid #fff;
-        line-height: 10px;
-        padding: 0 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+        line-height: 1.35;
+        padding: 2px 10px;
         &:first-child {
             padding-left: 0;
         }
@@ -3668,20 +3902,22 @@ body.modal-open {
     text-decoration: none;
     font-weight: 500;
     font-size: 11px;
-    white-space: nowrap;
     transition: color 0.3s ease;
 }
 
 .footer-mob-text {
   display: flex;
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 0;
+  margin: 0 0 12px;
   & > a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    border-right: 1px solid #fff;
-    line-height: 10px;
-    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.45);
+    line-height: 1.35;
+    padding: 2px 10px;
     &:first-child {
             padding-left: 0;
         }
