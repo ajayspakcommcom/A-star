@@ -607,6 +607,9 @@ function saveBrochure() {
         },
         success: function (data, textStatus, jqXHR) {
             if (textStatus === 'success') {
+                if (typeof astarGoogleAdsLeadConversion === 'function') {
+                    astarGoogleAdsLeadConversion();
+                }
                 $('.thankyou').removeClass('hide');
                 $("#uname").val('');
                 $("#uemail").val('');

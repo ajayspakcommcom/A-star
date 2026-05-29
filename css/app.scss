@@ -1134,44 +1134,62 @@ nav {
 }
 
 footer {
-    padding: 20px 0;
+    padding: 36px 0 28px;
     background-color: #1f1d1d;
     color: #fff;
 
-    [src="./img/footer-logo.webp"] {
-        margin-bottom: 20px;
-        width: 50%;
+    .row {
+        row-gap: 28px;
+        align-items: flex-start;
     }
 
-    p,
-    a {
-        // font-family: 'Poppins-Regular';
-        font-size: 11px;
-        line-height: 25px;
+    [src="./img/footer-logo.webp"] {
+        display: block;
+        margin-bottom: 18px;
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+    }
 
+    .col-md-7 > p {
+        margin: 0 0 14px;
+    }
 
-        &>span {
-            display: block;
-        }
+    p > span {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    p .custom-divider {
+        margin: 14px 0 16px !important;
+        width: 100% !important;
+        opacity: 0.35;
     }
 
     .footer-link-wrapper {
         display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 20px;
 
         &>div {
-            width: 33.3333%;
+            flex: 1 1 0;
+            min-width: 0;
 
             ul {
                 margin: 0;
                 padding: 0;
                 list-style: none;
 
-                & li {
-                    margin-bottom: 5px;
+                li {
+                    margin-bottom: 7px;
 
                     &>a {
                         color: #fff;
                         text-decoration: none;
+                        font-size: 11px;
+                        line-height: 1.45;
 
                         &:hover {
                             color: #ca933b;
@@ -1182,35 +1200,38 @@ footer {
         }
     }
 
-
     .footer-social-link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px 18px;
         margin: 0;
         padding: 0;
         list-style: none;
-        margin-top: 25px;
 
         .footer-btn {
-            margin-bottom: 1rem !important;
+            flex: 1 1 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0 0 6px !important;
+            width: 100%;
         }
 
         &>li {
-            display: inline-block;
-            margin-right: 15px;
-            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            margin: 0;
 
-            img {
-                width: 160px;
-                height: auto;
+            &>a > img {
+                width: 32px;
+                height: 32px;
             }
 
-            &>a {
-                display: block;
-                cursor: pointer;
-
-                &>img {
-                    width: 35px;
-                    cursor: pointer;
-                }
+            &:last-child img {
+                width: auto;
+                max-width: 150px;
+                max-height: 52px;
             }
         }
     }
@@ -2641,9 +2662,8 @@ select:first-of-type {
         height: 50px;
     }
 
-    footer,
-    .footer-section {
-        padding-bottom: 88px;
+    footer {
+        padding-bottom: calc(28px + 72px);
     }
 
     .main-layout-wrapper {
@@ -3851,16 +3871,16 @@ body.modal-open {
 .pan-india-section {
     display: flex;
     align-items: center;
-    gap: 12px;
     flex-wrap: wrap;
-    margin: 6px 0 10px;
+    gap: 8px 12px;
+    margin: 0 0 12px;
 
-    p{
-        font-size: 15px;
-        display: flex;
-        justify-self: center;
-        align-items: center;
-        align-content: center;
+    > span {
+        color: #ca933b;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
 }
 
@@ -3906,25 +3926,34 @@ body.modal-open {
 }
 
 .footer-mob-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 0;
-  margin: 0 0 12px;
-  & > a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    border-right: 1px solid rgba(255, 255, 255, 0.45);
-    line-height: 1.35;
-    padding: 2px 10px;
-    &:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 0;
+    margin: 0 0 14px;
+
+    > a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        border-right: 1px solid rgba(255, 255, 255, 0.35);
+        line-height: 1.4;
+        padding: 0 10px;
+        font-size: 11px;
+
+        &:first-child {
             padding-left: 0;
         }
+
         &:last-child {
             border-right: 0;
+            padding-right: 0;
         }
-  }
+
+        &:hover {
+            color: #ca933b;
+        }
+    }
 }
 
 
